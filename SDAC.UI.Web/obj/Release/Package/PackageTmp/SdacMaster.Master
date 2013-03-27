@@ -1,0 +1,650 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SdacMaster.master.cs"
+    Inherits="SDAC.UI.Web.SdacMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%--<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>--%>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>SDAC » Add / Edit</title>
+	<link id="Link1" runat="server" rel="shortcut icon" href="~/Images/favicon.ico" type="image/x-icon" />
+
+    <link href="css/stu_style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    
+	<script src="js/jquery-1.8.3.js"></script>
+    <script src="js/jquery-ui.js"></script>
+	<link href="CSS/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script src="JS/function.js" type="text/javascript"></script>
+    <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript">
+		$(function() {
+			var tabs = $( "#tabs" ).tabs();
+			tabs.find( ".ui-tabs-nav" ).sortable({
+				axis: "x",
+				stop: function() {
+					tabs.tabs( "refresh" );
+				}
+			});
+		});
+		// increase the default animation speed to exaggerate the effect
+		$.fx.speeds._default = 500;
+		$(function() {
+			$( "#dialog" ).dialog({
+				autoOpen: false,
+				show: "blind",
+				//hide: "explode"
+			});
+ 
+			$( "#opener" ).click(function() {
+				$( "#dialog" ).dialog( "open" );
+				return false;
+			});
+		});
+    </script>
+    <script>
+        function myfunction() {
+
+            // increase the default animation speed to exaggerate the effect
+            $.fx.speeds._default = 200;
+            $(function () {
+                $("#dialog").dialog({
+
+                    autoOpen: false,
+                    show: "blind",
+                    width: 800,
+                    height: 500,
+                    my: "top",
+                    at: "top"
+
+                });
+
+
+                $("#opener").click(function () {
+                    $("#dialog").dialog("open");
+                    return false;
+
+                    $("#tabs").tabs();
+
+                });
+
+
+
+                $(document).ready(function () {
+
+                    $("#DropDownListSection").each(function () {
+                        // alert($(this).val());
+                    });
+
+                    $("#resultdiv").load("Help.aspx", {}, function (data) {
+
+                        var tabs = $('#tabs').tabs();
+
+
+                        var pathname = window.location.pathname;
+
+                        $('.ui-tabs-anchor').each(function (i) {
+                            var ctabid = $(this).attr("href");
+                            if (pathname.indexOf("Search.aspx") >= 0 && ctabid == "#tabs-1") {
+                                $(this).trigger("click");
+                            }
+                            else
+                                if (pathname.indexOf("Result.aspx") >= 0 && ctabid == "#tabs-2") {
+
+                                    $(this).trigger("click");
+                                }
+                                else
+                                    if (pathname.indexOf("AddFlag.aspx") >= 0 && ctabid == "#tabs-3") {
+                                        $(this).trigger("click");
+                                    }
+                                    else
+                                        if (pathname.indexOf("Aggregate.aspx") >= 0 && ctabid == "#tabs-4") {
+                                            $(this).trigger("click");
+                                        }
+
+                        });
+
+
+                        tabs.find(".ui-tabs-nav").sortable({
+                            axis: "x",
+                            stop: function () {
+
+
+                            }
+                        });
+
+                    });
+                });
+            });
+
+
+        }
+         
+    </script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+
+            var droplistflagcnt = 0;
+
+            //Use the class you used for the drop down here, I used ‘custom-opt’
+            $('#DropDownListSection option').each(function () {
+                //   alert($(this).attr("class"));
+
+
+                if ($(this).attr("class") == 'abc') {
+                    var label = $(this).text();
+                    $(this).replaceWith("<optgroup label='" + label + "'></optgroup>");
+                }
+            });
+
+
+
+            var val = $("#hdnFieldMessage").val();
+            if (val == "" || val == null) {
+                $("#success").hide();
+                $("#success").removeClass("success");
+
+            }
+            else {
+                $("#success").addClass("success");
+                $("#lblSuccess").html(val);
+                $("#success").fadeOut(5000);
+            }
+
+
+        });
+        
+
+
+
+    
+    </script>
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+            $("#<%= DropDownListSection.ClientID %>").live("mouseover", function () {
+
+            });
+
+        }); 
+    </script>
+    <script type="text/javascript">
+        function pageLoad(sender, args) {
+            $(document).ready(function () {
+                $("#<%= DropDownListSection.ClientID %>").live("mouseover", function () {
+
+                });
+
+            });
+
+
+            if (args.get_isPartialLoad()) {
+                // alert("partial load");
+
+                var droplistflagcnt = 0;
+
+                //Use the class you used for the drop down here, I used ‘custom-opt’
+                $('#DropDownListSection option').each(function () {
+                    //   alert($(this).attr("class"));
+
+
+                    if ($(this).attr("class") == 'abc') {
+                        var label = $(this).text();
+                        $(this).replaceWith("<optgroup label='" + label + "'></optgroup>");
+                    }
+
+                });
+
+            }
+
+        }
+
+     
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <div class="header_bg">
+        <div class="header">
+            &nbsp;&nbsp;&nbsp;&nbsp;<div class="logo">
+                <a href="#" title="Welcome to SDAC  (Student Data Aggregation Calculator">
+                    <img src="images/logo.png" width="107" height="26" alt="Welcome to SDAC  (Student Data Aggregation Calculator" /></a></div>
+              <div class="header_right">
+              <table class="header_right" width="40px">
+              <tr>
+              <td align="right" class="header_right" width="30px" style="border-bottom-style:none;">
+                Welcome
+                    <asp:Label ID="lblUser" runat="server" Text=""></asp:Label>
+              </td>
+              <td align="left" width="10px" style="border-bottom-style:none;">
+              <div class="setting" id="user">
+                        <div class="header_right_img">
+                            <img alt="Profile Setting" class="gear" src="Images/directional_down.png"></div>
+                        <ul class="subnav ">
+                            <li id="logOut"><a href="Login.aspx?LogOut=1">LogOut</a></li>
+                            <br class="clear">
+                        </ul>
+                    </div>
+              </td>
+              </tr>
+              </table>
+                  
+                    
+                </div>
+           <%-- <div class="right">
+                
+                 Welcome <asp:Label ID="lblUser" runat="server" Text="" Width="150px"></asp:Label>
+               
+               <img alt="Profile Setting" class="gear" src="Images/directional_down.png">
+                
+                 <div class="setting" id="user">
+                    <div class="header_right_img">
+                        </div>
+                    <ul class="subnav ">
+                        <li id="logOut"><a href="Login.aspx?LogOut=1">LogOut</a></li>
+                        <br class="clear">
+                    </ul>
+                    
+                </div>
+                
+               
+            </div>--%>
+        </div>
+    </div>
+    <div class="top_shedow">
+    </div>
+    <div class="contain_bg">
+        <div class="top">
+            <div class="size">
+                <div class="heading">
+                    <h1>
+                        Student Data Aggregation Calculator</h1>
+                </div>
+                <div class="help" id="opener">
+                    <a href="javascript:void(0)" onclick="myfunction();" title="Help">Help</a></div>
+                <%-- <div class="help">
+                    <a href="#" title="Help" id="opener">Help</a></div>--%>
+            </div>
+        </div>
+        <!-- Search Form Starts -->
+        <div class="second">
+            <div class="size">
+        	                    
+                                 <asp:UpdatePanel ID="UpdatePanel1" runat="server" >
+                                 <ContentTemplate>
+
+                                 
+                                 <div class="input_size">
+                                  <p><asp:Label ID="LabelDistrict" runat="server" Text="District"></asp:Label></p>                                        
+                                         <asp:DropDownList ID="DropDownListDistrict" runat="server">
+                                            <asp:ListItem>&lt;-- Select -- &gt;</asp:ListItem>                                       
+                                        </asp:DropDownList>
+                                 </div>
+               	                       
+				                    
+                                
+                                 <div class="input_size">
+                                  <p>School</p>
+                                        <asp:DropDownList ID="DropDownListSchool" class="DropDownListSchool"
+                                        runat="server"  AutoPostBack="true"
+                                        onselectedindexchanged="DropDownListSchool_SelectedIndexChanged">
+                                            <asp:ListItem>&lt;-- Select -- &gt;</asp:ListItem>                                      
+                                        </asp:DropDownList>
+                                 </div>
+               	                       
+				                    
+                                 <div class="input_size">
+                                  <p><asp:Label ID="LabelStaff" runat="server" Text="Staff"></asp:Label></p> 
+                                        <asp:DropDownList ID="dropDownListStaff" runat="server" AutoPostBack="true" 
+                                             onselectedindexchanged="dropDownListStaff_SelectedIndexChanged">
+                                            <asp:ListItem>&lt;-- Select -- &gt;</asp:ListItem>                                       
+                                        </asp:DropDownList>
+				                    
+                                 </div>
+               	                       
+                                  <div class="input_size2">
+                                  <p>Course</p>
+                                        <asp:DropDownList ID="DropDownListCourse" runat="server" AutoPostBack="true"
+                                        onselectedindexchanged="DropDownListCourse_SelectedIndexChanged" >
+                                            <asp:ListItem>&lt;-- Select -- &gt;</asp:ListItem>                                       
+                                        </asp:DropDownList>
+                                   </div>
+               	                        
+				                   
+                                 <div class="input_size2">
+                                   <p>Section</p>
+                                        <asp:DropDownList ID="DropDownListSection" runat="server"
+                                        onselectedindexchanged="DropDownListSection_SelectedIndexChanged">
+                                            <asp:ListItem>&lt;-- Select -- &gt;</asp:ListItem>                                      
+                                        </asp:DropDownList>
+                                  </div>
+               	                      
+				                 
+                                 <div class="input_size3">
+                                  <p>My Flags</p>
+                                        <asp:DropDownList ID="DropDownListFlag" runat="server" ClientIDMode="Static"
+                                        DataTextField="FlagName" DataValueField="FlagId">
+                                            <asp:ListItem>&lt;-- Select -- &gt;</asp:ListItem>
+                                        </asp:DropDownList>
+                                        
+                                  </div>
+               	                       
+				                  
+                                  <div class="input_size4">
+                                   <p>&nbsp;</p>
+                                   
+                
+                                    <asp:Button ID="btnGo"  class="send"  runat="server" Text="" onclick="btnGo_Click"  ClientIDMode="Static"
+                                    />
+                                  </div>
+                                  
+                                
+                               
+                                 
+                                 
+                                    
+                               
+            	                    
+                
+                                    
+                
+                                     
+
+                                   
+                
+                                    
+                                    
+                                    
+                                    
+                                    
+                                        <asp:UpdateProgress ID="UpdateProgress1" runat="server">
+                                        <ProgressTemplate>
+                                        <div style="position: fixed; text-align: center; height: 100%; width: 100%; top: 0; right: 0; left: 0; z-index: 9999999; background-color: transparent; opacity: 0.7;">
+                                            <asp:Image ID="imgUpdateProgress" runat="server"  ImageUrl="Images/loading.gif"  AlternateText="Loading ..." ToolTip="Loading ..." Height="32px" Width="32px"  style="padding: 10px;position:fixed;top:45%;left:50%;" />
+                                        </div>
+                                     </ProgressTemplate>
+                                
+                                        </asp:UpdateProgress>
+                               
+                                    </ContentTemplate>
+                                     <Triggers>
+                                    <asp:AsyncPostBackTrigger  ControlID="DropDownListSchool" EventName="SelectedIndexChanged" /> 
+                                    <asp:AsyncPostBackTrigger ControlID="DropDownListCourse" EventName="SelectedIndexChanged"></asp:AsyncPostBackTrigger>
+                                <asp:AsyncPostBackTrigger ControlID="DropDownListCourse" EventName="SelectedIndexChanged"></asp:AsyncPostBackTrigger>
+<asp:AsyncPostBackTrigger ControlID="DropDownListCourse" EventName="SelectedIndexChanged"></asp:AsyncPostBackTrigger>
+<asp:AsyncPostBackTrigger ControlID="DropDownListCourse" EventName="SelectedIndexChanged"></asp:AsyncPostBackTrigger>
+                              </Triggers>  
+                             
+                               <Triggers> <asp:AsyncPostBackTrigger
+                                    ControlID="DropDownListCourse" EventName="SelectedIndexChanged" /> 
+                              </Triggers>
+                               
+                                      </asp:UpdatePanel>   
+
+
+			                       
+		                    </div>
+        </div>
+        <!-- Search Form Ends -->
+        <!-- nav Starts -->
+        <div class="toplink">
+            <div class="link">
+                <ul>
+                    <li class="search"><a href="Search.aspx" title="search" class="selected">Search</a></li>
+                    <li class="results"><a href="Result.aspx" title="results">Results</a></li>
+                    <li class="add"><a href="AddFlag.aspx" title="add/edit">Add/Edit</a></li>
+                    <li class="aggregate"><a href="Aggregate.aspx" title="Aggregate">Aggregate</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- nav Ends -->
+        <!-- Add / Edit Penal Starts -->
+        <div id="success">
+            <asp:Label ID="lblSuccess" runat="server" Text="" ClientIDMode="Static"></asp:Label>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="favorite" class="favmsg">
+            Added to favorites successfully!
+        </div>
+        <div id="unfavorite" class="favmsg">
+            Removed from favorites successfully!
+        </div>
+        <div style="clear: both;">
+        </div>
+        <!-- Add / Edit Penal Ends -->
+    </div>
+    <div class="bottom_shedow">
+        &nbsp;</div>
+    <asp:HiddenField ID="hdnFieldMessage" runat="server" ClientIDMode="Static" />
+    </form>
+    <div id="dialog" title="Help">
+        <div id="Div1" title="Help">
+            <div id="resultdiv">
+            </div>
+        </div>
+    </div>
+    <!-- Footer Starts -->
+    <div class="contain_size footer">
+        <div class="half">
+            <p>
+                (C) inBloom is a trademark of inBloom, Inc.</p>
+        </div>
+        <div class="half2">
+            <%-- <a href="#" title="Privacy Policy">Privacy Policy</a><span>|</span><a href="#" title="Terms of Use">Terms
+                of Use</a>--%>
+        </div>
+    </div>
+    <!-- Footer Ends -->
+    <!--  Dialog Box Start -->
+    <%--<div id="dialog" title="Help">
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1" title="Search">Search</a></li>
+        <li><a href="#tabs-2" title="Result">Result</a></li>
+        <li><a href="#tabs-3" title="Add/Edit Flag">Add/Edit Flag</a></li>
+        <li><a href="#tabs-4" title="Aggregate">Aggregate</a></li>
+    </ul>
+  
+    <div id="tabs-1">
+ 
+ 
+				  <div class="help_heading"> Overview</div>
+ 
+				<div class="help_heading_content">
+				The Search page provides the ability to find an existing flag in the
+				system.  Flags you have created, as well as, public flags may appear in the
+				list.
+				</div>
+ 
+				<div class="help_heading">  Search Bar</div>
+				   
+				<div class="help_heading_content">
+				 Allows you to search for flags based on the name, description or
+				keyword defined for each flag. Once you begin typing in the search field,
+				the list of flags will start to filter dynamically based on corresponding
+				matches found using the letters or words you type.
+				
+<p></p>
+				Note: The results will only match on the name, description or keyword
+				fields.
+				</div>
+ 
+			 <div class="help_heading">Show Public Flags</div>
+ 
+				<div class="help_heading_content">
+ 
+ 
+				Check this option to include flags that are defined as public in the search
+				results.
+				<p>
+				Note: Public flags can only be created, edited and deleted by someone 
+				with Administrator privileges.</p>
+ 
+				</div>
+				 <div class="help_heading">Actions</div>
+				<div class="help_heading_content">
+ 
+				For each flag that appears in the Search list, the following actions may be
+				performed by clicking on the corresponding icon.
+ 
+				<p></p>
+				<img class="actionimage" src="images/new_run.png" title="Run Flag"> Run the Flag
+				<p></p>
+				<img class="actionimage" src="images/copy_II.png" title="Copy Flag"> Copy the Flag
+				<p></p>
+				<img class="actionimage" src="images/edit_II.png" title="Edit Flag"> Edit the Flag
+				<p></p>
+				<img class="actionimage" src="images/star.png" title="Add Flag"> Save the Flag to Favorites
+				<p></p>
+				<img class="actionimage" src="images/new-trash1.png" title="Delete Flag"> Delete the Flag
+				<p></p>
+				</div>
+				
+ 
+				 <div class="help_heading">New Flag</div>
+ 
+				<div class="help_heading_content">
+				<a href="AddFlag.aspx"><img src="images/newflag.png"></a> 
+				 <br />  
+				 Click this button to create a new Flag.You will be redirected to the Add Flag page. 
+				</div>
+			
+				 <div class="help_heading"> New Aggregate Flag </div>
+				 <div class="help_heading_content">
+				<a href="Aggregate.aspx"><img src="images/aggregate.png"></a>  <br />Click this button to create a new Aggregate Flag.You will be redirected to the Add Aggregate Flag page.
+				 </div>
+ 
+				
+ 
+    </div>
+    <div id="tabs-2">
+       Information about Result Page
+    </div>
+    <div id="tabs-3">
+          <div class="help_heading"> Overview</div>
+ 
+    <div class="help_heading_content">
+   <p>
+The Add/Edit page allows you to add or edit a flag using a visually engaging step-by-step approach.
+ Prior to defining a flag, you must enter a Name and Description for the flag. 
+  You may also enter optional Keywords to add further relevance for each flag and to better assist in the search of flags. 
+  <br>  <br>
+If you are logged on as a District Admin, the option to set a flag as Public will be made available.
+</p>
+</div>
+ 
+<div class="help_heading"> Adding a New Flag</div><br>
+The process for adding a new flag is as follows:
+<div class="help_heading_content">
+ 
+<div class="help_heading">Step 1: Select a Data Element</div><br>
+ 
+The user begins by typing the word that describes the name of the data element they are 
+interesting in using.  This causes the list to begin filtering data elements so only the most relevant data 
+elements appear in the list.  Once the user clicks on the data element it will appear highlighted and display 
+in the Preview section indicating the field is now selected.
+<br><br>
+The list of data elements is also sortable by Name or Description columns.
+  If the user chooses to do so, they may scroll through the list and select a data element.
+  <br><br>
+ 
+<div class="help_heading">Step 1: Select a Data Element</div><br>
+ 
+Depending on the data type of the data element selected, the application will automatically 
+disable operators in the list that are invalid for that data type.  For example, when a user selects 
+a numeric data type such as GPA, the Starts with, Does not start with, Ends with and Does not end with 
+operators will be grayed out.  This will enhance the user experience by eliminating invalid selections.
+<br>
+ 
+The following operators are available for selection.  Only one operator may be selected at a time.
+<br>
+<ul>
+ 
+<li>Is equal to Starts with Is between</li>
+<li>Is not equal to Does not start with Is not between</li>
+<li>Is greater than Ends with Is one of</li>
+<li>Is greater than or equal to Does not end with Is not one of</li>
+<li>Is less than Contains Is blank or empty</li>
+<li>Is less than or equal to Does not contain Is not blank nor empty</li>
+</ul>
+<br>
+<div class="help_heading">Step 3: Set the Value</div><br>
+ 
+Enter a value in the textbox which will determine the output of the flag.
+ 
+The application will perform basic validation to ensure input values match the data type of the data element selected. 
+ For example, if you select Enrollment Date, the textbox will become a date picker.  Another example, if you select Rank,
+  the textbox will only allow numbers to be entered.
+  <br><br>
+<div class="help_heading">Step 4: Preview and Save</div><br>
+ 
+As you progress from Step 1 through Step 3, the Preview pane continually updates and displays the selected data element,
+ operator and values entered.  This provides a visual representation of the flag definition before clicking the Save button.
+ 
+<p></p>
+    <div class="buttons">
+            <input name="" type="button" value="Preview" class="btn_small" />
+		</div>
+    <p></p>
+Once the flag is defined, click the Preview button to executive the flag.
+ The application will retrieve 5 records for you to view in the preview data grid. 
+  This ensures you have set the flag as intended and will aid you from having to click Save and run the flag continually in a separate screen.  
+ 
+<p></p>
+   <div class="buttons">
+            <input name="" type="button" value="Save" class="btn_small" />
+		</div>
+    <p></p>
+You can continue modifying the flag and click Save once you are satisfied the flag has been defined correctly.
+ 
+<br><br>
+<i>Note 1: The Flag Name must be unique within your list of defined flags.  
+Public Flags must also be unique but only within the domain of Public Flags.
+<br><br>
+Note 2: The Copy Flag feature is similar to the Edit Flag feature except in that you must define a new Name for the flag.</i>
+    </div>
+    
+ 
+ 
+</div>
+ 
+ 
+ 
+ 
+<div id="tabs-4" >
+     <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+        <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+    </div>
+    
+    
+    
+</div>
+</div>--%>
+    <!--  Dialog Box End -->
+</body>
+</html>

@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SDACModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="SLC_SDACEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AggregateFlags" EntityType="SDACModel.AggregateFlag" />
+    <EntitySet Name="Conditions" EntityType="SDACModel.Condition" />
+    <EntitySet Name="DataElements" EntityType="SDACModel.DataElement" />
+    <EntitySet Name="ErrorLogs" EntityType="SDACModel.ErrorLog" />
+    <EntitySet Name="Flags" EntityType="SDACModel.Flag" />
+    <EntitySet Name="FlagAggregateFlags" EntityType="SDACModel.FlagAggregateFlag" />
+    <EntitySet Name="PublicFavorites" EntityType="SDACModel.PublicFavorite" />
+    <EntitySet Name="UserFlagAssociations" EntityType="SDACModel.UserFlagAssociation" />
+    <EntitySet Name="UserLogs" EntityType="SDACModel.UserLog" />
+    <AssociationSet Name="FK_rel1" Association="SDACModel.FK_rel1">
+      <End Role="AggregateFlag" EntitySet="AggregateFlags" />
+      <End Role="FlagAggregateFlag" EntitySet="FlagAggregateFlags" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Condition" Association="SDACModel.FK_Condition">
+      <End Role="Condition" EntitySet="Conditions" />
+      <End Role="Flag" EntitySet="Flags" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DataElementId" Association="SDACModel.FK_DataElementId">
+      <End Role="DataElement" EntitySet="DataElements" />
+      <End Role="Flag" EntitySet="Flags" />
+    </AssociationSet>
+    <AssociationSet Name="FK_rel2" Association="SDACModel.FK_rel2">
+      <End Role="Flag" EntitySet="Flags" />
+      <End Role="FlagAggregateFlag" EntitySet="FlagAggregateFlags" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserFlagAssociation_Flag" Association="SDACModel.FK_UserFlagAssociation_Flag">
+      <End Role="Flag" EntitySet="Flags" />
+      <End Role="UserFlagAssociation" EntitySet="UserFlagAssociations" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AggregateFlag">
+    <Key>
+      <PropertyRef Name="AggregateFlagId" />
+    </Key>
+    <Property Name="AggregateFlagId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AggregateFlagName" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="AggregateFlagDescription" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="Keyword" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="IsPublic" Type="Boolean" Nullable="false" />
+    <Property Name="IsFavorite" Type="Boolean" Nullable="false" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="IsDelete" Type="Boolean" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="FlagAggregateFlags" Relationship="SDACModel.FK_rel1" FromRole="AggregateFlag" ToRole="FlagAggregateFlag" />
+  </EntityType>
+  <EntityType Name="Condition">
+    <Key>
+      <PropertyRef Name="ConditionId" />
+    </Key>
+    <Property Name="ConditionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ConditionName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Flags" Relationship="SDACModel.FK_Condition" FromRole="Condition" ToRole="Flag" />
+  </EntityType>
+  <EntityType Name="DataElement">
+    <Key>
+      <PropertyRef Name="DataElementId" />
+    </Key>
+    <Property Name="DataElementId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DataDomain" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Entity" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FieldName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DataType" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="SampleData" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="ExternalField" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Flags" Relationship="SDACModel.FK_DataElementId" FromRole="DataElement" ToRole="Flag" />
+  </EntityType>
+  <EntityType Name="ErrorLog">
+    <Key>
+      <PropertyRef Name="ErrorLogId" />
+    </Key>
+    <Property Name="ErrorLogId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Source" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Errorcode" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="Stacktrace" Type="String" Nullable="false" MaxLength="2000" Unicode="false" FixedLength="false" />
+    <Property Name="IdentifiedDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Flag">
+    <Key>
+      <PropertyRef Name="FlagId" />
+    </Key>
+    <Property Name="FlagId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FlagName" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="FlagDescription" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="Keyword" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="IsPublic" Type="Boolean" Nullable="false" />
+    <Property Name="DataElementId" Type="Int32" Nullable="false" />
+    <Property Name="ConditionId" Type="Int32" Nullable="false" />
+    <Property Name="ValueSet1" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ValueSet2" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="IsFavorite" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Condition" Relationship="SDACModel.FK_Condition" FromRole="Flag" ToRole="Condition" />
+    <NavigationProperty Name="DataElement" Relationship="SDACModel.FK_DataElementId" FromRole="Flag" ToRole="DataElement" />
+    <NavigationProperty Name="FlagAggregateFlags" Relationship="SDACModel.FK_rel2" FromRole="Flag" ToRole="FlagAggregateFlag" />
+    <NavigationProperty Name="UserFlagAssociations" Relationship="SDACModel.FK_UserFlagAssociation_Flag" FromRole="Flag" ToRole="UserFlagAssociation" />
+  </EntityType>
+  <EntityType Name="FlagAggregateFlag">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AggregateFlagId" Type="Int32" Nullable="false" />
+    <Property Name="FlagId" Type="Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="AggregateFlag" Relationship="SDACModel.FK_rel1" FromRole="FlagAggregateFlag" ToRole="AggregateFlag" />
+    <NavigationProperty Name="Flag" Relationship="SDACModel.FK_rel2" FromRole="FlagAggregateFlag" ToRole="Flag" />
+  </EntityType>
+  <EntityType Name="PublicFavorite">
+    <Key>
+      <PropertyRef Name="PublicPrivateId" />
+    </Key>
+    <Property Name="PublicPrivateId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FlagId" Type="Int32" />
+    <Property Name="IsAggregate" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="UserFlagAssociation">
+    <Key>
+      <PropertyRef Name="UserFlagAssociationId" />
+    </Key>
+    <Property Name="UserFlagAssociationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FlagId" Type="Int32" Nullable="false" />
+    <Property Name="IsPublic" Type="Boolean" />
+    <Property Name="Isfavorite" Type="Boolean" />
+    <Property Name="IsAggregate" Type="Boolean" />
+    <Property Name="CreatedDate" Type="DateTime" />
+    <Property Name="DeletedDate" Type="DateTime" />
+    <NavigationProperty Name="Flag" Relationship="SDACModel.FK_UserFlagAssociation_Flag" FromRole="UserFlagAssociation" ToRole="Flag" />
+  </EntityType>
+  <EntityType Name="UserLog">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Role" />
+      <PropertyRef Name="LoginDate" />
+      <PropertyRef Name="LogoutDate" />
+    </Key>
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Role" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="LoginDate" Type="DateTime" Nullable="false" />
+    <Property Name="LogoutDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_rel1">
+    <End Role="AggregateFlag" Type="SDACModel.AggregateFlag" Multiplicity="1" />
+    <End Role="FlagAggregateFlag" Type="SDACModel.FlagAggregateFlag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AggregateFlag">
+        <PropertyRef Name="AggregateFlagId" />
+      </Principal>
+      <Dependent Role="FlagAggregateFlag">
+        <PropertyRef Name="AggregateFlagId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Condition">
+    <End Role="Condition" Type="SDACModel.Condition" Multiplicity="1" />
+    <End Role="Flag" Type="SDACModel.Flag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Condition">
+        <PropertyRef Name="ConditionId" />
+      </Principal>
+      <Dependent Role="Flag">
+        <PropertyRef Name="ConditionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DataElementId">
+    <End Role="DataElement" Type="SDACModel.DataElement" Multiplicity="1" />
+    <End Role="Flag" Type="SDACModel.Flag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DataElement">
+        <PropertyRef Name="DataElementId" />
+      </Principal>
+      <Dependent Role="Flag">
+        <PropertyRef Name="DataElementId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_rel2">
+    <End Role="Flag" Type="SDACModel.Flag" Multiplicity="1" />
+    <End Role="FlagAggregateFlag" Type="SDACModel.FlagAggregateFlag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Flag">
+        <PropertyRef Name="FlagId" />
+      </Principal>
+      <Dependent Role="FlagAggregateFlag">
+        <PropertyRef Name="FlagId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserFlagAssociation_Flag">
+    <End Role="Flag" Type="SDACModel.Flag" Multiplicity="1" />
+    <End Role="UserFlagAssociation" Type="SDACModel.UserFlagAssociation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Flag">
+        <PropertyRef Name="FlagId" />
+      </Principal>
+      <Dependent Role="UserFlagAssociation">
+        <PropertyRef Name="FlagId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

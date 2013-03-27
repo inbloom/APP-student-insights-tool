@@ -1,0 +1,11 @@
+C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.Data\bin\Debug\SDAC.Data.xml
+C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.Data\bin\Debug\SDAC.Data.dll
+C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.Data\bin\Debug\SDAC.Data.pdb
+C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.Data\bin\Debug\inBloomApiLibrary.dll
+C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.Data\bin\Debug\inBloomApiLibrary.pdb
+C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.Data\bin\Debug\inBloomApiLibrary.xml
+C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.Data\bin\Debug\Newtonsoft.Json.xml
+C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.Data\obj\Debug\SDAC.Data.csprojResolveAssemblyReference.cache
+C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.Data\obj\Debug\SDAC.Data.dll
+C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.Data\obj\Debug\SDAC.Data.pdb

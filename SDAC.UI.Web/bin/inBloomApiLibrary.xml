@@ -1,0 +1,2672 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>inBloomApiLibrary</name>
+    </assembly>
+    <members>
+        <member name="M:inBloomApiLibrary.GetEducationOrganizationsData.GetEducationOrganizations(System.String)">
+            <summary>
+            Gets education organizations details
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetEducationOrganizationsData.GetEducationOrganizationById(System.String,System.String)">
+            <summary>
+            Gets education organizations by id
+            </summary>
+            <param name="accToken"></param>
+            <param name="educationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetEducationOrganizationsData.GetEducationOrganizationStaffEducationOrganizationAssociations(System.String,System.String)">
+            <summary>
+            Gets staff Education Organization Assignment Associations with in the education organizations
+            </summary>
+            <param name="accToken"></param>
+            <param name="educationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetEducationOrganizationsData.GetEducationOrganizationStaffEducationOrganizationAssociationByStaff(System.String,System.String)">
+            <summary>
+             Gets staff details in staff Education Organization Assignment Associations with in the education organizations
+            </summary>
+            <param name="accToken"></param>
+            <param name="educationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetEducationOrganizationsData.GetEducationOrganizationCustom(System.String,System.String)">
+            <summary>
+            Gets education organizations custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="educationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetEducationOrganizationsData.PostEducationOrganizations(System.String,System.String)">
+            <summary>
+            Creates education organizations  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="educationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetEducationOrganizationsData.PutEducationOrganizations(System.String,System.String,System.String)">
+            <summary>
+            Updates education organizations  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="educationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetEducationOrganizationsData.DeleteEducationOrganizations(System.String,System.String)">
+            <summary>
+            Deletes education organizations  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="educationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetAttendancesData.GetAttendances(System.String)">
+            <summary>
+            Gets Student Attendance Details
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetAttendancesData.GetAttendanceCustom(System.String,System.String)">
+            <summary>
+            Gets Student Attendance Custom Details
+            </summary>
+            <param name="accToken"></param>
+            <param name="attendanceId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetAttendancesData.PostAttendance(System.String,System.String)">
+            <summary>
+            Creates Student Attendance Details
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetAttendancesData.PutAttendance(System.String,System.String,System.String)">
+            <summary>
+            Updates Student Attendance Details
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetAttendancesData.DeleteAttendance(System.String,System.String)">
+            <summary>
+            Deletes Student Attendance Details
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentAcademicRecords(System.String)">
+            <summary>
+            Gets student academic records details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentAcademicRecordCustom(System.String,System.String)">
+            <summary>
+            Gets student academic records custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentAcademicRecordById(System.String,System.String)">
+            <summary>
+            Gets student academic records details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.PostStudentAcademicRecords(System.String,System.String)">
+            <summary>
+            Creates student Academic Records details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.PutStudentAcademicRecords(System.String,System.String,System.String)">
+            <summary>
+            Updates student Academic Records details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.DeleteStudentAcademicRecords(System.String,System.String)">
+            <summary>
+            Deletes student Academic Records details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentAssessments(System.String)">
+            <summary>
+            Gets student assessments details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentAssessmentCustom(System.String,System.String)">
+            <summary>
+            Gets student assessments custom  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentAssessmentById(System.String,System.String)">
+            <summary>
+            Gets student assessments details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentAssessmentAssessments(System.String,System.String)">
+            <summary>
+            Gets assessments with in the student assessments.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentAssessmentStudents(System.String,System.String)">
+            <summary>
+             Gets students with in the student assessments.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.PostStudentAssessments(System.String,System.String)">
+            <summary>
+            Creates student Assessments details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.PutStudentAssessments(System.String,System.String,System.String)">
+            <summary>
+            Updates student Assessments details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.DeleteStudentAssessments(System.String,System.String)">
+            <summary>
+            Deletes student Assessments details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentCohortAssociations(System.String)">
+            <summary>
+            Gets student cohort associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentCohortAssociationCustom(System.String,System.String)">
+            <summary>
+            Gets student cohort associations custom  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentCohortAssociationById(System.String,System.String)">
+            <summary>
+            Gets student cohort associations details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentCohortAssociationCohorts(System.String,System.String)">
+            <summary>
+            Gets cohorts with in the student cohort associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentCohortAssociationStudents(System.String,System.String)">
+            <summary>
+            Gets students with in the student cohort associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.PostStudentCohortAssociations(System.String,System.String)">
+            <summary>
+            Creates student Cohort Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.PutStudentCohortAssociations(System.String,System.String,System.String)">
+            <summary>
+            Updates student Cohort Associations details.
+            
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.DeleteStudentCohortAssociations(System.String,System.String)">
+            <summary>
+            Deletes student Cohort Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentCompetencies(System.String)">
+            <summary>
+            Gets student competencies details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentCompetenciesCustom(System.String,System.String)">
+            <summary>
+            Gets student competencies custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentCompetenciesById(System.String,System.String)">
+            <summary>
+            Gets student competencies details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentCompetenciesReportCards(System.String,System.String)">
+            <summary>
+            Gets report cards with in the student competencies.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.PostStudentCompetencies(System.String,System.String)">
+            <summary>
+            Creates student Competencies details. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.PutStudentCompetencies(System.String,System.String,System.String)">
+            <summary>
+            Updates  student Competencies details. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.DeleteStudentCompetencies(System.String,System.String)">
+            <summary>
+            Deletes  student Competencies details. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentCompetencyObjectives(System.String)">
+            <summary>
+            Gets student competency objectives details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentCompetencyObjectiveCustom(System.String,System.String)">
+            <summary>
+            Gets student competency objectives custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentCompetencyObjectiveById(System.String,System.String)">
+            <summary>
+            Gets student competency objectives details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.PostStudentCompetencyObjectives(System.String,System.String)">
+            <summary>
+            Creates student Competency Objectives details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.PutStudentCompetencyObjectives(System.String,System.String,System.String)">
+            <summary>
+            Updates  student Competency Objectives details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.DeleteStudentCompetencyObjectives(System.String,System.String)">
+            <summary>
+            Deletes  student Competency Objectives details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentDisciplineIncidentAssociations(System.String)">
+            <summary>
+            Gets student discipline incident associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentDisciplineIncidentAssociationCustom(System.String,System.String)">
+            <summary>
+            Gets student discipline incident associations custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentDisciplineIncidentAssociationById(System.String,System.String)">
+            <summary>
+            Gets student discipline incident associations details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentDisciplineIncidentAssociationDisciplineIncidents(System.String,System.String)">
+            <summary>
+            Gets discipline incidents with in the student discipline incident associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentDisciplineIncidentAssociationStudents(System.String,System.String)">
+            <summary>
+            Gets students with in the student discipline incident associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.PostStudentDisciplineIncidentAssociations(System.String,System.String)">
+            <summary>
+            Creates student Discipline Incident Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.PutStudentDisciplineIncidentAssociations(System.String,System.String,System.String)">
+            <summary>
+            Updates student Discipline Incident Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.DeleteStudentDisciplineIncidentAssociations(System.String,System.String)">
+            <summary>
+            Deletes student Discipline Incident Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentGradeBookEntries(System.String)">
+            <summary>
+            Gets student grade book entries details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentGradeBookEntriesCustom(System.String,System.String)">
+            <summary>
+            Gets student grade book entries custom  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentGradeBookEntriesById(System.String,System.String)">
+            <summary>
+            Gets student grade book entries details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.PostStudentGradebookEntries(System.String,System.String)">
+            <summary>
+            Creates student Gradebook Entries details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.PutStudentGradebookEntries(System.String,System.String,System.String)">
+            <summary>
+            Updates  student Gradebook Entries details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.DeleteStudentGradebookEntries(System.String,System.String)">
+            <summary>
+            Deletes  student Gradebook Entries details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentParentAssociations(System.String)">
+            <summary>
+            Gets student parent associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentParentAssociationCustom(System.String,System.String)">
+            <summary>
+            Gets student parent associations custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentParentAssociationById(System.String,System.String)">
+            <summary>
+            Gets student parent associations details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentParentAssociationParents(System.String,System.String)">
+            <summary>
+            Gets parents with in the student parent associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentParentAssociationStudents(System.String,System.String)">
+            <summary>
+            Gets students with in the student parent associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.PostStudentParentAssociations(System.String,System.String)">
+            <summary>
+            Creates student Parent Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.PutStudentParentAssociations(System.String,System.String,System.String)">
+            <summary>
+            Updates  student Parent Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.DeleteStudentParentAssociations(System.String,System.String)">
+            <summary>
+            Deletes  student Parent Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentProgramAssociations(System.String)">
+            <summary>
+            Gets student program associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentProgramAssociationCustom(System.String,System.String)">
+            <summary>
+            Gets student program associations custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentProgramAssociationByProgramId(System.String,System.String)">
+            <summary>
+            Gets student program associations details by program id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentProgramAssociationById(System.String,System.String)">
+            <summary>
+            Gets student program associations details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentProgramAssociationPrograms(System.String,System.String)">
+            <summary>
+            Gets programs with in the student program associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentProgramAssociationStudents(System.String,System.String)">
+            <summary>
+            Gets students with in the student program associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.PostStudentProgramAssociations(System.String,System.String)">
+            <summary>
+            Creates  student Program Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.PutStudentProgramAssociations(System.String,System.String,System.String)">
+            <summary>
+            Updates  student Program Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.DeleteStudentProgramAssociations(System.String,System.String)">
+            <summary>
+            Deletes  student Program Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudents(System.String)">
+            <summary>
+            Gets students details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentCustom(System.String,System.String)">
+            <summary>
+             Gets students custom  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentAttendances(System.String,System.String)">
+            <summary>
+             Gets attendances with in the students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentCourseTranscripts(System.String,System.String)">
+            <summary>
+            Gets course transcripts with in the students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentCourseTranscriptCourses(System.String,System.String)">
+            <summary>
+            Gets courses in course transcripts with in the students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentReportCards(System.String,System.String)">
+            <summary>
+            Gets report cards with in the students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentStudentAssessments(System.String,System.String)">
+            <summary>
+            Gets student assessments with in the students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentStudentAssessmentAssessments(System.String,System.String)">
+            <summary>
+            Gets assessments in student assessments with in the students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentStudentCohortAssociations(System.String,System.String)">
+            <summary>
+            Gets student cohort associations with in the students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentStudentCohortAssociationCohorts(System.String,System.String)">
+            <summary>
+            Gets cohorts in student cohort associations with in the students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentStudentDisciplineIncidentAssociations(System.String,System.String)">
+            <summary>
+            Gets student discipline incident associations with in the students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentStudentDisciplineIncidentAssociationDisciplineIncidents(System.String,System.String)">
+            <summary>
+            Gets discipline incidents in student discipline incident associations with in the students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentStudentParentAssociations(System.String,System.String)">
+            <summary>
+            Gets student parent associations with in the students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentStudentParentAssociationParents(System.String,System.String)">
+            <summary>
+            Gets parents in student parent associations with in the students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentStudentProgramAssociations(System.String,System.String)">
+            <summary>
+            Gets student program associations with in the students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentStudentProgramAssociationPrograms(System.String,System.String)">
+            <summary>
+             Gets programs in student program associations with in the students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentStudentSchoolAssociations(System.String,System.String)">
+            <summary>
+            Gets student school associations with in the students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentStudentSchoolAssociationSchools(System.String,System.String)">
+            <summary>
+             Gets schools in student school associations with in the students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentStudentSectionAssociations(System.String,System.String)">
+            <summary>
+            Gets student section associations with in the students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentStudentSectionAssociationSections(System.String,System.String)">
+            <summary>
+            Gets sections in student section associations with in the students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.PostStudents(System.String,System.String)">
+            <summary>
+            Creates Students details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.PutStudents(System.String,System.String,System.String)">
+            <summary>
+            Updates  Students details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.DeleteStudents(System.String,System.String)">
+            <summary>
+            Deletes  Students details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentSchoolAssociations(System.String)">
+            <summary>
+            Gets student school associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentSchoolAssociationById(System.String,System.String)">
+            <summary>
+            Gets student school associations details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentSchoolAssociationCustom(System.String,System.String)">
+            <summary>
+            Gets student school associations custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentSchoolAssociationSchools(System.String,System.String)">
+            <summary>
+            Gets schools with in the student school associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentSchoolAssociationStudents(System.String,System.String)">
+            <summary>
+            Gets students with in the student school associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.PostStudentSchoolAssociations(System.String,System.String)">
+            <summary>
+            Creates student School Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.PutStudentSchoolAssociations(System.String,System.String,System.String)">
+            <summary>
+            Updates student School Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.DeleteStudentSchoolAssociations(System.String,System.String)">
+            <summary>
+            Deletes student School Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentSectionAssociations(System.String)">
+            <summary>
+            Gets student section associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentSectionAssociationById(System.String,System.String)">
+            <summary>
+            Gets student section associations details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentSectionAssociationCustom(System.String,System.String)">
+            <summary>
+            Gets student section associations custom  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentSectionAssociationGrades(System.String,System.String)">
+            <summary>
+            Gets grades with in the student section associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentSectionAssociationSections(System.String,System.String)">
+            <summary>
+            Gets sections with in the student section associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentSectionAssociationStudentCompetencies(System.String,System.String)">
+            <summary>
+            Gets student competencies with in the student section associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.GetStudentSectionAssociationStudents(System.String,System.String)">
+            <summary>
+             Gets students with in the student section associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.PostStudentSectionAssociations(System.String,System.String)">
+            <summary>
+            Creates student Section Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.PutStudentSectionAssociations(System.String,System.String,System.String)">
+            <summary>
+            Updates  student Section Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStudentsData.DeleteStudentSectionAssociations(System.String,System.String)">
+            <summary>
+            Deletes  student Section Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetDisciplineData.GetDisciplineActions(System.String)">
+            <summary>
+            Gets discipline actions details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetDisciplineData.GetDisciplineActionById(System.String,System.String)">
+            <summary>
+            Gets descipline action details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="disciplineId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetDisciplineData.GetDisciplineActionCustom(System.String,System.String)">
+            <summary>
+            Gets discipline action custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="disciplineId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetDisciplineData.PostDisciplineActions(System.String,System.String)">
+            <summary>
+            Creates discipline action  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="disciplineId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetDisciplineData.PutDisciplineActions(System.String,System.String,System.String)">
+            <summary>
+            Updates discipline action  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="disciplineId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetDisciplineData.DeleteDisciplineActions(System.String,System.String)">
+            <summary>
+            Deletes discipline action  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="disciplineId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetDisciplineData.GetDisciplineIncidents(System.String)">
+            <summary>
+            Gets discipline incidents details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetDisciplineData.GetDisciplineIncidentById(System.String,System.String)">
+            <summary>
+             Gets discipline incidents details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="disciplineId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetDisciplineData.GetDisciplineIncidentCustom(System.String,System.String)">
+            <summary>
+             Gets discipline incident custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="disciplineId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetDisciplineData.GetDisciplineIncidentStudentDisciplineIncidentAssociations(System.String,System.String)">
+            <summary>
+            Gets student discipline incident associations with in the  discipline incidents.
+            </summary>
+            <param name="accToken"></param>
+            <param name="disciplineId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetDisciplineData.GetDisciplineIncidentStudentDisciplineIncidentAssociationStudents(System.String,System.String)">
+            <summary>
+            Gets students details in student discipline incident associations  with in the  discipline incidents.
+            </summary>
+            <param name="accToken"></param>
+            <param name="disciplineId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetDisciplineData.PostDisciplineIncidents(System.String,System.String)">
+            <summary>
+            Creates discipline incidents details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetDisciplineData.PutDisciplineIncidents(System.String,System.String,System.String)">
+            <summary>
+            Updates discipline incidents details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetDisciplineData.DeleteDisciplineIncidents(System.String,System.String)">
+            <summary>
+            Deletes discipline incidents details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetSectionsData.GetSections(System.String,System.String)">
+            <summary>Gets sections details.       
+            </summary>
+            <param name="accToken">Access token has to send</param>
+            <param name="userId">User id  has to send</param>
+            <returns>Gets Sections Data</returns>        
+        </member>
+        <member name="M:inBloomApiLibrary.GetSectionsData.GetSectionCustom(System.String,System.String)">
+            <summary>
+            Gets section custom details.
+            </summary>
+            <param name="accToken">Access token has to send</param>
+            <param name="sectionId">User id  has to send</param>
+            <returns>Gets Sections Data</returns> 
+        </member>
+        <member name="M:inBloomApiLibrary.GetSectionsData.GetSectionById(System.String,System.String)">
+            <summary>
+            Gets section  details by id.
+            </summary>
+            <param name="accToken">Access token has to send</param>
+            <param name="sectionId">User id  has to send</param>
+            <returns>Gets Sections Data</returns> 
+        </member>
+        <member name="M:inBloomApiLibrary.GetSectionsData.GetSectionStudentAssociations(System.String,System.String)">
+            <summary>
+            Gets Student section associations details with in the sections.
+            </summary>
+            <param name="accToken"></param>
+            <param name="sectionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetSectionsData.GetSectionStudentAssociationStudentList(System.String,System.String)">
+            <summary>
+            Gets students details in student section associations with in the sections.
+            </summary>
+            <param name="accToken"></param>
+            <param name="sectionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetSectionsData.GetSectionTeacherAssociations(System.String,System.String)">
+            <summary>
+            Gets teacher section associations with in the sections.
+            </summary>
+            <param name="accToken"></param>
+            <param name="sectionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetSectionsData.GetSectionTeacherAssociationTeacherList(System.String,System.String)">
+            <summary>
+            Gets teachers in teacher section associations with in the sections. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="sectionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetSectionsData.PostSections(System.String,System.String)">
+            <summary>
+            Creates sections details
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetSectionsData.PutSections(System.String,System.String,System.String)">
+            <summary>
+            Update sections details
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <param name="sectionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetSectionsData.DeleteSections(System.String,System.String)">
+            <summary>
+            Deletes sectins details
+            </summary>
+            <param name="accToken"></param>
+            <param name="sectionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetSessionsData.GetSessions(System.String)">
+            <summary>
+            Gets sessions details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetSessionsData.GetSessionCustom(System.String,System.String)">
+            <summary>
+            Gets sessions custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetSessionsData.GetSessionById(System.String,System.String)">
+            <summary>
+            Gets sessions details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetSessionsData.GetSessionCourseOfferings(System.String,System.String)">
+            <summary>
+             Gets course offerings with in the sessions.
+            </summary>
+            <param name="accToken"></param>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetSessionsData.GetSessionCourseOfferingCourses(System.String,System.String)">
+            <summary>
+            Gets courses in course offerings with in the sessions.
+            </summary>
+            <param name="accToken"></param>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetSessionsData.PostSessions(System.String,System.String)">
+            <summary>
+            Creates Sessions
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetSessionsData.PutSessions(System.String,System.String,System.String)">
+            <summary>
+            Updates sesstions
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetSessionsData.DeleteSessions(System.String,System.String)">
+            <summary>
+            Deletes sessions
+            </summary>
+            <param name="accToken"></param>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetSchoolsData.GetSchools(System.String)">
+            <summary>
+            Gets schools details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetSchoolsData.GetSchoolCustom(System.String,System.String)">
+            <summary>
+            Gets schools custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="schoolId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetSchoolsData.GetSchoolSections(System.String,System.String)">
+            <summary>
+            Gets sections with in the schools.
+            </summary>
+            <param name="accToken"></param>
+            <param name="schoolId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetSchoolsData.GetSchoolStudentSchoolAssociations(System.String,System.String)">
+            <summary>
+             Gets student school associations with in the schools.
+            </summary>
+            <param name="accToken"></param>
+            <param name="schoolId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetSchoolsData.GetSchoolStudentSchoolAssociationStudents(System.String,System.String)">
+            <summary>
+            Gets students in student school associations with in the schools.
+            </summary>
+            <param name="accToken"></param>
+            <param name="schoolId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetSchoolsData.GetSchoolTeacherSchoolAssociations(System.String,System.String)">
+            <summary>
+            Gets teacher school associations with in the schools.
+            </summary>
+            <param name="accToken"></param>
+            <param name="schoolId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetSchoolsData.GetSchoolTeacherSchoolAssociationTeachers(System.String,System.String)">
+            <summary>
+            Gets teachers in teacher school associations with in the schools.
+            </summary>
+            <param name="accToken"></param>
+            <param name="schoolId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetSchoolsData.PostSchools(System.String,System.String)">
+            <summary>
+            Creates Schools details
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetSchoolsData.PutSchools(System.String,System.String,System.String)">
+            <summary>
+            Updates Schools details
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <param name="schoolId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetSchoolsData.DeleteSchools(System.String,System.String)">
+            <summary>
+            Deletes Schools details
+            </summary>
+            <param name="accToken"></param>
+            <param name="schoolId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.GetStaff(System.String)">
+            <summary>
+            Gets staff details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.GetStaffCustom(System.String,System.String)">
+            <summary>
+             Gets staff custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.GetStaffStaffCohortAssociations(System.String,System.String)">
+            <summary>
+             Gets staff cohort associations with in the staff.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.GetStaffStaffCohortAssociationCohorts(System.String,System.String)">
+            <summary>
+            Gets cohorts in staff cohort associations with in the staff.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.GetStaffStaffEducationOrganizationAssignmentAssociations(System.String,System.String)">
+            <summary>
+            Gets staff education organization assignment associations with in the staff.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.GetStaffStaffEducationOrganizationAssignmentAssociationEducationOrganizations(System.String,System.String)">
+            <summary>
+             Gets education organizations in staff education organization assignment associations with in the staff.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.GetStaffStaffProgramAssociations(System.String,System.String)">
+            <summary>
+            Gets staff program associations with in the staff.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.GetStaffStaffProgramAssociationPrograms(System.String,System.String)">
+            <summary>
+            Gets programs in staff program associations with in the staff.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.PostStaff(System.String,System.String)">
+            <summary>
+            Creates staff details
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.Putstaff(System.String,System.String,System.String)">
+            <summary>
+            Updates Staff Details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.Deletestaff(System.String,System.String)">
+            <summary>
+            Deletes staff details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.GetStaffCohortAssociations(System.String)">
+            <summary>
+            Gets staff cohort associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.GetStaffCohortAssociationCustom(System.String,System.String)">
+            <summary>
+             Gets staff cohort associations custom  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.GetStaffCohortAssociationById(System.String,System.String)">
+            <summary>
+             Gets staff cohort associations details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.GetStaffCohortAssociationCohorts(System.String,System.String)">
+            <summary>
+             Gets cohorts details with in the staff cohort associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.GetStaffCohortAssociationStaff(System.String,System.String)">
+            <summary>
+            Gets staff details with in the staff cohort associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.PostStaffCohortAssociations(System.String,System.String)">
+            <summary>
+            Creates  staff Cohort Associations details
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.PutStaffCohortAssociations(System.String,System.String,System.String)">
+            <summary>
+            Updates staff Cohort Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.DeleteStaffCohortAssociations(System.String,System.String)">
+            <summary>
+            Deletes staff Cohort Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.GetStaffEducationOrganizationAssignmentAssociations(System.String)">
+            <summary>
+            Gets staff education organization assignment associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.GetStaffEducationOrganizationAssignmentAssociationCustom(System.String,System.String)">
+            <summary>
+            Gets staff education organization assignment associations custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.GetStaffEducationOrganizationAssignmentAssociationById(System.String,System.String)">
+            <summary>
+            Gets staff education organization assignment associations details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.GetStaffEducationOrganizationAssignmentAssociationEducationOrganizations(System.String,System.String)">
+            <summary>
+            Gets education organizations with in the staff education organization assignment associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.GetStaffEducationOrganizationAssignmentAssociationStaff(System.String,System.String)">
+            <summary>
+            Gets staff details with in the staff education organization assignment associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.PostStaffEducationOrgAssignmentAssociations(System.String,System.String)">
+            <summary>
+            Creates staff Education Organization Assignment Associations dettails.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.PutStaffEducationOrgAssignmentAssociations(System.String,System.String,System.String)">
+            <summary>
+            Updates staff Education Organization Assignment Associations dettails.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.DeleteStaffEducationOrgAssignmentAssociations(System.String,System.String)">
+            <summary>
+            Deletes staff Education Organization Assignment Associations dettails.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.GetStaffProgramAssociations(System.String)">
+            <summary>
+            Gets staff program associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.GetStaffProgramAssociationCustom(System.String,System.String)">
+            <summary>
+            Gets staff program associations custom  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.GetStaffProgramAssociationByProgramId(System.String,System.String)">
+            <summary>
+            Gets staff program associations details by program id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="programId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.GetStaffProgramAssociationById(System.String,System.String)">
+            <summary>
+            Gets staff program associations details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.GetStaffProgramAssociationPrograms(System.String,System.String)">
+            <summary>
+            Gets programs with in the staff program associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.GetStaffProgramAssociationStaff(System.String,System.String)">
+            <summary>
+            Gets staff with in the staff program associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.PostStaffProgramAssociations(System.String,System.String)">
+            <summary>
+            Creates staff program associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.PutStaffProgramAssociations(System.String,System.String,System.String)">
+            <summary>
+            Updates  staff program associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetStaffData.DeleteStaffProgramAssociations(System.String,System.String)">
+            <summary>
+            Deletes  staff program associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.OAuth.CallAuthorization(System.String,System.String)">
+            <summary>
+            This function is used to check authentication of the user and gives access to api's.
+            </summary>
+            <param name="AccessToken"></param>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetLearningObjectivesData.GetLearningObjectives(System.String)">
+            <summary>
+            Gets Learning Objectives details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetLearningObjectivesData.GetLearningObjectiveById(System.String,System.String)">
+            <summary>
+            Gets learning objective by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="learningId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetLearningObjectivesData.GetLearningObjectiveCustom(System.String,System.String)">
+            <summary>
+            Gets learning objective custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="learningId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetLearningObjectivesData.GetLearningObjectiveChildLearningObjectives(System.String,System.String)">
+            <summary>
+            Gets child learning objectives with in the learning objective.
+            </summary>
+            <param name="accToken"></param>
+            <param name="learningId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetLearningObjectivesData.GetLearningObjectiveLearningStandards(System.String,System.String)">
+            <summary>
+            Gets learning standards with in the learning objective.
+            </summary>
+            <param name="accToken"></param>
+            <param name="learningId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetLearningObjectivesData.GetLearningObjectiveParentLearningObjectives(System.String,System.String)">
+            <summary>
+            Gets parent learning objectives with in the learning objective.
+            </summary>
+            <param name="accToken"></param>
+            <param name="learningId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetLearningObjectivesData.GetLearningObjectiveStudentCompetencies(System.String,System.String)">
+            <summary>
+            Gets student competencies with in the  learning objective.
+            </summary>
+            <param name="accToken"></param>
+            <param name="learningId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetLearningObjectivesData.GetLearningStandards(System.String)">
+            <summary>
+            Gets learning standards details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetLearningObjectivesData.GetLearningStandardById(System.String,System.String)">
+            <summary>
+             Gets learning standards details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="learningId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetLearningObjectivesData.GetLearningStandardCustom(System.String,System.String)">
+            <summary>
+             Gets learning standards custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="learningId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetLearningObjectivesData.PostLearningStandards(System.String,System.String)">
+            <summary>
+             Creates learning standards  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="learningId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetLearningObjectivesData.PutLearningStandards(System.String,System.String,System.String)">
+            <summary>
+             Updates learning standards  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="learningId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetLearningObjectivesData.DeleteLearningStandards(System.String,System.String)">
+            <summary>
+             Deletes learning standards  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="learningId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:inBloomApiLibrary.CommonData">
+            <summary>
+            Consist of common data required for class library
+            </summary>
+        </member>
+        <member name="M:inBloomApiLibrary.CommonData.CallApi(System.String,System.String)">
+            <summary>
+            This function is used for calling the api for GET method
+            </summary>
+            <param name="accToken"></param>
+            <param name="apiEndPoint"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.CommonData.CallApiForPOST(System.String,System.String,System.String)">
+            <summary>
+            This function is used for calling the api for POST method
+            </summary>
+            <param name="ApiEndPoint"></param>
+            <param name="accessToken"></param>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.CommonData.CallApiForPUT(System.String,System.String,System.String)">
+            <summary>
+            This function is used for calling the api for PUT method
+            </summary>
+            <param name="ApiEndPoint"></param>
+            <param name="accessToken"></param>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.CommonData.CallApiForDELETE(System.String,System.String)">
+            <summary>
+            This function is used for calling the api for PUT method
+            </summary>
+            <param name="ApiEndPoint"></param>
+            <param name="accessToken"></param>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.CommonData.CallApiWithParameter(System.String,System.String)">
+            <summary>
+            CallApiWithParameter call the SLC api with all the parameter.
+            </summary>
+            <param name="ApiEndPoint"></param>
+            <param name="accessToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.ApiClient.Request(System.String,System.String,inBloomApiLibrary.RequestType)">
+            <summary>
+             Executes inBloom Rest api's and gets the responce in the form of json.
+            </summary>
+            <param name="apiEndpoint"></param>
+            <param name="accessToken"></param>
+            <param name="requestType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.ApiClient.Post(System.String,System.String,System.String,inBloomApiLibrary.RequestType)">
+            <summary>
+             Executes inBloom Rest api's and post's the data.
+            </summary>
+            <param name="apiEndpoint"></param>
+            <param name="accessToken"></param>
+            <param name="Data"></param>
+            <param name="requestType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetParentsData.GetParents(System.String)">
+            <summary>
+            Gets parents details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetParentsData.GetParentById(System.String,System.String)">
+            <summary>
+             Gets parents details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="parentsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetParentsData.GetParentCustom(System.String,System.String)">
+            <summary>
+             Gets parents custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="parentsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetParentsData.GetParentStudentParentAssociations(System.String,System.String)">
+            <summary>
+            Gets student parent associations with in the parents.
+            </summary>
+            <param name="accToken"></param>
+            <param name="parentsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetParentsData.GetParentStudentParentAssociationStudents(System.String,System.String)">
+            <summary>
+            Gets student details in student parent associations with in the parents.
+            </summary>
+            <param name="accToken"></param>
+            <param name="parentsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetParentsData.PostParents(System.String,System.String)">
+            <summary>
+            Creates parents details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetParentsData.PutParents(System.String,System.String,System.String)">
+            <summary>
+            Updates parents details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetParentsData.DeleteParents(System.String,System.String)">
+            <summary>
+            Deletes parents details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCompetencyLevelDescriptorData.GetCompetencyLevelDescriptor(System.String)">
+            <summary>
+            Gets competency level descriptor details.
+            </summary>
+            <param name="accToken">Access token given by the athentication</param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCompetencyLevelDescriptorData.GetCompetencyLevelDescriptorById(System.String,System.String)">
+            <summary>
+            Gets competency level descriptor by id. 
+            </summary>
+            <param name="accToken">Access Token Given by the athentication</param>
+            <param name="competencyId">Competency id</param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCompetencyLevelDescriptorData.GetCompetencyLevelDescriptorCustom(System.String,System.String)">
+            <summary>
+            Gets competency level descriptor custom details.
+            </summary>
+            <param name="accToken">Access Token Given by the athentication</param>
+            <param name="competencyId">competency id</param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCompetencyLevelDescriptorData.PostCompetencyLevelDescriptor(System.String,System.String)">
+            <summary>
+            Creates competency level descriptor details.
+            </summary>
+            <param name="accToken">Access token given by the athentication</param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCompetencyLevelDescriptorData.PutCompetencyLevelDescriptor(System.String,System.String,System.String)">
+            <summary>
+            Updates competency level descriptor details.
+            </summary>
+            <param name="accToken">Access token given by the athentication</param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCompetencyLevelDescriptorData.DeleteCompetencyLevelDescriptor(System.String,System.String)">
+            <summary>
+            Deletes competency level descriptor details.
+            </summary>
+            <param name="accToken">Access token given by the athentication</param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCompetencyLevelDescriptorData.GetCompetencyLevelDescriptorTypes(System.String)">
+            <summary>
+            Gets competency level descriptor types.
+            </summary>
+            <param name="accToken">Access Token Given by the athentication</param>       
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCompetencyLevelDescriptorData.GetCompetencyLevelDescriptorTypeById(System.String,System.String)">
+            <summary>
+            Gets competency level descriptor types by id.
+            </summary>
+            <param name="accToken">Access Token Given by the athentication</param>
+            <param name="competencyId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCompetencyLevelDescriptorData.GetCompetencyLevelDescriptorTypeCustom(System.String,System.String)">
+            <summary>
+            Gets competency level descriptor types custom details.
+            </summary>
+            <param name="accToken">Access Token Given by the athentication</param>
+            <param name="competencyId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCompetencyLevelDescriptorData.PostCompetencyLevelDescriptorTypes(System.String,System.String)">
+            <summary>
+            Creates competency level descriptor types  details.
+            </summary>
+            <param name="accToken">Access Token Given by the athentication</param>
+            <param name="competencyId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCompetencyLevelDescriptorData.PutCompetencyLevelDescriptorTypes(System.String,System.String,System.String)">
+            <summary>
+            Updates competency level descriptor types  details.
+            </summary>
+            <param name="accToken">Access Token Given by the athentication</param>
+            <param name="competencyId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCompetencyLevelDescriptorData.DeleteCompetencyLevelDescriptorTypes(System.String,System.String)">
+            <summary>
+            Deletes competency level descriptor types details.
+            </summary>
+            <param name="accToken">Access Token Given by the athentication</param>
+            <param name="competencyId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetGradesData.GetGradeBookEntries(System.String)">
+            <summary>
+            Gets Grade Book Entries details. 
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetGradesData.GetGradeBookEntrieById(System.String,System.String)">
+            <summary>
+            Gets Grade Book Entries details by id. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="gradeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetGradesData.GetGradeBookEntrieCustom(System.String,System.String)">
+            <summary>
+            Gets Grade Book Entries custom details. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="gradeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetGradesData.PostGradebookEntries(System.String,System.String)">
+            <summary>
+            Creates Grade Book Entries  details. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="gradeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetGradesData.PutGradebookEntries(System.String,System.String,System.String)">
+            <summary>
+            Updates Grade Book Entries  details. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="gradeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetGradesData.DeleteGradebookEntries(System.String,System.String)">
+            <summary>
+            Deletes Grade Book Entries  details. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="gradeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetGradesData.GetGrades(System.String)">
+            <summary>
+            Gets Grade details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetGradesData.GetGradeCustom(System.String,System.String)">
+            <summary>
+            Gets grade custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="gradeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetGradesData.PostGrades(System.String,System.String)">
+            <summary>
+            Creates Grade details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetGradesData.PutGrades(System.String,System.String,System.String)">
+            <summary>
+            Updates Grade details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetGradesData.DeleteGrades(System.String,System.String)">
+            <summary>
+            Deletes Grade details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetGradesData.GetGradingPeriods(System.String)">
+            <summary>
+            Gets grading period details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetGradesData.GetGradingPeriodGrades(System.String,System.String)">
+            <summary>
+            Gets grades with in the grading periods.
+            </summary>
+            <param name="accToken"></param>
+            <param name="gradeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetGradesData.GetGradingPeriodReportCards(System.String,System.String)">
+            <summary>
+            Gets report cards with in the grading periods.
+            </summary>
+            <param name="accToken"></param>
+            <param name="gradeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetGradesData.GetGradingPeriodById(System.String,System.String)">
+            <summary>
+            Gets grading periods by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="gradeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetGradesData.GetGradingPeriodCustom(System.String,System.String)">
+            <summary>
+            Gets grading periods custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="gradeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetTeachersData.GetTeachers(System.String)">
+            <summary>
+            Gets teachers details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetTeachersData.GetTeacherCustom(System.String,System.String)">
+            <summary>
+            Gets teachers custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="TeacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetTeachersData.GetTeacherTeacherSchoolAssociations(System.String,System.String)">
+            <summary>
+            Gets teacher school associations with in the teachers.
+            </summary>
+            <param name="accToken"></param>
+            <param name="TeacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetTeachersData.GetTeacherTeacherSchoolAssociationSchools(System.String,System.String)">
+            <summary>
+            Gets schools in teacher school associations with in the teachers.
+            </summary>
+            <param name="accToken"></param>
+            <param name="TeacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetTeachersData.GetTeacherTeacherSectionAssociations(System.String,System.String)">
+            <summary>
+            Gets teacher section associations with in the teachers.
+            </summary>
+            <param name="accToken"></param>
+            <param name="TeacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetTeachersData.GetTeacherTeacherSectionAssociationSections(System.String,System.String)">
+            <summary>
+            Gets sections in teacher section associations with in the teachers.
+            </summary>
+            <param name="accToken"></param>
+            <param name="TeacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetTeachersData.PostTeachers(System.String,System.String)">
+            <summary>
+            Creates teachers Details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="TeacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetTeachersData.PutTeachers(System.String,System.String,System.String)">
+            <summary>
+            Updates teachers Details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="TeacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetTeachersData.DeleteTeachers(System.String,System.String)">
+            <summary>
+            Deletes teachers Details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="TeacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetTeachersData.GetTeacherSchoolAssociations(System.String)">
+            <summary>
+            Gets teacher school associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetTeachersData.GetTeacherSchoolAssociationCustom(System.String,System.String)">
+            <summary>
+            Gets teacher school associations custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="TeacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetTeachersData.GetTeacherSchoolAssociationById(System.String,System.String)">
+            <summary>
+            Gets teacher school associations by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="TeacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetTeachersData.GetTeacherSchoolAssociationSchools(System.String,System.String)">
+            <summary>
+            Gets schools with in the teacher school associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="TeacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetTeachersData.GetTeacherSchoolAssociationTeachers(System.String,System.String)">
+            <summary>
+            Gets teachers with in the teacher school associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="TeacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetTeachersData.PostTeacherSchoolAssociations(System.String,System.String)">
+            <summary>
+            Creates teacher school associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetTeachersData.PutTeacherSchoolAssociations(System.String,System.String,System.String)">
+            <summary>
+            Updates teacher school associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetTeachersData.DeleteTeacherSchoolAssociations(System.String,System.String)">
+            <summary>
+            Deletes teacher school associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetTeachersData.GetTeacherSectionAssociations(System.String)">
+            <summary>
+            Gets teacher section associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetTeachersData.GetTeacherSectionAssociationCustom(System.String,System.String)">
+            <summary>
+            Gets teacher section associations custom  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="TeacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetTeachersData.GetTeacherSectionAssociationById(System.String,System.String)">
+            <summary>
+            Gets teacher section associations details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="TeacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetTeachersData.GetTeacherSectionAssociationSections(System.String,System.String)">
+            <summary>
+            Gets sections with in the teacher section associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="TeacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetTeachersData.GetTeacherSectionAssociationTeachers(System.String,System.String)">
+            <summary>
+            Gets teachers with in the teacher section associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="TeacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetTeachersData.PostTeacherSectionAssociations(System.String,System.String)">
+            <summary>
+            Creates teacher section associations.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetTeachersData.PutTeacherSectionAssociations(System.String,System.String,System.String)">
+            <summary>
+            Updates teacher section associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetTeachersData.DeleteTeacherSectionAssociations(System.String,System.String)">
+            <summary>
+            Deletes teacher section associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetProgramsData.GetPrograms(System.String)">
+            <summary>
+            Gets program details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetProgramsData.GetProgramById(System.String,System.String)">
+            <summary>
+            Gets programs details by id
+            </summary>
+            <param name="accToken"></param>
+            <param name="programId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetProgramsData.GetProgramCustom(System.String,System.String)">
+            <summary>
+            Gets program custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="programId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetProgramsData.GetProgramStaffProgramAssociations(System.String,System.String)">
+            <summary>
+            Gets staff program associations with in the programs.
+            </summary>
+            <param name="accToken"></param>
+            <param name="programId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetProgramsData.GetProgramStaffProgramAssociationStaff(System.String,System.String)">
+            <summary>
+            Gets student details in staff program associations with in the programs.
+            </summary>
+            <param name="accToken"></param>
+            <param name="programId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetProgramsData.GetProgramStudentProgramAssociations(System.String,System.String)">
+            <summary>
+            Gets student program associations with in the programs.
+            </summary>
+            <param name="accToken"></param>
+            <param name="programId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetProgramsData.GetProgramStudentProgramAssociationStudents(System.String,System.String)">
+            <summary>
+            Gets students details in student program associations with in the programs.
+            </summary>
+            <param name="accToken"></param>
+            <param name="programId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetProgramsData.PostPrograms(System.String,System.String)">
+            <summary>
+            Creates program details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetProgramsData.PutPrograms(System.String,System.String,System.String)">
+            <summary>
+            Updates program details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetProgramsData.DeletePrograms(System.String,System.String)">
+            <summary>
+            Deletes program details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCohortsData.GetCohorts(System.String)">
+            <summary>
+            Gets cohorts details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCohortsData.GetCohortCustom(System.String,System.String)">
+            <summary>
+            Gets cohorts custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="cohortsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCohortsData.GetCohortById(System.String,System.String)">
+            <summary>
+            Gets cohorts by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="cohortsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCohortsData.GetCohortStaffCohortAssociations(System.String,System.String)">
+            <summary>
+            Gets staff cohort associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="cohortsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCohortsData.GetCohortStaffCohortAssociationStaff(System.String,System.String)">
+            <summary>
+            Gets staff details with in the staff cohort associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="cohortsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCohortsData.GetCohortStudentCohortAssociations(System.String,System.String)">
+            <summary>
+            Gets student cohort associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="cohortsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCohortsData.GetCohortStudentCohortAssociationStudents(System.String,System.String)">
+            <summary>
+            Gets student details with in the student cohort associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="cohortsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCohortsData.PostCohorts(System.String,System.String)">
+            <summary>
+            Creates cohorts details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCohortsData.PutCohorts(System.String,System.String,System.String)">
+            <summary>
+            Updates cohorts details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCohortsData.DeleteCohorts(System.String,System.String)">
+            <summary>
+            Deletes cohorts details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCoursesData.GetCourseOfferings(System.String)">
+            <summary>
+            Gets courses offerings details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCoursesData.GetCourseOfferingById(System.String,System.String)">
+            <summary>
+            Gets course offering by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCoursesData.GetCourseOfferingCourses(System.String,System.String)">
+            <summary>
+            Gets courses with in the course offerings. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCoursesData.GetCourseOfferingSessions(System.String,System.String)">
+            <summary>
+             Gets sessions with in the course offerings. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCoursesData.GetCourseOfferingCustom(System.String,System.String)">
+            <summary>
+             Gets course offerings custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCoursesData.PostCourseOfferings(System.String,System.String)">
+            <summary>
+             Creates course offerings  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCoursesData.PutCourseOfferings(System.String,System.String,System.String)">
+            <summary>
+             Updates course offerings  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCoursesData.DeleteCourseOfferings(System.String,System.String)">
+            <summary>
+             Deletes course offerings  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCoursesData.GetCourses(System.String)">
+            <summary>
+            Gets course details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCoursesData.GetCourseIdCourseOfferings(System.String,System.String)">
+            <summary>
+             Gets course offerings with in the courses  
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCoursesData.GetCourseIdCourseOfferingSessions(System.String,System.String)">
+            <summary>
+            Gets sesstions details in course offerings with in the course.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCoursesData.GetCourseCourseTranscripts(System.String,System.String)">
+            <summary>
+             Gets course transcripts with in the courses.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCoursesData.GetCourseCourseTranscriptStudents(System.String,System.String)">
+            <summary>
+            Gets students details in course transcripts with in the courses.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCoursesData.GetCourseStudentParentAssociations(System.String,System.String)">
+            <summary>
+            Gets student parent associations with in the course.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCoursesData.GetCourseStudentParentAssociationStudents(System.String,System.String)">
+            <summary>
+            Gets students details in student parent associations with in the course.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCoursesData.GetCourseCustom(System.String,System.String)">
+            <summary>
+            Gets course custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCoursesData.GetCourseById(System.String,System.String)">
+            <summary>
+            Gets course custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCoursesData.GetCourseCourseTranscripts(System.String)">
+            <summary>
+            Gets course transcripts with in the courses.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCoursesData.GetCourseCourseTranscriptById(System.String,System.String)">
+            <summary>
+            Gets course transcripts with in the course by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCoursesData.GetCourseCourseTranscriptCustom(System.String,System.String)">
+            <summary>
+            Gets course transcript custom details with in the courses.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCoursesData.GetCourseCourseTranscriptCourses(System.String,System.String)">
+            <summary>
+            Gets course in course transcripts with in the courses.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetCoursesData.GetCourseTranscriptStudents(System.String,System.String)">
+            <summary>
+            Gets students in course transcripts with in the courses.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetHomeData.GetHome(System.String)">
+            <summary>
+            Gets Home links
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetHomeData.LogOut(System.String)">
+            <summary>
+            this function is used to logout the user
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetAssessmentsData.PostAssessments(System.String,System.String)">
+            <summary>
+            this function is used to post the assessment details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetAssessmentsData.PutAssessments(System.String,System.String,System.String)">
+            <summary>
+            Updates assessments details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetAssessmentsData.DeleteAssessments(System.String,System.String)">
+            <summary>
+            Deletes assessments details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetAssessmentsData.GetAssessments(System.String)">
+            <summary>
+            Gets assessments details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetAssessmentsData.GetAssessmentLearningObjective(System.String,System.String)">
+            <summary>
+            Gets assessments learning objective details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="assessmentsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetAssessmentsData.GetAssessmentLearningStandards(System.String,System.String)">
+            <summary>
+             Gets assessments learning standards.
+            </summary>
+            <param name="accToken"></param>
+            <param name="assessmentsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetAssessmentsData.GetAssessmentStudentAssessments(System.String,System.String)">
+            <summary>
+             Gets student assessments details. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="assessmentsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetAssessmentsData.GetAssessmentStudentAssessmentsStudents(System.String,System.String)">
+            <summary>
+             Gets students details with in the student assessments.  
+            </summary>
+            <param name="accToken"></param>
+            <param name="assessmentsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetAssessmentsData.GetAssessmentCustom(System.String,System.String)">
+            <summary>
+             Gets assessments custom details. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="assessmentsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetReportCardsData.GetReportCards(System.String)">
+            <summary>
+            Gets report cards details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetReportCardsData.GetReportCardCustom(System.String,System.String)">
+            <summary>
+            Gets report card custom  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="reportId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetReportCardsData.PostReportCards(System.String,System.String)">
+            <summary>
+            Creates Report cards details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetReportCardsData.PutReportCards(System.String,System.String,System.String)">
+            <summary>
+            Updates Report cards details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="Data"></param>
+            <param name="reportId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:inBloomApiLibrary.GetReportCardsData.DeleteReportCards(System.String,System.String)">
+            <summary>
+            Deletes Report cards details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="reportId"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

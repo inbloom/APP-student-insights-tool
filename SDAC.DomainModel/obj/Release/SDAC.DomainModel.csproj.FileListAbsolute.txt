@@ -1,0 +1,5 @@
+C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.DomainModel\bin\Release\SDAC.DomainModel.dll.config
+C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.DomainModel\bin\Release\SDAC.DomainModel.dll
+C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.DomainModel\bin\Release\SDAC.DomainModel.pdb
+C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.DomainModel\obj\Release\SDAC.DomainModel.dll
+C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.DomainModel\obj\Release\SDAC.DomainModel.pdb

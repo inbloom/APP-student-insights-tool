@@ -1,0 +1,3216 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SDAC.Core</name>
+    </assembly>
+    <members>
+        <member name="M:SDAC.Core.CoreAssessmentsData.PostAssessments(System.String,System.String)">
+            <summary>
+            this function is used to post the assessment details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreAssessmentsData.PutAssessments(System.String,System.String,System.String)">
+            <summary>
+            Updates assessments details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="AssessmentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreAssessmentsData.DeleteAssessments(System.String,System.String)">
+            <summary>
+            Deletes assessments details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="AssessmentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreAssessmentsData.GetAssessments(System.String)">
+            <summary>
+            Gets assessments details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreAssessmentsData.GetAssessmentLearningObjective(System.String,System.String)">
+            <summary>
+            Gets assessments learning objective details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="assessmentsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreAssessmentsData.GetAssessmentLearningStandards(System.String,System.String)">
+            <summary>
+             Gets assessments learning standards.
+            </summary>
+            <param name="accToken"></param>
+            <param name="assessmentsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreAssessmentsData.GetAssessmentStudentAssessments(System.String,System.String)">
+            <summary>
+             Gets student assessments details. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="assessmentsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreAssessmentsData.GetAssessmentStudentAssessmentsStudents(System.String,System.String)">
+            <summary>
+             Gets students details with in the student assessments.  
+            </summary>
+            <param name="accToken"></param>
+            <param name="assessmentsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreAssessmentsData.GetAssessmentCustom(System.String,System.String)">
+            <summary>
+             Gets assessments custom details. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="assessmentsId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SDAC.Core.Course">
+            <summary>
+            
+            Purpose of Course class is to create object and store the list of courses.
+            Using this class we can set and access the list of course.
+            
+            </summary>
+        </member>
+        <member name="M:SDAC.Core.Course.GetCourseList">
+            <summary>
+            This function is used to get the course list
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.Course.SetCourseList(System.Web.UI.WebControls.ListItem[])">
+            <summary>
+            This function it used to assign the course list to current object
+            </summary>
+            <param name="_ListCourse"></param>
+        </member>
+        <member name="M:SDAC.Core.CoreAttendancesData.GetAttendances(System.String)">
+            <summary>
+            Gets Student Attendance Details
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreAttendancesData.GetAttendanceCustom(System.String,System.String)">
+            <summary>
+            Gets Student Attendance Custom Details
+            </summary>
+            <param name="accToken"></param>
+            <param name="attendanceId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreAttendancesData.PostAttendance(System.String,System.String)">
+            <summary>
+            Creates Student Attendance Details
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreAttendancesData.PutAttendance(System.String,System.String,System.String)">
+            <summary>
+            Updates Student Attendance Details
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="attendanceId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreAttendancesData.DeleteAttendance(System.String,System.String)">
+            <summary>
+            Deletes Student Attendance Details
+            </summary>
+            <param name="accToken"></param>
+            <param name="attendanceId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCohortsData.GetCohorts(System.String)">
+            <summary>
+            Gets _cohorts details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCohortsData.GetCohortCustom(System.String,System.String)">
+            <summary>
+            Gets _cohorts custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="cohortsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCohortsData.GetCohortById(System.String,System.String)">
+            <summary>
+            Gets _cohorts by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="cohortsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCohortsData.GetCohortStaffCohortAssociations(System.String,System.String)">
+            <summary>
+            Gets staff cohort associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="cohortsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCohortsData.GetCohortStaffCohortAssociationStaff(System.String,System.String)">
+            <summary>
+            Gets staff details with in the staff cohort associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="cohortsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCohortsData.GetCohortStudentCohortAssociations(System.String,System.String)">
+            <summary>
+            Gets student cohort associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="cohortsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCohortsData.GetCohortStudentCohortAssociationStudents(System.String,System.String)">
+            <summary>
+            Gets student details with in the student cohort associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="cohortsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCohortsData.PostCohorts(System.String,System.String)">
+            <summary>
+            Creates _cohorts details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCohortsData.PutCohorts(System.String,System.String,System.String)">
+            <summary>
+            Updates _cohorts details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="cohortsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCohortsData.DeleteCohorts(System.String,System.String)">
+            <summary>
+            Deletes _cohorts details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="cohortsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCompetencyLevelDescriptorData.GetCompetencyLevelDescriptor(System.String)">
+            <summary>
+            Gets _competency level descriptor details.
+            </summary>
+            <param name="accToken">Access token given by the athentication</param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCompetencyLevelDescriptorData.GetCompetencyLevelDescriptorById(System.String,System.String)">
+            <summary>
+            Gets _competency level descriptor by id. 
+            </summary>
+            <param name="accToken">Access Token Given by the athentication</param>
+            <param name="competencyId">Competency id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCompetencyLevelDescriptorData.GetCompetencyLevelDescriptorCustom(System.String,System.String)">
+            <summary>
+            Gets _competency level descriptor custom details.
+            </summary>
+            <param name="accToken">Access Token Given by the athentication</param>
+            <param name="competencyId">_competency id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCompetencyLevelDescriptorData.PostCompetencyLevelDescriptor(System.String,System.String)">
+            <summary>
+            Creates _competency level descriptor details.
+            </summary>
+            <param name="accToken">Access token given by the athentication</param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCompetencyLevelDescriptorData.PutCompetencyLevelDescriptor(System.String,System.String,System.String)">
+            <summary>
+            Updates _competency level descriptor details.
+            </summary>
+            <param name="accToken">Access token given by the athentication</param>
+            <param name="data"></param>
+            <param name="competencyId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCompetencyLevelDescriptorData.DeleteCompetencyLevelDescriptor(System.String,System.String)">
+            <summary>
+            Deletes _competency level descriptor details.
+            </summary>
+            <param name="accToken">Access token given by the athentication</param>
+            <param name="competencyId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCompetencyLevelDescriptorData.GetCompetencyLevelDescriptorTypes(System.String)">
+            <summary>
+            Gets _competency level descriptor types.
+            </summary>
+            <param name="accToken">Access Token Given by the athentication</param>       
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCompetencyLevelDescriptorData.GetCompetencyLevelDescriptorTypeById(System.String,System.String)">
+            <summary>
+            Gets _competency level descriptor types by id.
+            </summary>
+            <param name="accToken">Access Token Given by the athentication</param>
+            <param name="competencyId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCompetencyLevelDescriptorData.GetCompetencyLevelDescriptorTypeCustom(System.String,System.String)">
+            <summary>
+            Gets _competency level descriptor types custom details.
+            </summary>
+            <param name="accToken">Access Token Given by the athentication</param>
+            <param name="competencyId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCompetencyLevelDescriptorData.PostCompetencyLevelDescriptorTypes(System.String,System.String)">
+            <summary>
+            Creates _competency level descriptor types  details.
+            </summary>
+            <param name="accToken">Access Token Given by the athentication</param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCompetencyLevelDescriptorData.PutCompetencyLevelDescriptorTypes(System.String,System.String,System.String)">
+            <summary>
+            Updates _competency level descriptor types  details.
+            </summary>
+            <param name="accToken">Access Token Given by the athentication</param>
+            <param name="data"></param>
+            <param name="competencyId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCompetencyLevelDescriptorData.DeleteCompetencyLevelDescriptorTypes(System.String,System.String)">
+            <summary>
+            Deletes _competency level descriptor types details.
+            </summary>
+            <param name="accToken">Access Token Given by the athentication</param>
+            <param name="competencyId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.GetCourseOfferings(System.String)">
+            <summary>
+            Gets _courses offerings details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.GetCourseOfferingById(System.String,System.String)">
+            <summary>
+            Gets course offering by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.GetCourseOfferingCourses(System.String,System.String)">
+            <summary>
+            Gets _courses with in the course offerings. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.GetCourseOfferingSessions(System.String,System.String)">
+            <summary>
+             Gets sessions with in the course offerings. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.GetCourseOfferingCustom(System.String,System.String)">
+            <summary>
+             Gets course offerings custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.PostCourseOfferings(System.String,System.String)">
+            <summary>
+             Creates course offerings  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.PutCourseOfferings(System.String,System.String,System.String)">
+            <summary>
+             Updates course offerings  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.DeleteCourseOfferings(System.String,System.String)">
+            <summary>
+             Deletes course offerings  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.GetCourses(System.String)">
+            <summary>
+            Gets course details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.GetCourseById(System.String,System.String)">
+            <summary>
+            Gets course details by id.
+            </summary>
+            <param name="accToken"></param>
+            /// <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.GetCourseIdCourseOfferings(System.String,System.String)">
+            <summary>
+             Gets course offerings with in the _courses  
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.GetCourseIdCourseOfferingSessions(System.String,System.String)">
+            <summary>
+            Gets sesstions details in course offerings with in the course.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.GetCourseCourseTranscripts(System.String,System.String)">
+            <summary>
+             Gets course transcripts with in the _courses.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.GetCourseCourseTranscriptStudents(System.String,System.String)">
+            <summary>
+            Gets students details in course transcripts with in the _courses.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.GetCourseStudentParentAssociations(System.String,System.String)">
+            <summary>
+            Gets student parent associations with in the course.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.GetCourseStudentParentAssociationStudents(System.String,System.String)">
+            <summary>
+            Gets students details in student parent associations with in the course.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.GetCourseCustom(System.String,System.String)">
+            <summary>
+            Gets course custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.PostCourses(System.String,System.String)">
+            <summary>
+            Creates _courses details
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.PutCourses(System.String,System.String,System.String)">
+            <summary>
+            Updates _courses data 
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.DeleteCourses(System.String,System.String)">
+            <summary>
+            Deletes _courses data
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.GetCourseCourseTranscripts(System.String)">
+            <summary>
+            Gets course transcripts with in the _courses.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.GetCourseCourseTranscriptById(System.String,System.String)">
+            <summary>
+            Gets course transcripts with in the course by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.GetCourseCourseTranscriptCustom(System.String,System.String)">
+            <summary>
+            Gets course transcript custom details with in the _courses.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.GetCourseCourseTranscriptCourses(System.String,System.String)">
+            <summary>
+            Gets course in course transcripts with in the _courses.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.GetCourseTranscriptStudents(System.String,System.String)">
+            <summary>
+            Gets students in course transcripts with in the _courses.
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.PostCourseTranscripts(System.String,System.String)">
+            <summary>
+            Creates _courses transcripts details
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.PutCourseTranscripts(System.String,System.String,System.String)">
+            <summary>
+            Updates _courses transcripts details
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreCoursesData.DeleteCourseTranscripts(System.String,System.String)">
+            <summary>
+            Deletes _courses transcripts details
+            </summary>
+            <param name="accToken"></param>
+            <param name="courseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreDisciplineData.GetDisciplineActions(System.String)">
+            <summary>
+            Gets discipline actions details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreDisciplineData.GetDisciplineActionById(System.String,System.String)">
+            <summary>
+            Gets _descipline action details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="disciplineId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreDisciplineData.GetDisciplineActionCustom(System.String,System.String)">
+            <summary>
+            Gets discipline action custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="disciplineId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreDisciplineData.PostDisciplineActions(System.String,System.String)">
+            <summary>
+            Creates discipline action  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreDisciplineData.PutDisciplineActions(System.String,System.String,System.String)">
+            <summary>
+            Updates discipline action  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="disciplineId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreDisciplineData.DeleteDisciplineActions(System.String,System.String)">
+            <summary>
+            Deletes discipline action  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="disciplineId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreDisciplineData.GetDisciplineIncidents(System.String)">
+            <summary>
+            Gets discipline incidents details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreDisciplineData.GetDisciplineIncidentById(System.String,System.String)">
+            <summary>
+             Gets discipline incidents details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="disciplineId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreDisciplineData.GetDisciplineIncidentCustom(System.String,System.String)">
+            <summary>
+             Gets discipline incident custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="disciplineId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreDisciplineData.GetDisciplineIncidentStudentDisciplineIncidentAssociations(System.String,System.String)">
+            <summary>
+            Gets student discipline incident associations with in the  discipline incidents.
+            </summary>
+            <param name="accToken"></param>
+            <param name="disciplineId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreDisciplineData.GetDisciplineIncidentStudentDisciplineIncidentAssociationStudents(System.String,System.String)">
+            <summary>
+            Gets students details in student discipline incident associations  with in the  discipline incidents.
+            </summary>
+            <param name="accToken"></param>
+            <param name="disciplineId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreDisciplineData.PostDisciplineIncidents(System.String,System.String)">
+            <summary>
+            Creates discipline incidents details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreDisciplineData.PutDisciplineIncidents(System.String,System.String,System.String)">
+            <summary>
+            Updates discipline incidents details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="disciplineId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreDisciplineData.DeleteDisciplineIncidents(System.String,System.String)">
+            <summary>
+            Deletes discipline incidents details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="disciplineId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreEducationOrganizationsData.GetEducationOrganizations(System.String)">
+            <summary>
+            Gets _education organizations details
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreEducationOrganizationsData.GetEducationOrganizationById(System.String,System.String)">
+            <summary>
+            Gets _education organizations by id
+            </summary>
+            <param name="accToken"></param>
+            <param name="educationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreEducationOrganizationsData.GetEducationOrganizationStaffEducationOrganizationAssociations(System.String,System.String)">
+            <summary>
+            Gets staff Education Organization Assignment Associations with in the _education organizations
+            </summary>
+            <param name="accToken"></param>
+            <param name="educationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreEducationOrganizationsData.GetEducationOrganizationStaffEducationOrganizationAssociationByStaff(System.String,System.String)">
+            <summary>
+             Gets staff details in staff Education Organization Assignment Associations with in the _education organizations
+            </summary>
+            <param name="accToken"></param>
+            <param name="educationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreEducationOrganizationsData.GetEducationOrganizationCustom(System.String,System.String)">
+            <summary>
+            Gets _education organizations custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="educationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreEducationOrganizationsData.PostEducationOrganizations(System.String,System.String)">
+            <summary>
+            Creates _education organizations  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreEducationOrganizationsData.PutEducationOrganizations(System.String,System.String,System.String)">
+            <summary>
+            Updates _education organizations  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="educationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreEducationOrganizationsData.DeleteEducationOrganizations(System.String,System.String)">
+            <summary>
+            Deletes _education organizations  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="educationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreGradesData.GetGradeBookEntries(System.String)">
+            <summary>
+            Gets Grade Book Entries details. 
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreGradesData.GetGradeBookEntrieById(System.String,System.String)">
+            <summary>
+            Gets Grade Book Entries details by id. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="gradeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreGradesData.GetGradeBookEntrieCustom(System.String,System.String)">
+            <summary>
+            Gets Grade Book Entries custom details. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="gradeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreGradesData.PostGradebookEntries(System.String,System.String)">
+            <summary>
+            Creates Grade Book Entries  details. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreGradesData.PutGradebookEntries(System.String,System.String,System.String)">
+            <summary>
+            Updates Grade Book Entries  details. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="gradeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreGradesData.DeleteGradebookEntries(System.String,System.String)">
+            <summary>
+            Deletes Grade Book Entries  details. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="gradeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreGradesData.GetGrades(System.String)">
+            <summary>
+            Gets Grade details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreGradesData.GetGradeCustom(System.String,System.String)">
+            <summary>
+            Gets grade custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="gradeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreGradesData.PostGrades(System.String,System.String)">
+            <summary>
+            Creates Grade details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreGradesData.PutGrades(System.String,System.String,System.String)">
+            <summary>
+            Updates Grade details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreGradesData.DeleteGrades(System.String,System.String)">
+            <summary>
+            Deletes Grade details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreGradesData.GetGradingPeriods(System.String)">
+            <summary>
+            Gets grading period details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreGradesData.GetGradingPeriodGrades(System.String,System.String)">
+            <summary>
+            Gets _grades with in the grading periods.
+            </summary>
+            <param name="accToken"></param>
+            <param name="gradeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreGradesData.GetGradingPeriodReportCards(System.String,System.String)">
+            <summary>
+            Gets report cards with in the grading periods.
+            </summary>
+            <param name="accToken"></param>
+            <param name="gradeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreGradesData.GetGradingPeriodById(System.String,System.String)">
+            <summary>
+            Gets grading periods by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="gradeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreGradesData.GetGradingPeriodCustom(System.String,System.String)">
+            <summary>
+            Gets grading periods custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="gradeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreLearningObjectivesData.GetLearningObjectives(System.String)">
+            <summary>
+            Gets Learning Objectives details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreLearningObjectivesData.GetLearningObjectiveById(System.String,System.String)">
+            <summary>
+            Gets learning objective by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="learningId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreLearningObjectivesData.GetLearningObjectiveCustom(System.String,System.String)">
+            <summary>
+            Gets learning objective custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="learningId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreLearningObjectivesData.GetLearningObjectiveChildLearningObjectives(System.String,System.String)">
+            <summary>
+            Gets child learning objectives with in the learning objective.
+            </summary>
+            <param name="accToken"></param>
+            <param name="learningId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreLearningObjectivesData.GetLearningObjectiveLearningStandards(System.String,System.String)">
+            <summary>
+            Gets learning standards with in the learning objective.
+            </summary>
+            <param name="accToken"></param>
+            <param name="learningId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreLearningObjectivesData.GetLearningObjectiveParentLearningObjectives(System.String,System.String)">
+            <summary>
+            Gets parent learning objectives with in the learning objective.
+            </summary>
+            <param name="accToken"></param>
+            <param name="learningId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreLearningObjectivesData.GetLearningObjectiveStudentCompetencies(System.String,System.String)">
+            <summary>
+            Gets student competencies with in the  learning objective.
+            </summary>
+            <param name="accToken"></param>
+            <param name="learningId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreLearningObjectivesData.PostLearningObjectives(System.String,System.String)">
+            <summary>
+             Creates Learning Objectives
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreLearningObjectivesData.PutLearningObjectives(System.String,System.String,System.String)">
+            <summary>
+            Updates  Learning Objectives
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="learningId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreLearningObjectivesData.DeleteLearningObjectives(System.String,System.String)">
+            <summary>
+            Deletes  Learning Objectives
+            </summary>
+            <param name="accToken"></param>
+            <param name="learningId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreLearningObjectivesData.GetLearningStandards(System.String)">
+            <summary>
+            Gets learning standards details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreLearningObjectivesData.GetLearningStandardById(System.String,System.String)">
+            <summary>
+             Gets learning standards details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="learningId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreLearningObjectivesData.GetLearningStandardCustom(System.String,System.String)">
+            <summary>
+             Gets learning standards custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="learningId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreLearningObjectivesData.PostLearningStandards(System.String,System.String)">
+            <summary>
+             Creates learning standards  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="learningId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreLearningObjectivesData.PutLearningStandards(System.String,System.String,System.String)">
+            <summary>
+             Updates learning standards  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="learningId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreLearningObjectivesData.DeleteLearningStandards(System.String,System.String)">
+            <summary>
+             Deletes learning standards  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="learningId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreParentsData.GetParents(System.String)">
+            <summary>
+            Gets _parents details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreParentsData.GetParentById(System.String,System.String)">
+            <summary>
+             Gets _parents details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="parentsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreParentsData.GetParentCustom(System.String,System.String)">
+            <summary>
+             Gets _parents custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="parentsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreParentsData.GetParentStudentParentAssociations(System.String,System.String)">
+            <summary>
+            Gets student parent associations with in the _parents.
+            </summary>
+            <param name="accToken"></param>
+            <param name="parentsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreParentsData.GetParentStudentParentAssociationStudents(System.String,System.String)">
+            <summary>
+            Gets student details in student parent associations with in the _parents.
+            </summary>
+            <param name="accToken"></param>
+            <param name="parentsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreParentsData.PostParents(System.String,System.String)">
+            <summary>
+            Creates _parents details.
+            </summary>
+            <param name="accToken"></param>
+             <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreParentsData.PutParents(System.String,System.String,System.String)">
+            <summary>
+            Updates _parents details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="parentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreParentsData.DeleteParents(System.String,System.String)">
+            <summary>
+            Deletes _parents details.
+            </summary>
+            <param name="accToken"></param>
+             <param name="parentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreProgramsData.GetPrograms(System.String)">
+            <summary>
+            Gets program details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreProgramsData.GetProgramById(System.String,System.String)">
+            <summary>
+            Gets _programs details by id
+            </summary>
+            <param name="accToken"></param>
+            <param name="programId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreProgramsData.GetProgramCustom(System.String,System.String)">
+            <summary>
+            Gets program custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="programId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreProgramsData.GetProgramStaffProgramAssociations(System.String,System.String)">
+            <summary>
+            Gets staff program associations with in the _programs.
+            </summary>
+            <param name="accToken"></param>
+            <param name="programId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreProgramsData.GetProgramStaffProgramAssociationStaff(System.String,System.String)">
+            <summary>
+            Gets student details in staff program associations with in the _programs.
+            </summary>
+            <param name="accToken"></param>
+            <param name="programId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreProgramsData.GetProgramStudentProgramAssociations(System.String,System.String)">
+            <summary>
+            Gets student program associations with in the _programs.
+            </summary>
+            <param name="accToken"></param>
+            <param name="programId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreProgramsData.GetProgramStudentProgramAssociationStudents(System.String,System.String)">
+            <summary>
+            Gets students details in student program associations with in the _programs.
+            </summary>
+            <param name="accToken"></param>
+            <param name="programId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreProgramsData.PostPrograms(System.String,System.String)">
+            <summary>
+            Creates program details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:SDAC.Core.CoreProgramsData.PutPrograms(System.String,System.String,System.String)" -->
+        <member name="M:SDAC.Core.CoreProgramsData.DeletePrograms(System.String,System.String)">
+            <summary>
+            Deletes program details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="programId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreReportCardsData.GetReportCards(System.String)">
+            <summary>
+            Gets report cards details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreReportCardsData.GetReportCardCustom(System.String,System.String)">
+            <summary>
+            Gets report card custom  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="reportId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreReportCardsData.PostReportCards(System.String,System.String)">
+            <summary>
+            Creates Report cards details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreReportCardsData.PutReportCards(System.String,System.String,System.String)">
+            <summary>
+            Updates Report cards details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="reportId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreReportCardsData.DeleteReportCards(System.String,System.String)">
+            <summary>
+            Deletes Report cards details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="reportId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreSchoolsData.GetSchools(System.String)">
+            <summary>
+            Gets schools details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreSchoolsData.GetSchoolCustom(System.String,System.String)">
+            <summary>
+            Gets schools custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="schoolId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreSchoolsData.GetSchoolSections(System.String,System.String)">
+            <summary>
+            Gets sections with in the schools.
+            </summary>
+            <param name="accToken"></param>
+            <param name="schoolId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreSchoolsData.GetSchoolStudentSchoolAssociations(System.String,System.String)">
+            <summary>
+             Gets student _school associations with in the schools.
+            </summary>
+            <param name="accToken"></param>
+            <param name="schoolId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreSchoolsData.GetSchoolStudentSchoolAssociationStudents(System.String,System.String)">
+            <summary>
+            Gets students in student _school associations with in the schools.
+            </summary>
+            <param name="accToken"></param>
+            <param name="schoolId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreSchoolsData.GetSchoolTeacherSchoolAssociations(System.String,System.String)">
+            <summary>
+            Gets teacher _school associations with in the schools.
+            </summary>
+            <param name="accToken"></param>
+            <param name="schoolId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreSchoolsData.GetSchoolTeacherSchoolAssociationTeachers(System.String,System.String)">
+            <summary>
+            Gets teachers in teacher _school associations with in the schools.
+            </summary>
+            <param name="accToken"></param>
+            <param name="schoolId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreSchoolsData.PostSchools(System.String,System.String)">
+            <summary>
+            Creates Schools details
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreSchoolsData.PutSchools(System.String,System.String,System.String)">
+            <summary>
+            Updates Schools details
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="schoolId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreSchoolsData.DeleteSchools(System.String,System.String)">
+            <summary>
+            Deletes Schools details
+            </summary>
+            <param name="accToken"></param>
+            <param name="schoolId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreSectionsData.GetSections(System.String,System.String)">
+            <summary>Gets sections details.       
+            </summary>
+            <param name="accToken">Access token has to send</param>
+            <param name="userId">User id  has to send</param>
+            <returns>Gets Sections Data</returns>        
+        </member>
+        <member name="M:SDAC.Core.CoreSectionsData.GetSectionById(System.String,System.String)">
+            <summary>
+            Gets _section details by id.
+            </summary>
+            <param name="accToken">Access token has to send</param>
+            <param name="sectionId">User id  has to send</param>
+            <returns>Gets Sections Data</returns> 
+        </member>
+        <member name="M:SDAC.Core.CoreSectionsData.GetSectionCustom(System.String,System.String)">
+            <summary>
+            Gets _section custom details.
+            </summary>
+            <param name="accToken">Access token has to send</param>
+            <param name="sectionId">User id  has to send</param>
+            <returns>Gets Sections Data</returns> 
+        </member>
+        <member name="M:SDAC.Core.CoreSectionsData.GetSectionStudentAssociations(System.String,System.String)">
+            <summary>
+            Gets Student _section associations details with in the sections.
+            </summary>
+            <param name="accToken"></param>
+            <param name="sectionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreSectionsData.GetSectionStudentAssociationStudentList(System.String,System.String)">
+            <summary>
+            Gets students details in student _section associations with in the sections.
+            </summary>
+            <param name="accToken"></param>
+            <param name="sectionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreSectionsData.GetSectionTeacherAssociations(System.String,System.String)">
+            <summary>
+            Gets teacher _section associations with in the sections.
+            </summary>
+            <param name="accToken"></param>
+            <param name="sectionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreSectionsData.GetSectionTeacherAssociationTeacherList(System.String,System.String)">
+            <summary>
+            Gets teachers in teacher _section associations with in the sections. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="sectionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreSectionsData.PostSections(System.String,System.String)">
+            <summary>
+            Creates sections details
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreSectionsData.PutSections(System.String,System.String,System.String)">
+            <summary>
+            Update sections details
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="sectionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreSectionsData.DeleteSections(System.String,System.String)">
+            <summary>
+            Deletes sectins details
+            </summary>
+            <param name="accToken"></param>
+            <param name="sectionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreSessionsData.GetSessions(System.String)">
+            <summary>
+            Gets sessions details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreSessionsData.GetSessionCustom(System.String,System.String)">
+            <summary>
+            Gets sessions custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreSessionsData.GetSessionById(System.String,System.String)">
+            <summary>
+            Gets sessions details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreSessionsData.GetSessionCourseOfferings(System.String,System.String)">
+            <summary>
+             Gets course offerings with in the sessions.
+            </summary>
+            <param name="accToken"></param>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreSessionsData.GetSessionCourseOfferingCourses(System.String,System.String)">
+            <summary>
+            Gets courses in course offerings with in the sessions.
+            </summary>
+            <param name="accToken"></param>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreSessionsData.PostSessions(System.String,System.String)">
+            <summary>
+            Creates Sessions
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreSessionsData.PutSessions(System.String,System.String,System.String)">
+            <summary>
+            Updates sesstions
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreSessionsData.DeleteSessions(System.String,System.String)">
+            <summary>
+            Deletes sessions
+            </summary>
+            <param name="accToken"></param>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.GetStaff(System.String)">
+            <summary>
+            Gets _staff details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.GetStaffCustom(System.String,System.String)">
+            <summary>
+             Gets _staff custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.GetStaffStaffCohortAssociations(System.String,System.String)">
+            <summary>
+             Gets _staff cohort associations with in the _staff.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.GetStaffStaffCohortAssociationCohorts(System.String,System.String)">
+            <summary>
+            Gets cohorts in _staff cohort associations with in the _staff.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.GetStaffStaffEducationOrganizationAssignmentAssociations(System.String,System.String)">
+            <summary>
+            Gets _staff education organization assignment associations with in the _staff.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.GetStaffStaffEducationOrganizationAssignmentAssociationEducationOrganizations(System.String,System.String)">
+            <summary>
+             Gets education organizations in _staff education organization assignment associations with in the _staff.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.GetStaffStaffProgramAssociations(System.String,System.String)">
+            <summary>
+            Gets _staff program associations with in the _staff.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.GetStaffStaffProgramAssociationPrograms(System.String,System.String)">
+            <summary>
+            Gets programs in _staff program associations with in the _staff.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.PostStaff(System.String,System.String)">
+            <summary>
+            Creates _staff details
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.Putstaff(System.String,System.String,System.String)">
+            <summary>
+            Updates Staff Details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.Deletestaff(System.String,System.String)">
+            <summary>
+            Deletes _staff details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.GetStaffCohortAssociations(System.String)">
+            <summary>
+            Gets _staff cohort associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.GetStaffCohortAssociationCustom(System.String,System.String)">
+            <summary>
+             Gets _staff cohort associations custom  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.GetStaffCohortAssociationById(System.String,System.String)">
+            <summary>
+             Gets _staff cohort associations details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.GetStaffCohortAssociationCohorts(System.String,System.String)">
+            <summary>
+             Gets cohorts details with in the _staff cohort associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.GetStaffCohortAssociationStaff(System.String,System.String)">
+            <summary>
+            Gets _staff details with in the _staff cohort associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.PostStaffCohortAssociations(System.String,System.String)">
+            <summary>
+            Creates  _staff Cohort Associations details
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.PutStaffCohortAssociations(System.String,System.String,System.String)">
+            <summary>
+            Updates _staff Cohort Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.DeleteStaffCohortAssociations(System.String,System.String)">
+            <summary>
+            Deletes _staff Cohort Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.GetStaffEducationOrganizationAssignmentAssociations(System.String)">
+            <summary>
+            Gets _staff education organization assignment associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.GetStaffEducationOrganizationAssignmentAssociationCustom(System.String,System.String)">
+            <summary>
+            Gets _staff education organization assignment associations custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.GetStaffEducationOrganizationAssignmentAssociationById(System.String,System.String)">
+            <summary>
+            Gets _staff education organization assignment associations details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.GetStaffEducationOrganizationAssignmentAssociationEducationOrganizations(System.String,System.String)">
+            <summary>
+            Gets education organizations with in the _staff education organization assignment associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.GetStaffEducationOrganizationAssignmentAssociationStaff(System.String,System.String)">
+            <summary>
+            Gets _staff details with in the _staff education organization assignment associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.PostStaffEducationOrgAssignmentAssociations(System.String,System.String)">
+            <summary>
+            Creates _staff Education Organization Assignment Associations dettails.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.PutStaffEducationOrgAssignmentAssociations(System.String,System.String,System.String)">
+            <summary>
+            Updates _staff Education Organization Assignment Associations dettails.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.DeleteStaffEducationOrgAssignmentAssociations(System.String,System.String)">
+            <summary>
+            Deletes _staff Education Organization Assignment Associations dettails.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.GetStaffProgramAssociations(System.String)">
+            <summary>
+            Gets _staff program associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.GetStaffProgramAssociationCustom(System.String,System.String)">
+            <summary>
+            Gets _staff program associations custom  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.GetStaffProgramAssociationByProgramId(System.String,System.String)">
+            <summary>
+            Gets _staff program associations details by program id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="programId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.GetStaffProgramAssociationById(System.String,System.String)">
+            <summary>
+            Gets _staff program associations details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.GetStaffProgramAssociationPrograms(System.String,System.String)">
+            <summary>
+            Gets programs with in the _staff program associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.GetStaffProgramAssociationStaff(System.String,System.String)">
+            <summary>
+            Gets _staff with in the _staff program associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.PostStaffProgramAssociations(System.String,System.String)">
+            <summary>
+            Creates _staff program associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.PutStaffProgramAssociations(System.String,System.String,System.String)">
+            <summary>
+            Updates  _staff program associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStaffData.DeleteStaffProgramAssociations(System.String,System.String)">
+            <summary>
+            Deletes  _staff program associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="staffId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentAcademicRecords(System.String)">
+            <summary>
+            Gets student academic records details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentAcademicRecordCustom(System.String,System.String)">
+            <summary>
+            Gets student academic records custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentAcademicRecordById(System.String,System.String)">
+            <summary>
+            Gets student academic records details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.PostStudentAcademicRecords(System.String,System.String)">
+            <summary>
+            Creates student Academic Records details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.PutStudentAcademicRecords(System.String,System.String,System.String)">
+            <summary>
+            Updates student Academic Records details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.DeleteStudentAcademicRecords(System.String,System.String)">
+            <summary>
+            Deletes student Academic Records details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentAssessments(System.String)">
+            <summary>
+            Gets student assessments details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentAssessmentCustom(System.String,System.String)">
+            <summary>
+            Gets student assessments custom  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentAssessmentById(System.String,System.String)">
+            <summary>
+            Gets student assessments details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentAssessmentAssessments(System.String,System.String)">
+            <summary>
+            Gets assessments with in the student assessments.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentAssessmentStudents(System.String,System.String)">
+            <summary>
+             Gets _students with in the student assessments.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.PostStudentAssessments(System.String,System.String)">
+            <summary>
+            Creates student Assessments details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.PutStudentAssessments(System.String,System.String,System.String)">
+            <summary>
+            Updates student Assessments details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.DeleteStudentAssessments(System.String,System.String)">
+            <summary>
+            Deletes student Assessments details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentCohortAssociations(System.String)">
+            <summary>
+            Gets student cohort associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentCohortAssociationCustom(System.String,System.String)">
+            <summary>
+            Gets student cohort associations custom  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentCohortAssociationById(System.String,System.String)">
+            <summary>
+            Gets student cohort associations details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentCohortAssociationCohorts(System.String,System.String)">
+            <summary>
+            Gets cohorts with in the student cohort associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentCohortAssociationStudents(System.String,System.String)">
+            <summary>
+            Gets _students with in the student cohort associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.PostStudentCohortAssociations(System.String,System.String)">
+            <summary>
+            Creates student Cohort Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.PutStudentCohortAssociations(System.String,System.String,System.String)">
+            <summary>
+            Updates student Cohort Associations details.
+            
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.DeleteStudentCohortAssociations(System.String,System.String)">
+            <summary>
+            Deletes student Cohort Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentCompetencies(System.String)">
+            <summary>
+            Gets student competencies details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentCompetenciesCustom(System.String,System.String)">
+            <summary>
+            Gets student competencies custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentCompetenciesById(System.String,System.String)">
+            <summary>
+            Gets student competencies details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentCompetenciesReportCards(System.String,System.String)">
+            <summary>
+            Gets report cards with in the student competencies.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.PostStudentCompetencies(System.String,System.String)">
+            <summary>
+            Creates student Competencies details. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.PutStudentCompetencies(System.String,System.String,System.String)">
+            <summary>
+            Updates  student Competencies details. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.DeleteStudentCompetencies(System.String,System.String)">
+            <summary>
+            Deletes  student Competencies details. 
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentCompetencyObjectives(System.String)">
+            <summary>
+            Gets student competency objectives details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentCompetencyObjectiveCustom(System.String,System.String)">
+            <summary>
+            Gets student competency objectives custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentCompetencyObjectiveById(System.String,System.String)">
+            <summary>
+            Gets student competency objectives details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.PostStudentCompetencyObjectives(System.String,System.String)">
+            <summary>
+            Creates student Competency Objectives details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.PutStudentCompetencyObjectives(System.String,System.String,System.String)">
+            <summary>
+            Updates  student Competency Objectives details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.DeleteStudentCompetencyObjectives(System.String,System.String)">
+            <summary>
+            Deletes  student Competency Objectives details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentDisciplineIncidentAssociations(System.String)">
+            <summary>
+            Gets student discipline incident associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentDisciplineIncidentAssociationCustom(System.String,System.String)">
+            <summary>
+            Gets student discipline incident associations custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentDisciplineIncidentAssociationById(System.String,System.String)">
+            <summary>
+            Gets student discipline incident associations details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentDisciplineIncidentAssociationDisciplineIncidents(System.String,System.String)">
+            <summary>
+            Gets discipline incidents with in the student discipline incident associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentDisciplineIncidentAssociationStudents(System.String,System.String)">
+            <summary>
+            Gets _students with in the student discipline incident associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.PostStudentDisciplineIncidentAssociations(System.String,System.String)">
+            <summary>
+            Creates student Discipline Incident Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.PutStudentDisciplineIncidentAssociations(System.String,System.String,System.String)">
+            <summary>
+            Updates student Discipline Incident Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.DeleteStudentDisciplineIncidentAssociations(System.String,System.String)">
+            <summary>
+            Deletes student Discipline Incident Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentGradeBookEntries(System.String)">
+            <summary>
+            Gets student grade book entries details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentGradeBookEntriesCustom(System.String,System.String)">
+            <summary>
+            Gets student grade book entries custom  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentGradeBookEntriesById(System.String,System.String)">
+            <summary>
+            Gets student grade book entries details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.PostStudentGradebookEntries(System.String,System.String)">
+            <summary>
+            Creates student Gradebook Entries details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.PutStudentGradebookEntries(System.String,System.String,System.String)">
+            <summary>
+            Updates  student Gradebook Entries details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.DeleteStudentGradebookEntries(System.String,System.String)">
+            <summary>
+            Deletes  student Gradebook Entries details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentParentAssociations(System.String)">
+            <summary>
+            Gets student parent associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentParentAssociationCustom(System.String,System.String)">
+            <summary>
+            Gets student parent associations custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentParentAssociationById(System.String,System.String)">
+            <summary>
+            Gets student parent associations details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentParentAssociationParents(System.String,System.String)">
+            <summary>
+            Gets parents with in the student parent associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentParentAssociationStudents(System.String,System.String)">
+            <summary>
+            Gets _students with in the student parent associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.PostStudentParentAssociations(System.String,System.String)">
+            <summary>
+            Creates student Parent Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.PutStudentParentAssociations(System.String,System.String,System.String)">
+            <summary>
+            Updates  student Parent Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.DeleteStudentParentAssociations(System.String,System.String)">
+            <summary>
+            Deletes  student Parent Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentProgramAssociations(System.String)">
+            <summary>
+            Gets student program associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentProgramAssociationCustom(System.String,System.String)">
+            <summary>
+            Gets student program associations custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentProgramAssociationByProgramId(System.String,System.String)">
+            <summary>
+            Gets student program associations details by program id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentProgramAssociationById(System.String,System.String)">
+            <summary>
+            Gets student program associations details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentProgramAssociationPrograms(System.String,System.String)">
+            <summary>
+            Gets programs with in the student program associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentProgramAssociationStudents(System.String,System.String)">
+            <summary>
+            Gets _students with in the student program associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.PostStudentProgramAssociations(System.String,System.String)">
+            <summary>
+            Creates  student Program Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.PutStudentProgramAssociations(System.String,System.String,System.String)">
+            <summary>
+            Updates  student Program Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.DeleteStudentProgramAssociations(System.String,System.String)">
+            <summary>
+            Deletes  student Program Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudents(System.String)">
+            <summary>
+            Gets _students details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentCustom(System.String,System.String)">
+            <summary>
+             Gets _students custom  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentAttendances(System.String,System.String)">
+            <summary>
+             Gets attendances with in the _students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentCourseTranscripts(System.String,System.String)">
+            <summary>
+            Gets course transcripts with in the _students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentCourseTranscriptCourses(System.String,System.String)">
+            <summary>
+            Gets courses in course transcripts with in the _students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentReportCards(System.String,System.String)">
+            <summary>
+            Gets report cards with in the _students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentStudentAssessments(System.String,System.String)">
+            <summary>
+            Gets student assessments with in the _students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentStudentAssessmentAssessments(System.String,System.String)">
+            <summary>
+            Gets assessments in student assessments with in the _students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentStudentCohortAssociations(System.String,System.String)">
+            <summary>
+            Gets student cohort associations with in the _students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentStudentCohortAssociationCohorts(System.String,System.String)">
+            <summary>
+            Gets cohorts in student cohort associations with in the _students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentStudentDisciplineIncidentAssociations(System.String,System.String)">
+            <summary>
+            Gets student discipline incident associations with in the _students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentStudentDisciplineIncidentAssociationDisciplineIncidents(System.String,System.String)">
+            <summary>
+            Gets discipline incidents in student discipline incident associations with in the _students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentStudentParentAssociations(System.String,System.String)">
+            <summary>
+            Gets student parent associations with in the _students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentStudentParentAssociationParents(System.String,System.String)">
+            <summary>
+            Gets parents in student parent associations with in the _students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentStudentProgramAssociations(System.String,System.String)">
+            <summary>
+            Gets student program associations with in the _students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentStudentProgramAssociationPrograms(System.String,System.String)">
+            <summary>
+             Gets programs in student program associations with in the _students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentStudentSchoolAssociations(System.String,System.String)">
+            <summary>
+            Gets student school associations with in the _students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentStudentSchoolAssociationSchools(System.String,System.String)">
+            <summary>
+             Gets schools in student school associations with in the _students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentStudentSectionAssociations(System.String,System.String)">
+            <summary>
+            Gets student section associations with in the _students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentStudentSectionAssociationSections(System.String,System.String)">
+            <summary>
+            Gets sections in student section associations with in the _students.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.PostStudents(System.String,System.String)">
+            <summary>
+            Creates Students details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.PutStudents(System.String,System.String,System.String)">
+            <summary>
+            Updates  Students details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.DeleteStudents(System.String,System.String)">
+            <summary>
+            Deletes  Students details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentSchoolAssociations(System.String)">
+            <summary>
+            Gets student school associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentSchoolAssociationById(System.String,System.String)">
+            <summary>
+            Gets student school associations details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentSchoolAssociationCustom(System.String,System.String)">
+            <summary>
+            Gets student school associations custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentSchoolAssociationSchools(System.String,System.String)">
+            <summary>
+            Gets schools with in the student school associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentSchoolAssociationStudents(System.String,System.String)">
+            <summary>
+            Gets _students with in the student school associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.PostStudentSchoolAssociations(System.String,System.String)">
+            <summary>
+            Creates student School Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.PutStudentSchoolAssociations(System.String,System.String,System.String)">
+            <summary>
+            Updates student School Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.DeleteStudentSchoolAssociations(System.String,System.String)">
+            <summary>
+            Deletes student School Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentSectionAssociations(System.String)">
+            <summary>
+            Gets student section associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentSectionAssociationById(System.String,System.String)">
+            <summary>
+            Gets student section associations details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentSectionAssociationCustom(System.String,System.String)">
+            <summary>
+            Gets student section associations custom  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentSectionAssociationGrades(System.String,System.String)">
+            <summary>
+            Gets grades with in the student section associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentSectionAssociationSections(System.String,System.String)">
+            <summary>
+            Gets sections with in the student section associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentSectionAssociationStudentCompetencies(System.String,System.String)">
+            <summary>
+            Gets student competencies with in the student section associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.GetStudentSectionAssociationStudents(System.String,System.String)">
+            <summary>
+             Gets _students with in the student section associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.PostStudentSectionAssociations(System.String,System.String)">
+            <summary>
+            Creates student Section Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.PutStudentSectionAssociations(System.String,System.String,System.String)">
+            <summary>
+            Updates  student Section Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreStudentsData.DeleteStudentSectionAssociations(System.String,System.String)">
+            <summary>
+            Deletes  student Section Associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="studentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreTeachersData.GetTeachers(System.String)">
+            <summary>
+            Gets teachers details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreTeachersData.GetTeacherCustom(System.String,System.String)">
+            <summary>
+            Gets teachers custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="teacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreTeachersData.GetTeacherTeacherSchoolAssociations(System.String,System.String)">
+            <summary>
+            Gets teacher school associations with in the teachers.
+            </summary>
+            <param name="accToken"></param>
+            <param name="teacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreTeachersData.GetTeacherTeacherSchoolAssociationSchools(System.String,System.String)">
+            <summary>
+            Gets schools in teacher school associations with in the teachers.
+            </summary>
+            <param name="accToken"></param>
+            <param name="teacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreTeachersData.GetTeacherTeacherSectionAssociations(System.String,System.String)">
+            <summary>
+            Gets teacher section associations with in the teachers.
+            </summary>
+            <param name="accToken"></param>
+            <param name="teacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreTeachersData.GetTeacherTeacherSectionAssociationSections(System.String,System.String)">
+            <summary>
+            Gets sections in teacher section associations with in the teachers.
+            </summary>
+            <param name="accToken"></param>
+            <param name="teacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreTeachersData.PostTeachers(System.String,System.String)">
+            <summary>
+            Creates teachers Details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreTeachersData.PutTeachers(System.String,System.String,System.String)">
+            <summary>
+            Updates teachers Details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="teacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreTeachersData.DeleteTeachers(System.String,System.String)">
+            <summary>
+            Deletes teachers Details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="teacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreTeachersData.GetTeacherSchoolAssociations(System.String)">
+            <summary>
+            Gets teacher school associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreTeachersData.GetTeacherSchoolAssociationCustom(System.String,System.String)">
+            <summary>
+            Gets teacher school associations custom details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="teacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreTeachersData.GetTeacherSchoolAssociationById(System.String,System.String)">
+            <summary>
+            Gets teacher school associations by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="teacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreTeachersData.GetTeacherSchoolAssociationSchools(System.String,System.String)">
+            <summary>
+            Gets schools with in the teacher school associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="teacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreTeachersData.GetTeacherSchoolAssociationTeachers(System.String,System.String)">
+            <summary>
+            Gets teachers with in the teacher school associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="teacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreTeachersData.PostTeacherSchoolAssociations(System.String,System.String)">
+            <summary>
+            Creates teacher school associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreTeachersData.PutTeacherSchoolAssociations(System.String,System.String,System.String)">
+            <summary>
+            Updates teacher school associations details.
+            </summary>
+            <param name="accToken"></param>
+             <param name="data"></param>
+             <param name="teacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreTeachersData.DeleteTeacherSchoolAssociations(System.String,System.String)">
+            <summary>
+            Deletes teacher school associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="teacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreTeachersData.GetTeacherSectionAssociations(System.String)">
+            <summary>
+            Gets teacher section associations details.
+            </summary>
+            <param name="accToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreTeachersData.GetTeacherSectionAssociationCustom(System.String,System.String)">
+            <summary>
+            Gets teacher section associations custom  details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="teacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreTeachersData.GetTeacherSectionAssociationById(System.String,System.String)">
+            <summary>
+            Gets teacher section associations details by id.
+            </summary>
+            <param name="accToken"></param>
+            <param name="teacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreTeachersData.GetTeacherSectionAssociationSections(System.String,System.String)">
+            <summary>
+            Gets sections with in the teacher section associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="teacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreTeachersData.GetTeacherSectionAssociationTeachers(System.String,System.String)">
+            <summary>
+            Gets teachers with in the teacher section associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="teacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreTeachersData.PostTeacherSectionAssociations(System.String,System.String)">
+            <summary>
+            Creates teacher section associations.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreTeachersData.PutTeacherSectionAssociations(System.String,System.String,System.String)">
+            <summary>
+            Updates teacher section associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="data"></param>
+            <param name="teacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.CoreTeachersData.DeleteTeacherSectionAssociations(System.String,System.String)">
+            <summary>
+            Deletes teacher section associations details.
+            </summary>
+            <param name="accToken"></param>
+            <param name="teacherId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SDAC.Core.School">
+            <summary>
+            
+            Purpose of School class is to create object and store the list of schools.
+            Using this class we can set and access the list of schools.
+            
+            </summary>
+        </member>
+        <member name="M:SDAC.Core.School.GetSchoolList">
+            <summary>
+            function to get the school list
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.School.SetSchoolList(System.Web.UI.WebControls.ListItem[])">
+            <summary>
+            function to set the school list
+            </summary>
+            <param name="_ListSchool"></param>
+        </member>
+        <member name="T:SDAC.Core.Section">
+            <summary>
+            
+            Purpose of Section class is to create object and store the list of sections.
+            Using this class we can set and access the list of sections.
+            
+            </summary>
+        </member>
+        <member name="M:SDAC.Core.Section.GetSectionList">
+            <summary>
+            function to get the section list
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.Section.SetSectionList(System.Web.UI.WebControls.ListItem[])">
+            <summary>
+            function to set the section list
+            </summary>
+            <param name="_ListSection"></param>
+        </member>
+        <member name="T:SDAC.Core.SqlHelper">
+            <summary>
+            
+            Purpose of SqlHelper class is to handle the database related queries and connections.
+            SqlHelper class contains all the functions to perform various operations on Flag and Aggregate flags with Entity Model.
+            Contains functionality of Insert/Update/Delete for Flag and Aggregate Flag along with the appropriate validation for them.    /// 
+            
+            </summary>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.FlagIsExist(System.String,System.String)">
+            <summary>
+            function to check if the Flag exists with the given name
+            </summary>
+            <param name="FlagName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.FlagHasSameName(System.Int32,System.String)">
+            <summary>
+            function to check the flag has same name on edit page
+            </summary>
+            <param name="FlagId"></param>
+            <param name="FlagName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.AggregateFlagHasSameName(System.Int32,System.String)">
+            <summary>
+            function to check the Aggregate flag has the same name on edit aggregate page
+            </summary>
+            <param name="AggregateFlagId"></param>
+            <param name="AggregateFlagName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.AddFlag(System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            function to add the flag
+            </summary>
+            <param name="FlagName"></param>
+            <param name="FlagDescription"></param>
+            <param name="Keyword"></param>
+            <param name="DataElementId"></param>
+            <param name="ConditionId"></param>
+            <param name="ValueSet1"></param>
+            <param name="ValueSet2"></param>
+            <param name="UserId"></param>
+            <param name="UserName"></param>
+            <param name="IsPublic"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.UpdateFlag(System.Int32,System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            function to update flag
+            </summary>
+            <param name="FlagId"></param>
+            <param name="FlagName"></param>
+            <param name="FlagDescription"></param>
+            <param name="Keyword"></param>
+            <param name="DataElementId"></param>
+            <param name="ConditionId"></param>
+            <param name="ValueSet1"></param>
+            <param name="ValueSet2"></param>
+            <param name="UserId"></param>
+            <param name="UserName"></param>
+            <param name="IsPublic"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetFlagList(System.String)">
+            <summary>
+            function to get the flag list added by user
+            </summary>
+            <param name="UserId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.DeleteFlag(System.Int32)">
+            <summary>
+            function to delete the flag by flag id
+            </summary>
+            <param name="FlagId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetFlag(System.Int32)">
+            <summary>
+            function to get flag details by flag id
+            </summary>
+            <param name="FlagId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetAggregateFlag(System.Int32)">
+            <summary>
+            function to get aggregate flag details by aggregate flag id
+            </summary>
+            <param name="AggregateFlagId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetFlagAddedForInAggregate(System.Int32)">
+            <summary>
+            function to get the list of flag selected for aggregate flag
+            </summary>
+            <param name="AgggregateFlagId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.IsFav(System.Int32)">
+            <summary>
+            function to check the flag is favorite or not
+            </summary>
+            <param name="FlagId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetUserIdByFlagId(System.Int32)">
+            <summary>
+            function to get the user id who added the flag
+            </summary>
+            <param name="FlagId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetConditionIdByFlagId(System.Int32)">
+            <summary>
+            function to get the condition id which is selected for flag
+            </summary>
+            <param name="FlagId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetValue1ByFlagId(System.Int32)">
+            <summary>
+            function to get the first value added for flag
+            </summary>
+            <param name="FlagId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetValue2ByFlagId(System.Int32)">
+            <summary>
+            function to get the second value added for flag
+            </summary>
+            <param name="FlagId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetFlagId(System.String)">
+            <summary>
+            function to get the flag id by flag name
+            </summary>
+            <param name="FlagName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetAggregateFlagById(System.String)">
+            <summary>
+            function to get the aggregate flag id by aggregate flag name
+            </summary>
+            <param name="AggregateFlagName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.DeleteAggregateFlag(System.Int32)">
+            <summary>
+            Function to delete the aggregate flag
+            </summary>
+            <param name="AggregateFlagId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.DeleteFromFlagAggregateFlagByAggregateFlagId(System.Int32)">
+            <summary>
+            Function to delete the record of Aggregate flag from FlagAggregateFlag table
+            </summary>
+            <param name="AggregateFlagId"></param>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetAllFlagIdOfAggregateFlagByAggregateFlagId(System.Int32)">
+            <summary>
+            function to get all the flag id which are added for aggregate flag
+            </summary>
+            <param name="AggregateFlagId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.ExistInAggregateFlag(System.Int32,System.Int32)">
+            <summary>
+            Function to check if the flag is already selected in aggregate flag
+            </summary>
+            <param name="AggregateFlagId"></param>
+            <param name="FlagId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.AddAggregateFlag(System.String,System.String,System.String,System.Boolean,System.Int32[],System.String)">
+            <summary>
+            function to add aggregate flag
+            </summary>
+            <param name="AggregateFlagName"></param>
+            <param name="AggregateDescription"></param>
+            <param name="AggregateKeyword"></param>
+            <param name="IsPublic"></param>
+            <param name="FlagId"></param>
+            <param name="UserId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.EditAddAggregateFlag(System.Int32,System.String,System.String,System.String,System.Boolean,System.Int32[],System.String)">
+            <summary>
+            Function to edit the aggregate flag
+            </summary>
+            <param name="AggregateFlagId"></param>
+            <param name="AggregateFlagName"></param>
+            <param name="AggregateDescription"></param>
+            <param name="AggregateKeyword"></param>
+            <param name="IsPublic"></param>
+            <param name="FlagId"></param>
+            <param name="UserId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.AggregateFlagExist(System.String,System.String)">
+            <summary>
+            Function to check if the aggregate flag already exists with given name
+            </summary>
+            <param name="AggregateFlagName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.AddedByUser(System.String,System.Int32)">
+            <summary>
+            Function to check the flag is added by login user
+            </summary>
+            <param name="UserId"></param>
+            <param name="FlagId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.AggregateAddedByUser(System.String,System.Int32)">
+            <summary>
+            Function to check the aggregate flag is added by login user
+            </summary>
+            <param name="UserId"></param>
+            <param name="FlagId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetFlagListByCategory(System.String)">
+            <summary>
+            Function to get the flag list by categories like public, favorite and recent flag
+            </summary>
+            <param name="UserId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetConditionName(System.Int32)">
+            <summary>
+            function to get the condition name by condition id
+            </summary>
+            <param name="ConditionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetAllPublicFlag">
+            <summary>
+            Function to get all the public flags
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetAllAggregatePublicFlag">
+            <summary>
+            Function to get all the public aggregate flags
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetFavoriteFlag(System.String)">
+            <summary>
+            Function to get all the favorite flags
+            </summary>
+            <param name="UserId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetFavoriteFlagAddedByAnother(System.String)">
+            <summary>
+            Function to get all the flags added by another user, favorite by login user
+            </summary>
+            <param name="UserId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetAggregateFavoriteFlag(System.String)">
+            <summary>
+            Function to get all the favorite aggregate flags by user id
+            </summary>
+            <param name="UserId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetFavoriteAggregateFlagAddedByAnother(System.String)">
+            <summary>
+            Function to get the aggregate flag added by another user, favorite by login user
+            </summary>
+            <param name="UserId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.IsInPublicFavorite(System.Int32,System.String)">
+            <summary>
+            Function to check if the flag record is already added in table
+            </summary>
+            <param name="FlagId"></param>
+            <param name="UserId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.IsAggregateInPublicFavorite(System.Int32,System.String)">
+            <summary>
+            Function to check the flag is present in public favorite table
+            </summary>
+            <param name="FlagId"></param>
+            <param name="UserId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetAllDataElement">
+            <summary>
+            Function to get all the data element
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetAllEntityFromDataElement">
+            <summary>
+            Function to get all the entities from data element table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetAllDataElementByEntity(System.String)">
+            <summary>
+            Function to get all DataElement by Entity name
+            </summary>
+            <param name="Entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetAllDataElementByDataDomain(System.String)">
+            <summary>
+            Function to get all DataElement by DataDomain
+            </summary>
+            <param name="DataDomain"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetExternalEntityByFieldNameAndEntityName(System.String,System.String)">
+            <summary>
+            Function to get ExternalField by Entity Name
+            </summary>
+            <param name="FieldName"></param>
+            <param name="EnitityName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetAllDataDomainFromDataElement">
+            <summary>
+            Function to get all the DataDomain
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetEntityNameByDataElementId(System.Int32)">
+            <summary>
+            Function to get EntityName by DataElement
+            </summary>
+            <param name="DataElementId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetDataElementIdByFlagId(System.Int32)">
+            <summary>
+            Function to get Data Element Id selected for flag by flag Id
+            </summary>
+            <param name="FlagId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetDataDomainNameByDataElementId(System.Int32)">
+            <summary>
+            Function to get DataDomainName by Data Element id
+            </summary>
+            <param name="DataElementId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetFieldNameByDataElementId(System.Int32)">
+            <summary>
+            Function to get FieldName by DataElement 
+            </summary>
+            <param name="DataElementId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetDataTypeByDataElementId(System.Int32)">
+            <summary>
+            Function to get DataType by DataElement
+            </summary>
+            <param name="DataElementId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.FavoriteFlag(System.Int32,System.String)">
+            <summary>
+            Function to toggle from favorite to not favorite and vice versa
+            </summary>
+            <param name="FlagId"></param>
+            <param name="UserId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.AggregatetFavoriteFlag(System.Int32,System.String)">
+            <summary>
+            function to make aggregate flag favorite 
+            </summary>
+            <param name="AgggregateFlagId"></param>
+            <param name="UserId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.AggregatetAddedByUser(System.String,System.Int32)">
+            <summary>
+            function to check the aggregate flag is added by login user
+            </summary>
+            <param name="UserId"></param>
+            <param name="AgggregateFlagId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.IsAggregateIsFav(System.Int32)">
+            <summary>
+            function to check the aggregate flag is favorite
+            </summary>
+            <param name="AggregateFlagId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetDataElementIdByFlagIdForRunAggregate(System.Int32)">
+            <summary>
+            function to get Data Element id selected for flag by flag id
+            </summary>
+            <param name="FlagId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetFieldNameByDataElementIdForRunAggregate(System.Int32)">
+            <summary>
+            function to get FieldName by DataElement 
+            </summary>
+            <param name="DataElementId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetEntityNameByDataElementIdForRunAggregate(System.Int32)">
+            <summary>
+            function to get EntityName by DataElement
+            </summary>
+            <param name="DataElementId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetDataTypeByDataElementIdForRunAggregate(System.Int32)">
+            <summary>
+            function to get DataType by DataElement
+            </summary>
+            <param name="DataElementId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetUserIdByFlagIdForRunAggregate(System.Int32)">
+            <summary>
+            function to get the user id who added the flag
+            </summary>
+            <param name="FlagId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetConditionIdByFlagIdForRunAggregate(System.Int32)">
+            <summary>
+            function to get the condition id which is selected for flag
+            </summary>
+            <param name="FlagId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetValue1ByFlagIdForRunAggregate(System.Int32)">
+            <summary>
+            function to get the first value added for flag
+            </summary>
+            <param name="FlagId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SDAC.Core.SqlHelper.GetValue2ByFlagIdForRunAggregate(System.Int32)">
+            <summary>
+            function to get the second value added for flag
+            </summary>
+            <param name="FlagId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SDAC.Core.User">
+            <summary>   
+            
+            Purpose of User class is create the object and store the all the information of login user.
+            Using this class we can access and change the attribute of login user.   
+            
+            </summary>
+        </member>
+    </members>
+</doc>

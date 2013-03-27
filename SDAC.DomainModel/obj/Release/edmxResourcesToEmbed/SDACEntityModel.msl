@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SDACModelStoreContainer" CdmEntityContainer="SLC_SDACEntities">
+    <EntitySetMapping Name="AggregateFlags">
+      <EntityTypeMapping TypeName="SDACModel.AggregateFlag">
+        <MappingFragment StoreEntitySet="AggregateFlag">
+          <ScalarProperty Name="AggregateFlagId" ColumnName="AggregateFlagId" />
+          <ScalarProperty Name="AggregateFlagName" ColumnName="AggregateFlagName" />
+          <ScalarProperty Name="AggregateFlagDescription" ColumnName="AggregateFlagDescription" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="IsPublic" ColumnName="IsPublic" />
+          <ScalarProperty Name="IsFavorite" ColumnName="IsFavorite" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Conditions">
+      <EntityTypeMapping TypeName="SDACModel.Condition">
+        <MappingFragment StoreEntitySet="Condition">
+          <ScalarProperty Name="ConditionId" ColumnName="ConditionId" />
+          <ScalarProperty Name="ConditionName" ColumnName="ConditionName" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DataElements">
+      <EntityTypeMapping TypeName="SDACModel.DataElement">
+        <MappingFragment StoreEntitySet="DataElement">
+          <ScalarProperty Name="DataElementId" ColumnName="DataElementId" />
+          <ScalarProperty Name="DataDomain" ColumnName="DataDomain" />
+          <ScalarProperty Name="Entity" ColumnName="Entity" />
+          <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+          <ScalarProperty Name="DataType" ColumnName="DataType" />
+          <ScalarProperty Name="SampleData" ColumnName="SampleData" />
+          <ScalarProperty Name="ExternalField" ColumnName="ExternalField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ErrorLogs">
+      <EntityTypeMapping TypeName="SDACModel.ErrorLog">
+        <MappingFragment StoreEntitySet="ErrorLog">
+          <ScalarProperty Name="ErrorLogId" ColumnName="ErrorLogId" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="Errorcode" ColumnName="Errorcode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Stacktrace" ColumnName="Stacktrace" />
+          <ScalarProperty Name="IdentifiedDate" ColumnName="IdentifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Flags">
+      <EntityTypeMapping TypeName="SDACModel.Flag">
+        <MappingFragment StoreEntitySet="Flag">
+          <ScalarProperty Name="FlagId" ColumnName="FlagId" />
+          <ScalarProperty Name="FlagName" ColumnName="FlagName" />
+          <ScalarProperty Name="FlagDescription" ColumnName="FlagDescription" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="IsPublic" ColumnName="IsPublic" />
+          <ScalarProperty Name="DataElementId" ColumnName="DataElementId" />
+          <ScalarProperty Name="ConditionId" ColumnName="ConditionId" />
+          <ScalarProperty Name="ValueSet1" ColumnName="ValueSet1" />
+          <ScalarProperty Name="ValueSet2" ColumnName="ValueSet2" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="IsFavorite" ColumnName="IsFavorite" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FlagAggregateFlags">
+      <EntityTypeMapping TypeName="SDACModel.FlagAggregateFlag">
+        <MappingFragment StoreEntitySet="FlagAggregateFlag">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AggregateFlagId" ColumnName="AggregateFlagId" />
+          <ScalarProperty Name="FlagId" ColumnName="FlagId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PublicFavorites">
+      <EntityTypeMapping TypeName="SDACModel.PublicFavorite">
+        <MappingFragment StoreEntitySet="PublicFavorite">
+          <ScalarProperty Name="PublicPrivateId" ColumnName="PublicPrivateId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="FlagId" ColumnName="FlagId" />
+          <ScalarProperty Name="IsAggregate" ColumnName="IsAggregate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserFlagAssociations">
+      <EntityTypeMapping TypeName="SDACModel.UserFlagAssociation">
+        <MappingFragment StoreEntitySet="UserFlagAssociation">
+          <ScalarProperty Name="UserFlagAssociationId" ColumnName="UserFlagAssociationId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="FlagId" ColumnName="FlagId" />
+          <ScalarProperty Name="IsPublic" ColumnName="IsPublic" />
+          <ScalarProperty Name="Isfavorite" ColumnName="Isfavorite" />
+          <ScalarProperty Name="IsAggregate" ColumnName="IsAggregate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserLogs">
+      <EntityTypeMapping TypeName="SDACModel.UserLog">
+        <MappingFragment StoreEntitySet="UserLog">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="LoginDate" ColumnName="LoginDate" />
+          <ScalarProperty Name="LogoutDate" ColumnName="LogoutDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

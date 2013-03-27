@@ -1,0 +1,407 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="SDAC.UI.Web.StudentAggregate" Codebehind="StudentAggregate.master.cs" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head id="Head" runat="server">
+	<title>Untitled Page</title>
+	<link id="Link1" runat="server" rel="shortcut icon" href="~/Images/favicon.ico" type="image/x-icon" />
+    <script src="JS/jquery-1.8.3.js" type="text/javascript"></script>
+    <script src="JS/jquery-ui.js" type="text/javascript"></script>
+    <link href="CSS/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script src="JS/function.js" type="text/javascript"></script>
+    <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+	<script src="JS/jquery.validate.js" type="text/javascript"></script>
+	<script type="text/javascript">
+         function myfunction() {
+
+             // increase the default animation speed to exaggerate the effect
+             $.fx.speeds._default = 200;
+             $(function () {
+                 $("#dialog").dialog({
+
+                     autoOpen: false,
+                     show: "blind",
+                     width: 800,
+                     height: 500,
+                     my: "top",
+                     at: "top"
+
+                 });
+
+
+                 $("#opener").click(function () {
+                     $("#dialog").dialog("open");
+                     return false;
+
+                     $("#tabs").tabs();
+
+                 });
+
+
+
+                 $(document).ready(function () {
+
+                     $("#DropDownListFlag").each(function () {
+                        // alert($(this).val());
+                     });
+
+                     $("#resultdiv").load("Help.aspx", {}, function (data) {
+
+                         var tabs = $('#tabs').tabs();
+
+
+                         var pathname = window.location.pathname;
+
+                         $('.ui-tabs-anchor').each(function (i) {
+                             var ctabid = $(this).attr("href");
+                             if (pathname.indexOf("Search.aspx") >= 0 && ctabid == "#tabs-1") {
+                                 $(this).trigger("click");
+                             }
+                             else
+                                 if (pathname.indexOf("Result.aspx") >= 0 && ctabid == "#tabs-2") {
+
+                                     $(this).trigger("click");
+                                 }
+                                 else
+                                     if (pathname.indexOf("AddFlag.aspx") >= 0 && ctabid == "#tabs-3") {
+                                         $(this).trigger("click");
+                                     }
+                                     else
+                                         if (pathname.indexOf("Aggregate.aspx") >= 0 && ctabid == "#tabs-4") {
+                                             $(this).trigger("click");
+                                         }
+
+                         });
+
+
+
+
+
+                         tabs.find(".ui-tabs-nav").sortable({
+                             axis: "x",
+                             stop: function () {
+
+
+                             }
+                         });
+
+                     });
+                 });
+             });
+
+
+         }
+         
+    </script>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+
+         var droplistflagcnt = 0;
+
+            //Use the class you used for the drop down here, I used ‘custom-opt’
+            $('#DropDownListFlag option').each(function () {
+             //   alert($(this).attr("class"));
+
+
+                if ($(this).attr("class") == 'abc') {
+                    var label = $(this).text();
+                        $(this).replaceWith("<optgroup label='" + label + "'></optgroup>");
+                     }
+
+             
+            });
+
+
+
+            var val = $("#hdnFieldMessage").val();
+            if (val == "" || val == null) {
+                $("#success").hide();
+                $("#success").removeClass("success");
+
+            }
+            else {
+                $("#success").addClass("success");
+                $("#lblSuccess").html(val);
+                $("#success").fadeOut(5000);
+            }
+
+
+          
+
+        });
+        
+
+
+
+    
+    </script>
+
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+            $("#<%= DropDownListFlag.ClientID %>").live("mouseover", function () {
+
+            });
+
+        }); 
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function pageLoad(sender, args) {
+        $(document).ready(function () {
+            $("#<%= DropDownListFlag.ClientID %>").live("mouseover", function () {
+
+            });
+
+        });
+
+
+        if (args.get_isPartialLoad()) {
+           // alert("partial load");
+
+          var droplistflagcnt = 0;
+
+            //Use the class you used for the drop down here, I used ‘custom-opt’
+            $('#DropDownListFlag option').each(function () {
+               //   alert($(this).attr("class"));
+
+
+                if ($(this).attr("class") == 'abc') {
+                    var label = $(this).text();
+                    $(this).replaceWith("<optgroup label='" + label + "'></optgroup>");
+                }
+
+
+
+            });
+
+
+
+        }
+
+      
+
+
+
+    }
+
+     
+     </script>
+
+
+</head>
+<body >
+    
+   <!-- body Div: Start -->
+    <div id="body">
+ 
+            <form id="form1" runat="server"> 
+            <asp:ScriptManager ID="ScriptManager1" runat="server">
+                </asp:ScriptManager>
+            <!-- nav Div: Start -->
+            <div class="nav">
+                    <div class="nav_content">
+                        <div class="logo_name"><a href="Search.aspx" class="logolink" > <img src="Images/logo.png" /> </a></div>
+			            <div class="header_right">
+                            Welcome <asp:Label ID="lblUser" runat="server" Text=""></asp:Label>       
+			<div class="setting" id="user"><div class="header_right_img"><img alt="Profile Setting" class="gear" src="Images/directional_down.png"></div>
+				<ul class="subnav ">
+                          			<li id="logOut"><a href="Login.aspx?LogOut=1">LogOut</a></li>
+                              		<br class="clear">
+                        </ul>
+				
+				</div>	</div>
+
+
+                    </div>            
+            </div>
+            <!-- nav Div: End -->
+            
+             
+            <div class="top_shedow"></div>
+            
+            <!-- header_content Div: Start -->
+            <div class="content">
+	   
+
+                    <div class="top">
+    	                <div class="size">
+        	                <div class="heading"><h1>Student Data Aggregation Calculator</h1></div>
+                            <div class="help" id="opener"><a href="javascript:void(0)" onclick="myfunction();" title="Help">Help</a></div>
+
+                        </div>
+                    </div>
+                    <!-- Search Form Starts -->
+                        <div class="second">
+    	                    <div class="size">
+        	                    
+                                 <asp:UpdatePanel ID="UpdatePanel1" runat="server" >
+                                 <ContentTemplate>
+
+            	                    <div class="input_size">
+               	                        <p><asp:Label ID="LabelDistrict" runat="server" Text="District"></asp:Label></p>                                        
+                                         <asp:DropDownList ID="DropDownListDistrict" runat="server">
+                                            <asp:ListItem>&lt;-- Select -- &gt;</asp:ListItem>                                       
+                                        </asp:DropDownList>
+				                    </div>
+                
+                                    <div class="input_size">
+               	                        <p>School</p>
+                                        <asp:DropDownList ID="DropDownListSchool" class="DropDownListSchool"
+                                        runat="server"  AutoPostBack="true"
+                                        onselectedindexchanged="DropDownListSchool_SelectedIndexChanged">
+                                            <asp:ListItem>&lt;-- Select -- &gt;</asp:ListItem>                                      
+                                        </asp:DropDownList>
+				                    </div>
+                
+                                     <div class="input_size2">
+               	                        <p><asp:Label ID="LabelStaff" runat="server" Text="Staff"></asp:Label></p> 
+                                        <asp:DropDownList ID="dropDownListStaff" runat="server" AutoPostBack="true" 
+                                             onselectedindexchanged="dropDownListStaff_SelectedIndexChanged">
+                                            <asp:ListItem>&lt;-- Select -- &gt;</asp:ListItem>                                       
+                                        </asp:DropDownList>
+				                    </div>
+
+                                    <div class="input_size2">
+               	                        <p>Course</p>
+                                        <asp:DropDownList ID="DropDownListCourse" runat="server" AutoPostBack="true"
+                                        onselectedindexchanged="DropDownListCourse_SelectedIndexChanged" >
+                                            <asp:ListItem>&lt;-- Select -- &gt;</asp:ListItem>                                       
+                                        </asp:DropDownList>
+				                    </div>
+                
+                                    <div class="input_size2">
+               	                        <p>Section</p>
+                                        <asp:DropDownList ID="DropDownListSection" runat="server"
+                                        onselectedindexchanged="DropDownListSection_SelectedIndexChanged">
+                                            <asp:ListItem>&lt;-- Select -- &gt;</asp:ListItem>                                      
+                                        </asp:DropDownList>
+				                    </div>
+                                    <div class="input_size3">
+               	                        <p>My Flags</p>
+                                        <asp:DropDownList ID="DropDownListFlag" runat="server" ClientIDMode="Static"
+                                        DataTextField="FlagName" DataValueField="FlagId">
+                                            <asp:ListItem>&lt;-- Select -- &gt;</asp:ListItem>
+                                        </asp:DropDownList>
+                                        
+				                    </div>
+                                    <p>&nbsp;</p>
+                
+                                    
+                                    <asp:Button ID="btnGo"  class="send"  runat="server" Text="" onclick="btnGo_Click"  ClientIDMode="Static"
+                                    />
+                                        <asp:UpdateProgress ID="UpdateProgress1" runat="server">
+                                        <ProgressTemplate>
+                                        <div style="position: fixed; text-align: center; height: 100%; width: 100%; top: 0; right: 0; left: 0; z-index: 9999999; background-color: transparent; opacity: 0.7;">
+                                            <asp:Image ID="imgUpdateProgress" runat="server"  ImageUrl="Images/loading.gif"  AlternateText="Loading ..." ToolTip="Loading ..." Height="32px" Width="32px"  style="padding: 10px;position:fixed;top:45%;left:50%;" />
+                                        </div>
+                                     </ProgressTemplate>
+                                
+                                        </asp:UpdateProgress>
+                               
+                                    </ContentTemplate>
+                                     <Triggers>
+                                    <asp:AsyncPostBackTrigger  ControlID="DropDownListSchool" EventName="SelectedIndexChanged" /> 
+                                    <asp:AsyncPostBackTrigger ControlID="DropDownListCourse" EventName="SelectedIndexChanged"></asp:AsyncPostBackTrigger>
+                                <asp:AsyncPostBackTrigger ControlID="DropDownListCourse" EventName="SelectedIndexChanged"></asp:AsyncPostBackTrigger>
+<asp:AsyncPostBackTrigger ControlID="DropDownListCourse" EventName="SelectedIndexChanged"></asp:AsyncPostBackTrigger>
+<asp:AsyncPostBackTrigger ControlID="DropDownListCourse" EventName="SelectedIndexChanged"></asp:AsyncPostBackTrigger>
+                              </Triggers>  
+                             
+                               <Triggers> <asp:AsyncPostBackTrigger
+                                    ControlID="DropDownListCourse" EventName="SelectedIndexChanged" /> 
+                              </Triggers>
+                               
+                                      </asp:UpdatePanel>   
+
+
+			                       
+		                    </div>
+        
+                            </div>
+                    <!-- Search Form Ends -->
+
+                    <!-- nav Starts -->
+                            <div class="toplink">
+                                <div class="link">	
+                                    <ul>
+                	                    <li class="search"><a href="Search.aspx" title="SEARCH" id="search" >search</a></li>
+                                        <%--<li class="results"><a href="Result.aspx" title="results" id="result">results</a></li>--%>
+                                        <li class="add"><a href="AddFlag.aspx" title="ADD/EDIT" id="add_edit">add/edit</a></li>
+                                        <li class="aggregate"><a href="Aggregate.aspx" title="AGGREGATE" id="aggregate">Aggregate</a></li>
+                                    </ul>
+			                    </div>
+                            </div>
+                    <!-- nav Ends -->
+
+                    <div id="success" >
+                        <asp:Label ID="lblSuccess" runat="server" Text="" ClientIDMode="Static"></asp:Label>
+                    </div>
+
+
+                  
+                    <div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    
+                    
+                     <div id="favorite" class="favmsg">
+                            Added to favorites successfully!
+                    </div>
+                    <div id="unfavorite" class="favmsg">
+                           Removed from favorites successfully!
+                    </div>
+                    <div style="clear:both;"></div>
+
+
+               </div>     
+             <!-- content Div: End -->
+             <div class="bottom_shedow">&nbsp;</div>
+
+             <asp:HiddenField ID="hdnFieldMessage" runat="server" ClientIDMode="Static" />
+
+              </form>
+                    <!-- footer Div: Start -->
+
+                     <!-- footer Div: End -->
+            <div id="dialog" title="Help">
+        <div id="Div1" title="Help">
+
+     <div id="resultdiv">
+   
+     </div>
+
+</div>
+
+ </div>
+    <!-- body Div: End -->
+   
+
+        <!-- Footer Starts -->
+        <div class="contain_size footer">
+	        <div class="half">
+            <p>(C) inBloom is a trademark of inBloom, Inc.</p>
+            </div>
+    
+	        <div class="half2">
+    	       <%-- <a href="PrivacyPolicy.aspx" target="_blank" title="">Privacy Policy</a><span>|</span><a href="TermAndCondition.aspx" target="_blank" title="Terms of Use">Terms of Use</a>--%>
+            </div>
+    
+        </div>
+        <!-- Footer Ends -->
+
+    </div>                           
+</body>
+</html>

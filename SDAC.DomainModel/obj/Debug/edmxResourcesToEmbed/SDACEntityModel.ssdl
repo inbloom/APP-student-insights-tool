@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SDACModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="SDACModelStoreContainer">
+    <EntitySet Name="AggregateFlag" EntityType="SDACModel.Store.AggregateFlag" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Condition" EntityType="SDACModel.Store.Condition" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DataElement" EntityType="SDACModel.Store.DataElement" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ErrorLog" EntityType="SDACModel.Store.ErrorLog" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Flag" EntityType="SDACModel.Store.Flag" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FlagAggregateFlag" EntityType="SDACModel.Store.FlagAggregateFlag" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PublicFavorite" EntityType="SDACModel.Store.PublicFavorite" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserFlagAssociation" EntityType="SDACModel.Store.UserFlagAssociation" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserLog" EntityType="SDACModel.Store.UserLog" store:Type="Tables" store:Schema="dbo" store:Name="UserLog">
+      <DefiningQuery>SELECT 
+      [UserLog].[UserId] AS [UserId], 
+      [UserLog].[Name] AS [Name], 
+      [UserLog].[Role] AS [Role], 
+      [UserLog].[LoginDate] AS [LoginDate], 
+      [UserLog].[LogoutDate] AS [LogoutDate]
+      FROM [dbo].[UserLog] AS [UserLog]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Condition" Association="SDACModel.Store.FK_Condition">
+      <End Role="Condition" EntitySet="Condition" />
+      <End Role="Flag" EntitySet="Flag" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DataElementId" Association="SDACModel.Store.FK_DataElementId">
+      <End Role="DataElement" EntitySet="DataElement" />
+      <End Role="Flag" EntitySet="Flag" />
+    </AssociationSet>
+    <AssociationSet Name="FK_rel1" Association="SDACModel.Store.FK_rel1">
+      <End Role="AggregateFlag" EntitySet="AggregateFlag" />
+      <End Role="FlagAggregateFlag" EntitySet="FlagAggregateFlag" />
+    </AssociationSet>
+    <AssociationSet Name="FK_rel2" Association="SDACModel.Store.FK_rel2">
+      <End Role="Flag" EntitySet="Flag" />
+      <End Role="FlagAggregateFlag" EntitySet="FlagAggregateFlag" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserFlagAssociation_Flag" Association="SDACModel.Store.FK_UserFlagAssociation_Flag">
+      <End Role="Flag" EntitySet="Flag" />
+      <End Role="UserFlagAssociation" EntitySet="UserFlagAssociation" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AggregateFlag">
+    <Key>
+      <PropertyRef Name="AggregateFlagId" />
+    </Key>
+    <Property Name="AggregateFlagId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AggregateFlagName" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="AggregateFlagDescription" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="Keyword" Type="varchar" MaxLength="100" />
+    <Property Name="IsPublic" Type="bit" Nullable="false" />
+    <Property Name="IsFavorite" Type="bit" Nullable="false" />
+    <Property Name="UserId" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="IsDelete" Type="bit" />
+    <Property Name="CreatedBy" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Condition">
+    <Key>
+      <PropertyRef Name="ConditionId" />
+    </Key>
+    <Property Name="ConditionId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ConditionName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DataElement">
+    <Key>
+      <PropertyRef Name="DataElementId" />
+    </Key>
+    <Property Name="DataElementId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DataDomain" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Entity" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="FieldName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="DataType" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="SampleData" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="ExternalField" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ErrorLog">
+    <Key>
+      <PropertyRef Name="ErrorLogId" />
+    </Key>
+    <Property Name="ErrorLogId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Source" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Errorcode" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Description" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="Stacktrace" Type="varchar" Nullable="false" MaxLength="2000" />
+    <Property Name="IdentifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Flag">
+    <Key>
+      <PropertyRef Name="FlagId" />
+    </Key>
+    <Property Name="FlagId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FlagName" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="FlagDescription" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="Keyword" Type="varchar" MaxLength="100" />
+    <Property Name="IsPublic" Type="bit" Nullable="false" />
+    <Property Name="DataElementId" Type="int" Nullable="false" />
+    <Property Name="ConditionId" Type="int" Nullable="false" />
+    <Property Name="ValueSet1" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ValueSet2" Type="varchar" MaxLength="50" />
+    <Property Name="UserId" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="IsFavorite" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="CreatedBy" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FlagAggregateFlag">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AggregateFlagId" Type="int" Nullable="false" />
+    <Property Name="FlagId" Type="int" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PublicFavorite">
+    <Key>
+      <PropertyRef Name="PublicPrivateId" />
+    </Key>
+    <Property Name="PublicPrivateId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="FlagId" Type="int" />
+    <Property Name="IsAggregate" Type="bit" />
+  </EntityType>
+  <EntityType Name="UserFlagAssociation">
+    <Key>
+      <PropertyRef Name="UserFlagAssociationId" />
+    </Key>
+    <Property Name="UserFlagAssociationId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="FlagId" Type="int" Nullable="false" />
+    <Property Name="IsPublic" Type="bit" />
+    <Property Name="Isfavorite" Type="bit" />
+    <Property Name="IsAggregate" Type="bit" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'SDAC.dbo.UserLog' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="UserLog">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Role" />
+      <PropertyRef Name="LoginDate" />
+      <PropertyRef Name="LogoutDate" />
+    </Key>
+    <Property Name="UserId" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Role" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="LoginDate" Type="datetime" Nullable="false" />
+    <Property Name="LogoutDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Condition">
+    <End Role="Condition" Type="SDACModel.Store.Condition" Multiplicity="1" />
+    <End Role="Flag" Type="SDACModel.Store.Flag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Condition">
+        <PropertyRef Name="ConditionId" />
+      </Principal>
+      <Dependent Role="Flag">
+        <PropertyRef Name="ConditionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DataElementId">
+    <End Role="DataElement" Type="SDACModel.Store.DataElement" Multiplicity="1" />
+    <End Role="Flag" Type="SDACModel.Store.Flag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DataElement">
+        <PropertyRef Name="DataElementId" />
+      </Principal>
+      <Dependent Role="Flag">
+        <PropertyRef Name="DataElementId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_rel1">
+    <End Role="AggregateFlag" Type="SDACModel.Store.AggregateFlag" Multiplicity="1" />
+    <End Role="FlagAggregateFlag" Type="SDACModel.Store.FlagAggregateFlag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AggregateFlag">
+        <PropertyRef Name="AggregateFlagId" />
+      </Principal>
+      <Dependent Role="FlagAggregateFlag">
+        <PropertyRef Name="AggregateFlagId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_rel2">
+    <End Role="Flag" Type="SDACModel.Store.Flag" Multiplicity="1" />
+    <End Role="FlagAggregateFlag" Type="SDACModel.Store.FlagAggregateFlag" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Flag">
+        <PropertyRef Name="FlagId" />
+      </Principal>
+      <Dependent Role="FlagAggregateFlag">
+        <PropertyRef Name="FlagId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserFlagAssociation_Flag">
+    <End Role="Flag" Type="SDACModel.Store.Flag" Multiplicity="1" />
+    <End Role="UserFlagAssociation" Type="SDACModel.Store.UserFlagAssociation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Flag">
+        <PropertyRef Name="FlagId" />
+      </Principal>
+      <Dependent Role="UserFlagAssociation">
+        <PropertyRef Name="FlagId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

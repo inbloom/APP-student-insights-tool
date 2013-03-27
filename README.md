@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 inBloom-student-grouping-tool
 =========================
 What is it?
@@ -24,3 +25,9 @@ Licensing
 ---------
 
 Please see the file called LICENSE.
+=======
+group
+=====
+
+inBloom Student Grouping Tool
+>>>>>>> 77d7a31f1a421b234c2fda7a8ea6ba858a830753

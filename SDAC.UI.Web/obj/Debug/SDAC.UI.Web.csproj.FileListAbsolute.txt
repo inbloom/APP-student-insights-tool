@@ -40,3 +40,24 @@ C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.UI.Web\bin\inBlo
 C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.UI.Web\obj\Debug\SDAC.UI.Web.csprojResolveAssemblyReference.cache
 C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.UI.Web\obj\Debug\SDAC.UI.Web.dll
 C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.UI.Web\obj\Debug\SDAC.UI.Web.pdb
+\\VBOXSVR\share\dac-build\try\SDAC.UI.Web\bin\SDAC.UI.Web.dll
+\\VBOXSVR\share\dac-build\try\SDAC.UI.Web\bin\SDAC.UI.Web.pdb
+\\VBOXSVR\share\dac-build\try\SDAC.UI.Web\bin\iTextSharp.dll
+\\VBOXSVR\share\dac-build\try\SDAC.UI.Web\bin\Newtonsoft.Json.dll
+\\VBOXSVR\share\dac-build\try\SDAC.UI.Web\bin\NLog.dll
+\\VBOXSVR\share\dac-build\try\SDAC.UI.Web\bin\SDAC.Core.dll
+\\VBOXSVR\share\dac-build\try\SDAC.UI.Web\bin\SDAC.DomainModel.dll
+\\VBOXSVR\share\dac-build\try\SDAC.UI.Web\bin\SDAC.Data.dll
+\\VBOXSVR\share\dac-build\try\SDAC.UI.Web\bin\inBloomApiLibrary.dll
+\\VBOXSVR\share\dac-build\try\SDAC.UI.Web\bin\SDAC.Core.pdb
+\\VBOXSVR\share\dac-build\try\SDAC.UI.Web\bin\SDAC.Core.xml
+\\VBOXSVR\share\dac-build\try\SDAC.UI.Web\bin\SDAC.DomainModel.pdb
+\\VBOXSVR\share\dac-build\try\SDAC.UI.Web\bin\Newtonsoft.Json.xml
+\\VBOXSVR\share\dac-build\try\SDAC.UI.Web\bin\NLog.xml
+\\VBOXSVR\share\dac-build\try\SDAC.UI.Web\bin\SDAC.Data.pdb
+\\VBOXSVR\share\dac-build\try\SDAC.UI.Web\bin\SDAC.Data.xml
+\\VBOXSVR\share\dac-build\try\SDAC.UI.Web\bin\inBloomApiLibrary.pdb
+\\VBOXSVR\share\dac-build\try\SDAC.UI.Web\bin\inBloomApiLibrary.xml
+\\VBOXSVR\share\dac-build\try\SDAC.UI.Web\obj\Debug\SDAC.UI.Web.csprojResolveAssemblyReference.cache
+\\VBOXSVR\share\dac-build\try\SDAC.UI.Web\obj\Debug\SDAC.UI.Web.dll
+\\VBOXSVR\share\dac-build\try\SDAC.UI.Web\obj\Debug\SDAC.UI.Web.pdb

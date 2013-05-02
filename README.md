@@ -1,6 +1,6 @@
-<<<<<<< HEAD
 inBloom-student-grouping-tool
-=========================
+=============================
+
 What is it?
 -----------
 
@@ -14,20 +14,14 @@ Details of the latest version can be found on the inBloom github repository at h
 Documentation
 -------------
 
-The documentation available is included in the ./doc directory.
+The documentation available is included in the doc directory.
 
 Installation
 ------------
 
-Please see the file AdministratorGuide, in the ./doc directory.
+Please see the file AdministratorGuide, in the .oc directory.
 
 Licensing
 ---------
 
 Please see the file called LICENSE.
-=======
-group
-=====
-
-inBloom Student Grouping Tool
->>>>>>> 77d7a31f1a421b234c2fda7a8ea6ba858a830753

@@ -30,3 +30,19 @@ C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Core\bin\Debug\i
 C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Core\obj\Debug\SDAC.Core.csprojResolveAssemblyReference.cache
 C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Core\obj\Debug\SDAC.Core.dll
 C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Core\obj\Debug\SDAC.Core.pdb
+\\VBOXSVR\share\dac-build\try\SDAC.Core\bin\Debug\SDAC.Core.xml
+\\VBOXSVR\share\dac-build\try\SDAC.Core\bin\Debug\SDAC.Core.dll
+\\VBOXSVR\share\dac-build\try\SDAC.Core\bin\Debug\SDAC.Core.pdb
+\\VBOXSVR\share\dac-build\try\SDAC.Core\bin\Debug\Newtonsoft.Json.dll
+\\VBOXSVR\share\dac-build\try\SDAC.Core\bin\Debug\SDAC.Data.dll
+\\VBOXSVR\share\dac-build\try\SDAC.Core\bin\Debug\SDAC.DomainModel.dll
+\\VBOXSVR\share\dac-build\try\SDAC.Core\bin\Debug\inBloomApiLibrary.dll
+\\VBOXSVR\share\dac-build\try\SDAC.Core\bin\Debug\SDAC.Data.pdb
+\\VBOXSVR\share\dac-build\try\SDAC.Core\bin\Debug\SDAC.Data.xml
+\\VBOXSVR\share\dac-build\try\SDAC.Core\bin\Debug\SDAC.DomainModel.pdb
+\\VBOXSVR\share\dac-build\try\SDAC.Core\bin\Debug\Newtonsoft.Json.xml
+\\VBOXSVR\share\dac-build\try\SDAC.Core\bin\Debug\inBloomApiLibrary.pdb
+\\VBOXSVR\share\dac-build\try\SDAC.Core\bin\Debug\inBloomApiLibrary.xml
+\\VBOXSVR\share\dac-build\try\SDAC.Core\obj\Debug\SDAC.Core.csprojResolveAssemblyReference.cache
+\\VBOXSVR\share\dac-build\try\SDAC.Core\obj\Debug\SDAC.Core.dll
+\\VBOXSVR\share\dac-build\try\SDAC.Core\obj\Debug\SDAC.Core.pdb

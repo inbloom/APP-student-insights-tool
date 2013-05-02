@@ -20,3 +20,14 @@ C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Data\bin\Debug\N
 C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Data\obj\Debug\SDAC.Data.csprojResolveAssemblyReference.cache
 C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Data\obj\Debug\SDAC.Data.dll
 C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Data\obj\Debug\SDAC.Data.pdb
+\\VBOXSVR\share\dac-build\try\SDAC.Data\bin\Debug\SDAC.Data.xml
+\\VBOXSVR\share\dac-build\try\SDAC.Data\bin\Debug\SDAC.Data.dll
+\\VBOXSVR\share\dac-build\try\SDAC.Data\bin\Debug\SDAC.Data.pdb
+\\VBOXSVR\share\dac-build\try\SDAC.Data\bin\Debug\inBloomApiLibrary.dll
+\\VBOXSVR\share\dac-build\try\SDAC.Data\bin\Debug\Newtonsoft.Json.dll
+\\VBOXSVR\share\dac-build\try\SDAC.Data\bin\Debug\inBloomApiLibrary.pdb
+\\VBOXSVR\share\dac-build\try\SDAC.Data\bin\Debug\inBloomApiLibrary.xml
+\\VBOXSVR\share\dac-build\try\SDAC.Data\bin\Debug\Newtonsoft.Json.xml
+\\VBOXSVR\share\dac-build\try\SDAC.Data\obj\Debug\SDAC.Data.csprojResolveAssemblyReference.cache
+\\VBOXSVR\share\dac-build\try\SDAC.Data\obj\Debug\SDAC.Data.dll
+\\VBOXSVR\share\dac-build\try\SDAC.Data\obj\Debug\SDAC.Data.pdb

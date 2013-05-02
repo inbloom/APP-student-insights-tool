@@ -14,3 +14,19 @@ C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.Core\bin\Debug\inBloomApiLi
 C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.Core\obj\Debug\SDAC.Core.csprojResolveAssemblyReference.cache
 C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.Core\obj\Debug\SDAC.Core.dll
 C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.Core\obj\Debug\SDAC.Core.pdb
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Core\bin\Debug\SDAC.Core.xml
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Core\bin\Debug\SDAC.Core.dll
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Core\bin\Debug\SDAC.Core.pdb
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Core\bin\Debug\SDAC.Data.dll
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Core\bin\Debug\SDAC.DomainModel.dll
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Core\bin\Debug\inBloomApiLibrary.dll
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Core\bin\Debug\SDAC.Data.pdb
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Core\bin\Debug\SDAC.Data.xml
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Core\bin\Debug\SDAC.DomainModel.pdb
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Core\bin\Debug\inBloomApiLibrary.pdb
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Core\bin\Debug\inBloomApiLibrary.xml
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Core\obj\Debug\SDAC.Core.csprojResolveAssemblyReference.cache
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Core\obj\Debug\SDAC.Core.dll
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Core\obj\Debug\SDAC.Core.pdb

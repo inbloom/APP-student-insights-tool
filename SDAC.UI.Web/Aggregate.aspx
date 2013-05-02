@@ -1,6 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="SDAC.UI.Web.Aggregate" MasterPageFile="StudentAggregate.Master" Title="SDAC >> Aggregate Flag" Codebehind="Aggregate.aspx.cs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <script src="JS/analytics.js" type="text/javascript"></script>
+
 	<script src="JS/jquery-1.8.3.js" type="text/javascript"></script>
 	<script src="JS/jquery-ui.js" type="text/javascript"></script>
 	<link href="CSS/jquery-ui.css" rel="stylesheet" type="text/css" />

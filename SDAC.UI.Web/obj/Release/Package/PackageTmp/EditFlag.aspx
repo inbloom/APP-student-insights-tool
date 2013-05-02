@@ -1,6 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EditFlag.aspx.cs" Inherits="SDAC.UI.Web.Edit" Title="SDAC >> Edit Flag " MasterPageFile="~/StudentAggregate.Master" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <script src="JS/analytics.js" type="text/javascript"></script>
+
 	<script src="JS/jquery-1.8.3.js" type="text/javascript"></script>
 	<script src="JS/jquery-ui.js" type="text/javascript"></script>
 	<link href="CSS/jquery-ui.css" rel="stylesheet" type="text/css" />

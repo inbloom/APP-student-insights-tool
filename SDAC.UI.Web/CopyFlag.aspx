@@ -1,6 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="True" Inherits="SDAC.UI.Web.CopyFlag" MasterPageFile="StudentAggregate.Master" Title="SDAC >> Copy Flag" Codebehind="CopyFlag.aspx.cs" ValidateRequest="false" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <script src="JS/analytics.js" type="text/javascript"></script>
 
     <script src="JS/jquery-1.8.3.js" type="text/javascript"></script>
     <script src="JS/jquery-ui.js" type="text/javascript"></script>

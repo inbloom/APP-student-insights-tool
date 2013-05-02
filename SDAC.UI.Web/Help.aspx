@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Help.aspx.cs" Inherits="SDAC.UI.Web.Help"   %>
 
-
+<script src="JS/analytics.js" type="text/javascript"></script>
 <div id="tabs">
     <ul>
         <li><a href="#tabs-1"><strong>Search</strong></a></li>

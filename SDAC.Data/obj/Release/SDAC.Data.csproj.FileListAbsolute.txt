@@ -7,3 +7,12 @@ C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.Data\bin\Release\inBloomApi
 C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.Data\bin\Release\Newtonsoft.Json.xml
 C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.Data\obj\Release\SDAC.Data.dll
 C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.Data\obj\Release\SDAC.Data.pdb
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Data\bin\Release\SDAC.Data.dll
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Data\bin\Release\SDAC.Data.pdb
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Data\bin\Release\inBloomApiLibrary.dll
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Data\bin\Release\Newtonsoft.Json.dll
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Data\bin\Release\inBloomApiLibrary.pdb
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Data\bin\Release\inBloomApiLibrary.xml
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Data\bin\Release\Newtonsoft.Json.xml
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Data\obj\Release\SDAC.Data.dll
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.Data\obj\Release\SDAC.Data.pdb

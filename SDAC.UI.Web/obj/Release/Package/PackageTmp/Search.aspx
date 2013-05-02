@@ -1,6 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" Title="Welcome to SDAC" Inherits="SDAC.UI.Web.Search" MasterPageFile="StudentAggregate.Master" Codebehind="Search.aspx.cs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <script src="JS/analytics.js" type="text/javascript"></script>
+
   <script src="js/jquery.js" type="text/javascript"></script>
     <script src="JS/jquery-1.8.3.js" type="text/javascript"></script>
     <script src="JS/jquery-ui.js" type="text/javascript"></script>

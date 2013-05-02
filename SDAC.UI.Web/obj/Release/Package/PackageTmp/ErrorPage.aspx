@@ -4,6 +4,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Error Page</title>
+    <script src="JS/analytics.js" type="text/javascript"></script>
+
 	<script src="JS/jquery-1.8.2.min.js" type="text/javascript"></script>
 	<script src="JS/jquery-ui.js" type="text/javascript"></script>
 	<link href="CSS/jquery-ui.css" rel="stylesheet" type="text/css" />

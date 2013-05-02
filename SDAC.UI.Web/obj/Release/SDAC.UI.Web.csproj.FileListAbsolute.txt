@@ -17,3 +17,22 @@ C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.UI.Web\bin\inBloomApiLibrar
 C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.UI.Web\obj\Release\SDAC.UI.Web.csprojResolveAssemblyReference.cache
 C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.UI.Web\obj\Release\SDAC.UI.Web.dll
 C:\Users\dnelson\Desktop\SDAC-2013-02-27\Source\SDAC.UI.Web\obj\Release\SDAC.UI.Web.pdb
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.UI.Web\bin\SDAC.UI.Web.dll
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.UI.Web\bin\SDAC.UI.Web.pdb
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.UI.Web\bin\iTextSharp.dll
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.UI.Web\bin\Newtonsoft.Json.dll
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.UI.Web\bin\NLog.dll
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.UI.Web\bin\SDAC.Core.dll
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.UI.Web\bin\SDAC.DomainModel.dll
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.UI.Web\bin\SDAC.Data.dll
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.UI.Web\bin\inBloomApiLibrary.dll
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.UI.Web\bin\SDAC.Core.pdb
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.UI.Web\bin\SDAC.DomainModel.pdb
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.UI.Web\bin\Newtonsoft.Json.xml
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.UI.Web\bin\NLog.xml
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.UI.Web\bin\SDAC.Data.pdb
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.UI.Web\bin\inBloomApiLibrary.pdb
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.UI.Web\bin\inBloomApiLibrary.xml
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.UI.Web\obj\Release\SDAC.UI.Web.csprojResolveAssemblyReference.cache
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.UI.Web\obj\Release\SDAC.UI.Web.dll
+C:\Users\dnelson\Documents\Visual Studio 2012\Projects\dac\SDAC.UI.Web\obj\Release\SDAC.UI.Web.pdb

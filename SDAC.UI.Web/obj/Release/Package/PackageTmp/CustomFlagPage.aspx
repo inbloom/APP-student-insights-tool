@@ -1,6 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CustomFlagPage.aspx.cs" Inherits="SDAC.UI.Web.CustomFlagPage" Title="Custom Flag Page" MasterPageFile="~/StudentAggregate.Master" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <script src="JS/analytics.js" type="text/javascript"></script>
+
 	<style type="text/css">
 		.customflag
 		{

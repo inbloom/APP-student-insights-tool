@@ -125,7 +125,7 @@ namespace SDAC.UI.Web
                 _user.EducationOrganization = _authenticateUser.GetStringWithoutQuote(UserResponse["edOrg"].ToString());
                 _user.EducationOrganizationId=_authenticateUser.GetStringWithoutQuote(UserResponse["edOrgId"].ToString());
                 _user.Email = _authenticateUser.GetStringWithoutQuote(UserResponse["email"].ToString());
-                _user.ExternalId = _authenticateUser.GetStringWithoutQuote(UserResponse["external_id"].ToString());
+                
                 _user.FullName = _authenticateUser.GetStringWithoutQuote(UserResponse["full_name"].ToString());
 
                 JToken Token= UserResponse["granted_authorities"];
@@ -159,6 +159,9 @@ namespace SDAC.UI.Web
                 _user.SliRoles = SliRoles;
 
                 _user.TenantId = _authenticateUser.GetStringWithoutQuote(UserResponse["tenantId"].ToString());
+                // TenantId added here to prevent the application database from sharing user information across tenancies for users with the same inbloom userId
+                _user.ExternalId = _authenticateUser.GetStringWithoutQuote(UserResponse["external_id"].ToString()) + _user.TenantId;
+
                 _user.UserId = _authenticateUser.GetStringWithoutQuote(UserResponse["user_id"].ToString());
 
                

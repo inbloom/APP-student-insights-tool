@@ -25,12 +25,12 @@ namespace SDAC.UI.Web
                     Session["Section"] = null;
                     Session["SectionAndCourseOfferingId"] = null;
                     Session["CourseIdAndCourseOfferingId"] = null;
-                    Response.Redirect("Search.aspx");
+                    Response.Redirect("https://portal.sandbox.inbloom.org/portal/c/logout");
                 }
             }
             catch (Exception ex)
             {
-                Response.Redirect("Search.aspx");
+                Response.Redirect("https://portal.sandbox.inbloom.org/portal/c/logout");
             }
         }
         protected void Button1_Click(object sender, EventArgs e)

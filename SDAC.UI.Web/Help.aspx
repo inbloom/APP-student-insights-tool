@@ -3,14 +3,45 @@
 <script src="JS/analytics.js" type="text/javascript"></script>
 <div id="tabs">
     <ul>
-        <li><a href="#tabs-1"><strong>Search</strong></a></li>
-        <li><a href="#tabs-2"><strong>Results</strong></a></li>
-        <li><a href="#tabs-3"><strong>Add/Edit Flag</strong></a></li>
-		<li><a href="#tabs-4"><strong>Aggregate Flag</strong></a></li>
-		<li><a href="#tabs-5"><strong>About</strong></a></li>
+        <li><a href="#tabs-1"><strong>Introduction</strong></a></li>
+        <li><a href="#tabs-2"><strong>Search</strong></a></li>
+        <li><a href="#tabs-3"><strong>Results</strong></a></li>
+        <li><a href="#tabs-4"><strong>Add/Edit Flag</strong></a></li>
+		<li><a href="#tabs-5"><strong>Aggregate Flag</strong></a></li>
+		<li><a href="#tabs-6"><strong>About</strong></a></li>
     </ul>
-  
+
     <div id="tabs-1">
+
+	    <div class="help_heading"> Introduction to the Student Data Aggregation Calculator</div>
+
+		<div class="help_heading_content">
+			<p>The Student Data Aggregation Calculator (SDAC) is intended for users who want to identify
+                subsets of students across the inBloom Data Store.</p>
+
+            <p>The Student Data Aggregation Calculator is a flexible and intuitive application that
+                allows educators to create flags with specific conditions, and run those conditions across
+                the student database to identify subsets of students who meet the criteria. The flags can
+                be saved for future use, creating an easy-to-use tool that can quickly identify students.</p>
+
+            <p>Authorized staff/users may access inBloom student data by using their assigned login
+                credentials to sign-in to the inBloom portal using a web browser.</p>
+            
+            <p>Users will have permissions assigned to them based on their role (i.e. Educator, IT Administrator). 
+                Some actions are only available to users with Administrator privileges. As an example, IT Administrators 
+                are able to create public flags, where an Educator with default permissions will not have he required permissions. 
+                This an aspect to be aware of when creating, editing, or deleting public flags.</p>
+
+            <p>For instructions on how to sign into your school district’s portal, please contact your
+                district administrator.</p>
+		</div>
+
+	</div>
+
+
+
+
+    <div id="tabs-2">
 
 
 				  <div class="help_heading"> Overview</div>
@@ -82,7 +113,7 @@
 				
 
     </div>
-    <div id="tabs-2">
+    <div id="tabs-3">
    	 <div class="help_heading">   Overview</div>
  <div class="help_heading_content">
 The Results page displays a list of students based on the criteria defined for the selected flag.
@@ -139,7 +170,7 @@ Opens the Add/Edit page allowing you to make changes to the current flag
 
 
     </div>
-    <div id="tabs-3">
+    <div id="tabs-4">
           <div class="help_heading"> Overview</div>
 
     <div class="help_heading_content">
@@ -232,7 +263,7 @@ Note 2: The Copy Flag feature is similar to the Edit Flag feature except in that
     </div>
     </div>
     </div>
-    <div id="tabs-4">
+    <div id="tabs-5">
       
 
   <div class="help_heading"> Overview</div>
@@ -293,7 +324,7 @@ The application will perform the necessary aggregation of each data set for the 
 Note: This version of the SDAC limits the number of individual flags that can be added to an Aggregate to five. When combining some flags, the application may prompt you that the selected flags may not be combined due to the source of each flags data element.</p> </i>
     </div>
     </div>
-	<div id="tabs-5">
+	<div id="tabs-6">
 		<div class="help_heading">About</div>
 		<div class="help_heading_content">
 			<p>Student Data Aggregation Calculator was developed for inBloom, Inc. by Upeo, LLC (<a href="http://www.upeo.com/" target="_blank">www.upeo.com</a>).  This software is made available as open-source under the Apache License, Version 2.0.</p>

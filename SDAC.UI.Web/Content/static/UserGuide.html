@@ -1,0 +1,597 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title>SDAC - User Guide</title>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<link href="./bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+<style type="text/css">
+    img.screenshot
+    {
+        border:1px solid gray;
+        margin-top:25px;
+        margin-bottom:25px;
+    }
+</style>
+</head>
+
+<body lang=EN-US>
+
+<div style="position:relative">
+
+<div style="width:20%; float:left;" class="affix">
+<ul class="nav nav-list">
+  <li class="nav-header">User Guide</li>
+  <li><a href="#intro">Introduction</a></li>
+  <li><a href="#search">Search</a></li>
+  <li><a href="#results">Results</a></li>
+  <li><a href="#addedit">Add/Edit Flag</a></li>
+  <li><a href="#aggflag">Aggregate Flag</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#tutorial">SDAC Tutorial</a></li>
+</ul>
+
+</div>
+<div id="content" style="margin-left:21%;">
+
+<section id="intro">
+    
+	<h2> Introduction to the Student Data Aggregation Calculator</h2>
+        <div style='margin-left:.25in'>
+			<p>The Student Data Aggregation Calculator (SDAC) is intended for users who want to identify
+                subsets of students across the inBloom Data Store.</p>
+
+            <p>The Student Data Aggregation Calculator is a flexible and intuitive application that
+                allows educators to create flags with specific conditions, and run those conditions across
+                the student database to identify subsets of students who meet the criteria. The flags can
+                be saved for future use, creating an easy-to-use tool that can quickly identify students.</p>
+            
+            <p>Users have permissions assigned to them based on their role (i.e. Educator, IT Administrator). 
+                Some actions are only available to users with Administrator privileges. As an example, IT Administrators 
+                are able to create public flags, where an Educator with default permissions will not have the required permissions. 
+                This is an aspect to be aware of when creating, editing, or deleting public flags.</p>
+
+            <p>For information about your current permission level, please contact your district administrator.</p>
+
+            <p>For information on how to start using the SDAC with a Sandbox account, visit the <a href="#tutorial">SDAC Tutorial</a></p>
+		</div>
+
+</section>
+   
+<section id="search">
+<hr>
+<h2>Search</h2>
+
+	<h4> Overview</h4>
+        <div style='margin-left:.25in'>
+
+				<p>
+				The Search page provides the ability to find an existing flag in the
+				system.  Flags you have created, as well as, public flags may appear in the
+				list.
+				</p>
+        </div>
+        
+		<h4>  Search Bar</h4>
+		<div style='margin-left:.25in'>		   
+				<p>
+				 Allows you to search for flags based on the name, description or
+				keyword defined for each flag. Once you begin typing in the search field,
+				the list of flags will start to filter dynamically based on corresponding
+				matches found using the letters or words you type.
+				Note: The results will only match on the name, description or keyword
+				fields.
+				</p>
+        </div>
+        <h4>Show Public Flags</h4>
+        <div style='margin-left:.25in'>
+				<p>Check this option to include flags that are defined as public in the search results.</p>
+				<p>
+				Note: Public flags can only be created, edited and deleted by someone with Administrator privileges.</p>		
+		</div>
+
+        <h4>Actions</h4>
+        <div style='margin-left:.25in'>
+				<p>For each flag that appears in the Search list, the following actions may be performed by clicking on the corresponding icon.</p>
+
+				<p></p>
+				<img class="actionimage" src="img/new_run_help.png" title="Run Flag"> Run the Flag
+				<p></p>
+				<img class="actionimage" src="img/copy_II_help.png" title="Copy Flag"> Copy the Flag
+				<p></p>
+				<img class="actionimage" src="img/edit_II_help.png" title="Edit Flag"> Edit the Flag
+				<p></p>
+				<img class="actionimage" src="img/star_help.png" title="Add to Favorite"> Save the Flag to Favorites
+				<p></p>
+				<img class="actionimage" src="img/new-trash1_help.png" title="Delete Flag"> Delete the Flag
+				<p></p>
+		</div>		
+				
+
+        <h4> New Flag</h4>
+        <div style='margin-left:.25in'>
+        
+				<a href="../../AddFlag.aspx" target="_blank"><img src="img/newflag.png"></a><br> 
+				   
+                <p>Click this button to create a new Flag. You will be redirected to the Add Flag page. </p>
+		</div>		
+			
+        <h4> New Aggregate Flag </h4>
+        <div style='margin-left:.25in'>
+		
+			<a href="../../Aggregate.aspx" target="_blank"><img src="img/aggregate.png"></a> <br>
+            <p> Click this button to create a new Aggregate Flag. You will be redirected to the Add Aggregate Flag page. 
+                You must have created at least one flag before an Aggregate Flag can be created</p>
+		</div>		 
+
+</section>				
+
+<section id="results">
+<hr />
+
+<h2>Results</h2>
+   	<h4>Overview</h4>
+    <div style='margin-left:.25in'> 
+        <p>The Results page displays a list of students based on the criteria defined for the selected flag.
+        The name of the flag and description are prominently displayed above the list of students.
+        The information displayed in the table includes Student ID, 
+        Student Name, Ethnicity, Gender, Grade Level and the field selected when the user created the flag.  
+        </p>
+    </div>
+    
+    <h4>Actions</h4>
+    <div style='margin-left:.25in'>
+    
+        <p>Several additional options are available on the Results page including:</p>
+
+        <img src="img/addtofav.png">
+        <p>Adds this flag to your list of favorites</p>
+
+        <img src="img/export_help.png">
+        <p>Outputs the data displayed in the grid to a formatted Excel spreadsheet including column headings
+</p>
+<img src="img/copy_helpimage.png">
+<p>Opens the Add/Edit page with pre filled information from the flag allowing you to create a copy of the flag
+</p>
+
+<img src="img/edit_helpimage.png">
+<p>Opens the Add/Edit page allowing you to make changes to the current flag</p>
+</div>
+
+<h4>Add Fields</h4>
+<div style='margin-left:.25in'>
+<p>Adding student information to the results of a flag is a simple process.</p>
+    <p><img src="img/add_fields.png"></p>
+
+<p>Click on the Add New Fields to Results drop down and you will see a list of available fields.  Select the fields by clicking on the checkbox next to a field name.  To deselect a field, simply uncheck the field.</p>
+
+<p>The current version of the SDAC provides the ability to add fields from the Student Identification and Demographics group only.  The list of fields selected are not saved with the flag.<br />  Therefore, you will need to add fields to the results each time you run the flag.</p>
+
+<img src="img/btn_update.png">
+<p>Once you have selected the fields from the drop down, click the Update button to refresh the list of students.  Once updated, the table will display the additional columns selected.</p>
+</div>
+
+    <h4>Notes</h4>
+    <div style='margin-left:.25in'>
+        <p><i>1. Results are limited based on School, Course and Section selected</i></p>
+        <p><i>2. Each column in the data grid can be sorted by clicking on the column header</i></p>
+    </div>
+</section>
+
+<section id="addedit">
+<hr />
+
+<h2>Add/Edit Flag</h2>
+    <h4> Overview</h4>
+    <div style='margin-left:.25in'>
+    
+        <p>
+        The Add/Edit page allows you to add or edit a flag using a visually engaging step-by-step approach.
+        Prior to defining a flag, you must enter a Name and Description for the flag. 
+        You may also enter optional Keywords to add further relevance for each flag and to better assist in the search of flags. 
+        </p>
+        <p>If you are logged on as a District Admin, the option to set a flag as Public will be made available.</p>
+    </div>
+    
+    <h4> Adding a New Flag</h4>
+    <div style='margin-left:.25in'>
+        <p>The process for adding a new flag is as follows:</p>
+        
+        <h5>Step 1: Select a Data Element</h5>
+        <p>The user begins by typing the word that describes the name of the data element they are interesting in using. 
+        This causes the list to begin filtering data elements so only the most relevant data elements appear in the list.  
+        Once the user clicks on the data element it will appear highlighted and display in the Preview section indicating the field is now selected.
+        The list of data elements is also sortable by Name or Description columns.  
+        If the user chooses to do so, they may scroll through the list and select a data element.
+        </p>
+
+
+        <h5>Step 2: Apply a Condition</h5>
+        <p>Depending on the data type of the data element selected, the application will automatically 
+        disable operators in the list that are invalid for that data type.  For example, when a user selects 
+        a numeric data type such as GPA, the Starts with, Does not start with, Ends with and Does not end with 
+        operators will be grayed out.  This will enhance the user experience by eliminating invalid selections.
+        </p>
+
+        <p>The following operators are available for selection.  Only one operator may be selected at a time.</p>
+        
+        <table class="table table-bordered table-condensed">
+            <tbody>
+                <tr><td>Is equal to </td><td>Starts with</td><td>Is between</td></tr>
+                <tr><td>Is not equal to</td><td>Does not start with</td><td>Is not between</td></tr>
+                <tr><td>Is greater than</td><td>Ends with</td><td>Is one of</td></tr>
+                <tr><td>Is greater than or equal to </td><td>Does not end with</td><td>Is not one of</td></tr>
+                <tr><td>Is less than</td><td>Contains</td><td>Is blank or empty</td></tr>
+                <tr><td>Is less than or equal to</td><td>Does not contain</td><td>Is not blank nor empty</td></tr>
+            </tbody>
+        </table>
+
+<!----- TESTING TESTING ----->
+
+
+        <h5>Step 3: Set the Value</h5>
+        <p>Enter a value in the textbox which will determine the output of the flag.</p>
+
+        <p >The application will perform basic validation to ensure input values match the data type of the data element selected. 
+        For example, if you select Enrollment Date, the textbox will become a date picker.  Another example, if you select Rank,
+        the textbox will only allow numbers to be entered.
+        </p>
+
+        <h5>Step 4: Preview and Save</h5>
+        <p>As you progress from Step 1 through Step 3, the Preview pane continually updates and displays the selected data element,
+        operator and values entered.  This provides a visual representation of the flag definition before clicking the Save button.</p>
+
+        <div class="buttons">
+            <input class="btn_small" type="button" value="Preview" name="">
+        </div>
+
+        <p>Once the flag is defined, click the Preview button to executive the flag.
+        The application will retrieve 5 records for you to view in the preview data grid. 
+        This ensures you have set the flag as intended and will aid you from having to click Save and run the flag continually in a separate screen.
+        </p>
+
+        <div class="buttons">
+            <input class="btn_small" type="button" value="Save" name="">
+        </div>
+
+        <p>You can continue modifying the flag and click Save once you are satisfied the flag has been defined correctly.</p>
+
+        <p><i>Note 1: The Flag Name must be unique within your list of defined flags.  
+        Public Flags must also be unique but only within the domain of Public Flags.</i></p>
+
+        <p><i>Note 2: The Copy Flag feature is similar to the Edit Flag feature except in that you must define a new Name for the flag.</i></p>
+    </div>
+</section>
+
+<section id="aggflag">
+<hr />
+
+<h2>Aggregate Flag</h2>
+    <h4> Overview</h4>
+    <div style='margin-left:.25in'>
+        <p>An Aggregate Flag is the combination of multiple flags defined as either private 
+        (created by you) or Public (created by an Admin user) and which allows you to perform 
+        advanced analysis of student data.  By aggregating individual flags, you can identify 
+        students with very specific qualities or factors.  As an example, you may wish to create 
+        an Aggregate Flag called High Performing Underprivileged Students that consists of the 
+        following flags:
+        </p>
+
+        <ul>
+            <li><p>Honor Roll</p></li>
+            <li><p>Free and Reduced Lunch</p></li>
+            <li><p>English Language Learner</p></li>
+        </ul>
+
+        <p>The application will perform the necessary aggregation of each data set for the individual 
+        flags resulting in the list of students that meet these collective criteria.  The results of 
+        an Aggregate Flag only includes students that are inclusive of each individual flag.  Using 
+        the example above, the High Performing Underprivileged Students flag will only list students 
+        that appear in the Honor Roll AND Free and Reduced Lunch AND English Language Learner flags.
+        </p>
+    </div>
+
+    <h4>Adding a New Aggregate Flag</h4>
+    <div style='margin-left:.25in'>
+      
+        <p>The steps required to create an Aggregate Flag are as follows.</p>
+        
+        <ol>
+            <li><p>Enter a Name for the flag.</p></li>
+            <li><p>Enter a Description for the flag.</p></li>
+            <li><p>Enter optional Keywords to add further relevance for each flag and to better assist in the search of flags.</p></li>
+            <li><p>If you are logged on as a District Admin, the option to set a flag as Public will be made available.</p> </li>
+            <li><p>Select flags from the list using one of the following methods</p>
+                <ul>
+                    <li><p><strong>Search:</strong> Search for flags based on the name, description or keyword defined for each flag. Once you begin typing in the search field, the list of flags will start to filter dynamically based on corresponding matches found using the letters or words you type.    </p></li>
+                    <li><p><strong>Drag and Drop:</strong> Select a flag from the list of flags and move it to the list on the right by clicking on the right arrow or by dragging and dropping the flag.</p></li>
+                </ul>
+            </li>
+        </ol>
+
+        <br>
+
+        <img src="img/save_help.png" alt="savehelp"><br>
+        <p>Click Save once you are satisfied the Aggregate Flag has been defined correctly.</p>
+
+
+        <p><i>Note: Check the Show Public Flags option to include flags that are defined as public in the search results.</i></p>
+    </div>
+    
+    <h4>Run the Aggregate Flag</h4>
+    <div style='margin-left:.25in'>
+    
+        <p>Once an Aggregate Flag is saved, you may access and view the flag by using one of the following methods:</p>
+
+        <ul>
+            <li><p>Select the flag from the My Flags drop down</p></li>
+            <li><p>Locate flags on the Search page which have the following icon <img src="img/aggregate_list.png" alt="aggregate help"></p></li>
+        </ul>
+
+        <p><i>Note: This version of the SDAC limits the number of individual flags that can be added 
+        to an Aggregate to five. When combining some flags, the application may prompt you that the 
+        selected flags may not be combined due to the source of each flags data element. </i></p>
+    </div>
+</section>
+
+<section id="about">
+<hr />
+
+<h2>About</h2>
+    <div style='margin-left:.25in'>
+		<p>Student Data Aggregation Calculator was developed for inBloom, Inc. by Upeo, 
+        LLC (<a href="http://www.upeo.com/" target="_blank">www.upeo.com</a>). &nbsp;
+        This software is made available as open-source under the Apache License, Version 2.0.</p>
+        
+        <p>For application support, please contact your school district technology support center.</p>
+    </div>
+</section>
+
+<section id="tutorial">
+<hr />
+
+<h2>SDAC Tutorial on Creating and Using Flags</h2>
+    <div style='margin-left:.25in'>
+        <p>
+            This is a brief tutorial to show a new user how to create and use flags with the Student Data Aggregation 
+            Calculator (SDAC). To get to the SDAC application, simply enter <a href="http://dac.inbloom.org">dac.inbloom.org</a> 
+            into a web browser. Next, the user will be prompted to enter their inBloom username and password.
+        </p>
+
+        <p>After a user logs in to inBloom, the user will be prompted to select a Data Set and virtual Sandbox User.</p>
+   
+        <img src="./img/Dataset_and_User.png" class="screenshot img-rounded"/>
+        
+        <br />
+
+        <p>We recommend selecting the Small Data Set and one of the virtual Sanbox Users highlighted in the image above. 
+            The users are also listed in the following table:
+        </p>
+
+        <table class="table table-bordered table-hover table-condensed">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Permission Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Charles Gray</td>
+                    <td>Educator</td>
+                    <td>Non-Administrator</td>
+                </tr>
+                <tr>
+                    <td>Linda Kim</td>
+                    <td>Educator</td>
+                    <td>Non-Administrator</td>
+                </tr>
+                <tr>
+                    <td>Rebecca Braverman</td>
+                    <td>Educator</td>
+                    <td>Non-Administrator</td>
+                </tr>
+                <tr>
+                    <td>Maria Gonzales</td>
+                    <td>Leader</td>
+                    <td>Non-Administrator</td>
+                </tr>
+                <tr>
+                    <td>Amy Kopal</td>
+                    <td>IT Administrator</td>
+                    <td>Administrator</td>
+                </tr>
+                <tr>
+                    <td>Mary Smith</td>
+                    <td>Aggregate Viewer</td>
+                    <td>Non-Administrator</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        
+        <p>
+            The user should choose a virtual Sandbox User based on the level of privileges the user needs 
+                while using the SDAC.
+        </p>
+   
+        <p>
+            Adminstrator permission levels give the user the ability to create, edit and delete public flags 
+            in the SDAC. Public flags can be accessed by multiple users. Without adminstrator priviledges, 
+            the user can create personal flags and save them for personal use; however, no other users will be able 
+            to access these personal flags.
+        </p>
+    </div>
+    
+    <h4>Creating a New Flag</h4>
+    <div style='margin-left:.25in'>
+
+        <p>
+            After selecting the Data Set and Sandbox User, the user will be redirected to the SDAC home page.
+        </p>
+
+        <img src="./img/search_home.png" class="screenshot img-rounded"/>
+        
+        <br />
+
+        <p>
+            The SDAC home page will have the "Search" tab selected, as shown in the previous image.  In order for the 
+            user to create their first flag, the user can click on the "New Flag" button.  This button is shown in the 
+            previous image.
+        </p>
+    
+        <p>
+            After clicking on the "New Flag" button, the SDAC will change from the "Search" tab to the "Add/Edit" tab. 
+        </p>
+
+        <img src="./img/add_edit_name.png" class="screenshot img-rounded"/>
+        
+        <br />
+    
+        <p>
+            To create a new flag, the user must enter a name and a description for the flag.  The location of the "Name" 
+            and "Description" fields are shown in the previous image.
+        </p>
+        <p>
+            For this example, the flag will take the following values:
+        </p>
+
+        <table class="table table-bordered table-hover table-condensed">
+            <thead>
+                <tr>
+                    <th>Field</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Name</td>
+                    <td>GPA above 3.00</td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td>Lists students with grade point averages above 3.00</td>
+                </tr>
+                <tr>
+                    <td>Keyword</td>
+                    <td>HonorRoll</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br />
+
+        <img src="./img/name_descr_key_example.png" class="screenshot img-rounded"/>
+        
+        <br />
+    
+        <p>
+            Next, the user must select a data element.  Data elements are the type of data the flag is searching to find.
+        </p>
+    
+        <img src="./img/data_element.png" class="screenshot img-rounded"/>
+        
+        <br />
+
+        <p>
+            InBloom's Small Data Set, which was recommended as the data set to select, does not values entered for every 
+            field in the inBloom API. Below is a list of the data fields that have values and are recommended for creation 
+            of new flags.
+        </p>
+        <br />
+        <ul>
+            <li>Gender</li>
+            <li>Grade point average (GPA)</li>
+            <li>Student's name</li>
+            <li>Home address</li>
+            <li>Number of absences (between 0 and 2)</li>
+            <li>Number of tardies (between 0 and 2)</li>
+        </ul>
+        <br />
+        <p>
+            For this example, the flag will take the following values:
+        </p>
+        
+        <table class="table table-bordered table-hover table-condensed">
+            <thead>
+                <tr>
+                    <th>Field</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data Element</td>
+                    <td>Student Academic Record</td>
+                </tr>
+                <tr>
+                    <td>Data Sub-Element</td>
+                    <td>Cumulative Grade Point Average</td>
+                </tr>
+                <tr>
+                    <td>Condition</td>
+                    <td>Is greater than</td>
+                </tr>
+                <tr>
+                    <td>Value</td>
+                    <td>3.00</td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <br />
+    
+        <img src="./img/gpa_data_element_example.png" class="screenshot img-rounded"/>
+        
+        <br />
+    
+        <p>
+            After selecting the following values, the user simply presses the "Save" button in the lower right corner. 
+            The user returns to the search page with the new flag is now located in the list of available flags. 
+        </p>
+    </div>
+        
+    <h4>Using a Flag</h4>
+    <div style='margin-left:.25in'>
+
+        <img src="./img/search_page_with_example_flag.png" class="screenshot img-rounded"/>
+        
+        <br />
+
+        <p>
+            In order to run the new flag, simply click the "Run" button (contains a triangle symbol) located within the 
+            Action column of the new flag, "GPA above 3.00".
+        </p>
+
+        <img src="./img/run_button.png" class="screenshot img-rounded"/>
+        
+        <br />
+    
+        <p>
+            The user will be sent to a Results page where all the students in the selected Data Set with a GPA above 3.00 
+            will be listed.
+        </p>
+    
+        <img src="./img/results_page.png" class="screenshot img-rounded"/>
+        
+        <br />
+    
+        <p>
+            The Search page shows the flag name and description, along with the list of students that match the query. 
+            There is a maximum of 10 students displayed on the page.  To see the next page of students, click on the 
+            "Next" button in the bottom right corner of the Search page.
+        </p>
+    
+        <p>
+            This is how new flags are created and used to filter students into lists based on user-defined parameters. 
+        </p>
+    </div>
+</section>
+
+</div>
+</div>
+</body>
+
+</html>

@@ -283,7 +283,7 @@
                         Student Data Aggregation Calculator</h1>
                 </div>
                 <div class="help" id="opener">
-                    <a href="javascript:void(0)" onclick="myfunction();" title="Help">Help</a></div>
+                    <a href="./Content/static/UserGuide.html" title="Help" target="_blank">Help</a></div>
                 <%-- <div class="help">
                     <a href="#" title="Help" id="opener">Help</a></div>--%>
             </div>

@@ -213,7 +213,7 @@
             <!-- nav Div: Start -->
             <div class="nav">
                     <div class="nav_content">
-                        <div class="logo_name"><a href="Search.aspx" class="logolink" > <img src="Images/logo.png" /> </a></div>
+                        <div class="logo_name"><a href="Search.aspx" class="logolink" > <img src="Images/logo.png" alt="logo"/> </a></div>
 			            <div class="header_right">
                             Welcome <asp:Label ID="lblUser" runat="server" Text=""></asp:Label>       
 			<div class="setting" id="user"><div class="header_right_img"><img alt="Profile Setting" class="gear" src="Images/directional_down.png"></div>
@@ -239,7 +239,7 @@
                     <div class="top">
     	                <div class="size">
         	                <div class="heading"><h1>Student Data Aggregation Calculator</h1></div>
-                            <div class="help" id="opener"><a href="javascript:void(0)" onclick="myfunction();" title="Help">Help</a></div>
+                            <div class="help" id="opener"><a href="./Content/static/UserGuide.html" title="Help" target="_blank">Help</a></div>
 
                         </div>
                     </div>

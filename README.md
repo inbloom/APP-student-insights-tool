@@ -21,7 +21,13 @@ Installation
 
 Please see the file AdministratorGuide, in the .oc directory.
 
+CONTRIBUTE
+---
+Interested in helping to improve the inBloom Student Grouping Tool? Great! You can take look at the backlog on our [Jira issue tracker](https://support.inbloom.org "Jira"). Browse existing issues, or contribute your own ideas for improvement and new features.
+
+Looking to interact with other developers interested in changing the future of education? Check out our [community forums](https://forums.inbloom.org/ "Forums"), and join the conversation!
+
 Licensing
 ---------
 
-Please see the file called LICENSE.
+The inBloom Student Grouping Tool is licensed under the Apache License. Please see the file called LICENSE-2.0.txt.

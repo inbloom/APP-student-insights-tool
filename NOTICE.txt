@@ -1,9 +1,3 @@
-*inBloom Student Data Aggregation Calculator*
-
-Copyright 2013 inBloom, Inc.
-
-This product includes software developed by inBloom, Inc. (http://www.inbloom.org/).
-
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this software except in compliance with the License.
 You may obtain a copy of the License at
@@ -17,8 +11,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 
-%% The following software may be included in this product: Upeo .NET SDK for inBloom API
-https://github.com/upeo/
+%% The following software may be included in this product: Upeo .NET SDK for the API https://github.com/upeo/
 Copyright 2013 Upeo, LLC  (http://www.upeo.com).
 
 Licensed under the Apache License, Version 2.0 (the "License");
